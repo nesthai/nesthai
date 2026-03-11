@@ -1,0 +1,145 @@
+{
+  "pages": [
+    {
+      "template": "default",
+      "output": "index.html",
+      "data": {
+        "title": "Beaulieu Property Management | Immobilier de Luxe Pattaya & Thaïlande",
+        "description": "Agence immobilière de luxe à Pattaya. Condos, villas, terrains et projets neufs. Accompagnement francophone pour investissement immobilier en Thaïlande depuis 2009.",
+        "keywords": "immobilier Pattaya, condo Thaïlande, villa Pattaya, terrain à vendre Thaïlande, investissement immobilier Thaïlande",
+        "canonicalUrl": "https://www.beaulieu-pattaya.com/",
+        "ogTitle": "Beaulieu Property Management | Immobilier de Luxe Pattaya",
+        "ogDescription": "Agence immobilière premium à Pattaya. Condos, villas, terrains à vendre. Expert francophone pour votre investissement en Thaïlande.",
+        "ogImage": "https://www.beaulieu-pattaya.com/images/og-image.jpg",
+        "twitterTitle": "Beaulieu Property Management | Immobilier Pattaya",
+        "twitterDescription": "Condos, villas et terrains à Pattaya. Votre expert immobilier francophone en Thaïlande.",
+        "twitterImage": "https://www.beaulieu-pattaya.com/images/twitter-image.jpg",
+        "bodyClass": "page-home",
+        "activeAccueil": true,
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "RealEstateAgent",
+          "@id": "https://www.beaulieu-pattaya.com/#organization",
+          "name": "Beaulieu Property Management Co., Ltd.",
+          "url": "https://www.beaulieu-pattaya.com",
+          "telephone": "+66-92-449-9960",
+          "email": "contact@beaulieu-pattaya.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Pattaya Sai 3",
+            "addressLocality": "Pattaya City",
+            "addressRegion": "Chon Buri",
+            "postalCode": "20150",
+            "addressCountry": "TH"
+          }
+        }
+      }
+    },
+    {
+      "template": "default",
+      "output": "condos.html",
+      "data": {
+        "title": "Condos à Vendre et Louer - Pattaya | Beaulieu",
+        "description": "Découvrez nos condos à vendre et à louer à Pattaya. Studios, 1-3 chambres, penthouses. Baan Amphur, Jomtien, Centre-ville, Wongamat.",
+        "keywords": "condo pattaya, appartement thailande, studio pattaya, penthouse pattaya, condo luxe thailande",
+        "canonicalUrl": "https://www.beaulieu-pattaya.com/condos.html",
+        "ogTitle": "Condos de Luxe à Pattaya | Beaulieu Property",
+        "ogDescription": "Sélection exclusive de condos à Pattaya. Studios aux penthouses avec vue mer.",
+        "ogImage": "https://www.beaulieu-pattaya.com/images/condos-og.jpg",
+        "bodyClass": "page-condos",
+        "activeCondos": true
+      }
+    },
+    {
+      "template": "default",
+      "output": "maisons.html",
+      "data": {
+        "title": "Maisons et Villas à Vendre - Pattaya | Beaulieu",
+        "description": "Villas et maisons de luxe à vendre à Pattaya et Jomtien. Piscine privée, vue mer, standing international. Accompagnement francophone.",
+        "keywords": "villa pattaya, maison thailande, immobilier luxe pattaya, villa piscine pattaya, maison jomtien",
+        "canonicalUrl": "https://www.beaulieu-pattaya.com/maisons.html",
+        "ogTitle": "Villas de Luxe à Pattaya | Beaulieu Property",
+        "ogDescription": "Maisons et villas avec piscine privée à Pattaya. Standing international.",
+        "ogImage": "https://www.beaulieu-pattaya.com/images/maisons-og.jpg",
+        "bodyClass": "page-maisons",
+        "activeMaisons": true
+      }
+    },
+    {
+      "template": "default",
+      "output": "terrains.html",
+      "data": {
+        "title": "Terrains à Vendre - Pattaya | Beaulieu",
+        "description": "Terrains à vendre à Pattaya pour construction maison ou investissement. Vue mer, centre-ville, zones résidentielles. Taillez votre projet sur mesure.",
+        "keywords": "terrain pattaya, terrain à vendre thailande, terrain construction pattaya, investissement terrain thailande",
+        "canonicalUrl": "https://www.beaulieu-pattaya.com/terrains.html",
+        "ogTitle": "Terrains à Vendre Pattaya | Beaulieu Property",
+        "ogDescription": "Sélection de terrains à bâtir à Pattaya. Investissement et construction.",
+        "ogImage": "https://www.beaulieu-pattaya.com/images/terrains-og.jpg",
+        "bodyClass": "page-terrains",
+        "activeTerrains": true
+      }
+    },
+    {
+      "template": "default",
+      "output": "projets.html",
+      "data": {
+        "title": "Projets Neufs Immobiliers - Pattaya 2024 | Beaulieu",
+        "description": "Développements immobiliers neufs à Pattaya. Condos off-plan, résidences de standing. Investissement sur plan avec promoteurs de confiance.",
+        "keywords": "projet immobilier pattaya, condo neuf thailande, investissement off plan pattaya, residence standing pattaya",
+        "canonicalUrl": "https://www.beaulieu-pattaya.com/projets.html",
+        "ogTitle": "Projets Neufs Pattaya 2024 | Beaulieu Property",
+        "ogDescription": "Développements immobiliers neufs à Pattaya. Investissez sur plan.",
+        "ogImage": "https://www.beaulieu-pattaya.com/images/projets-og.jpg",
+        "bodyClass": "page-projets",
+        "activeProjets": true
+      }
+    },
+    {
+      "template": "default",
+      "output": "guides.html",
+      "data": {
+        "title": "Thaïlande Immo Decoded | Guides & Conseils Immobilier Pattaya",
+        "description": "Guides experts immobilier Thaïlande : leasehold vs freehold, fiscalité, pièges juridiques, meilleurs quartiers Pattaya. Ressources exclusives pour investisseurs francophones.",
+        "keywords": "guide immobilier thailande, acheter immobilier pattaya légal, leasehold freehold thailande, investir pattaya",
+        "canonicalUrl": "https://www.beaulieu-pattaya.com/guides.html",
+        "extraCss": "guides.css",
+        "ogTitle": "Thaïlande Immo Decoded | Guides Immobilier Pattaya",
+        "ogDescription": "Guides experts pour acheter sereinement en Thaïlande. La référence francophone.",
+        "ogImage": "https://www.beaulieu-pattaya.com/images/guides-og.jpg",
+        "bodyClass": "page-guides",
+        "activeGuides": true
+      }
+    },
+    {
+      "template": "default",
+      "output": "contact.html",
+      "data": {
+        "title": "Contact | Beaulieu Property Management Pattaya",
+        "description": "Contactez Beaulieu Property Management à Pattaya. Agence immobilière francophone. WhatsApp, email, téléphone. Visites sur rendez-vous.",
+        "keywords": "contact agence immobiliere pattaya, beaulieu property contact, agent immobilier francophone pattaya",
+        "canonicalUrl": "https://www.beaulieu-pattaya.com/contact.html",
+        "ogTitle": "Contact | Beaulieu Property Management",
+        "ogDescription": "Contactez notre agence immobilière francophone à Pattaya.",
+        "ogImage": "https://www.beaulieu-pattaya.com/images/contact-og.jpg",
+        "bodyClass": "page-contact",
+        "activeContact": true
+      }
+    },
+    {
+      "template": "default",
+      "output": "alertes-prix.html",
+      "data": {
+        "title": "Alertes Prix Immobilier Pattaya | Soyez le premier informé | Beaulieu",
+        "description": "Créez vos alertes prix personnalisées pour l'immobilier à Pattaya. Recevez une notification dès qu'un condo, maison ou terrain correspondant à votre budget est disponible.",
+        "keywords": "alerte prix immobilier pattaya, notification condo pattaya, alerte bien immobilier thailande",
+        "canonicalUrl": "https://www.beaulieu-pattaya.com/alertes-prix.html",
+        "ogTitle": "Alertes Prix Immobilier | Beaulieu Pattaya",
+        "ogDescription": "Créez vos alertes personnalisées. Soyez le premier informé des nouveautés.",
+        "ogImage": "https://www.beaulieu-pattaya.com/images/alertes-og.jpg",
+        "bodyClass": "page-alertes",
+        "extraScripts": ["alertes-prix.js"]
+      }
+    }
+  ]
+}

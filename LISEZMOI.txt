@@ -1,0 +1,145 @@
+================================================================================
+  BEAULIEU PROPERTY - SYSTEME DE MAINTENANCE
+================================================================================
+
+PROBLEME RESOLU :
+================
+Avant : 45 fichiers HTML avec code duplique
+Apres : 3 partials + pages sources generees automatiquement
+
+Gain de temps : -95% sur les modifications globales
+
+
+FICHIERS CLES :
+==============
+_partials/          <- Composants reutilisables (modifier ici pour tout changer)
+  head-start.html   <- Debut du HTML
+  head-meta.html    <- Meta tags communs
+  head-end.html     <- Fermeture head
+  header.html       <- Navigation
+  footer.html       <- Footer + scripts
+
+_sources/           <- Contenu des pages (creer vos pages ici)
+  index.html        <- Page d'accueil
+  condos.html       <- Page condos
+  contact.html      <- Page contact
+  ...
+
+
+UTILISATION RAPIDE :
+===================
+
+OPTION 1 : Python (RECOMMANDE)
+------------------------------
+1. Verifier que Python est installe :
+   python --version
+
+2. Si non installe, telecharger sur https://python.org
+
+3. Lancer le build :
+   DOUBLE-CLIC sur BUILD_PYTHON.bat
+
+OPTION 2 : PowerShell
+---------------------
+1. Ouvrir PowerShell
+
+2. Autoriser les scripts (une seule fois) :
+   Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
+
+3. Lancer le build :
+   DOUBLE-CLIC sur BUILD.bat
+   OU
+   .\build.ps1
+
+
+MODE DEVELOPPEMENT (AUTO-RELOAD) :
+==================================
+Lancer WATCH.bat ou :
+  python generate.py --watch
+
+Modifiez les fichiers dans _sources/ ou _partials/
+Les pages se regenerent automatiquement !
+
+
+CREER UNE NOUVELLE PAGE :
+========================
+
+1. Creer _sources/ma-page.html :
+
+<!--META
+title: Mon Titre | Beaulieu
+description: Description SEO
+description: mots, cles, seo
+nav: condos
+-->
+
+<main id="main-content">
+  <h1>Mon contenu</h1>
+</main>
+
+2. Lancer BUILD_PYTHON.bat (ou BUILD.bat)
+
+3. ma-page.html est genere automatiquement !
+
+
+MODIFIER LE DESIGN (TOUTES LES PAGES) :
+======================================
+
+AVANT : Modifier 45 fichiers (45 minutes)
+APRES : Modifier 1 fichier (10 secondes)
+
+1. Ouvrir _partials/header.html
+2. Faire les modifications
+3. Lancer BUILD_PYTHON.bat
+4. Toutes les pages sont mises a jour !
+
+
+CHAMPS META DISPONIBLES :
+=========================
+
+<!--META
+title: Titre de la page
+description: Description SEO
+keywords: mots, cles
+nav: condos              <- Active le menu (index/condos/maisons/terrains/projets/guides/concierge/contact)
+css: guides.css          <- CSS supplementaire
+scripts: alertes-prix    <- Scripts JS supplementaires (separes par virgules)
+-->
+
+
+REGLE D'OR :
+===========
+
+NE JAMAIS MODIFIER les fichiers HTML a la racine
+(index.html, condos.html, etc.)
+
+TOUJOURS MODIFIER les fichiers dans _sources/
+
+Les fichiers a la racine sont REGENERES automatiquement.
+
+
+DEPANNAGE :
+==========
+
+Probleme : "Python n'est pas reconnu"
+Solution : Installer Python depuis https://python.org
+
+Probleme : "Execution des scripts desactivee"
+Solution : Ouvrir PowerShell en admin et taper :
+  Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
+
+Probleme : "Dossier _partials non trouve"
+Solution : Verifier que les dossiers _partials/ et _sources/ existent
+
+
+DOCUMENTATION COMPLETE :
+=======================
+Voir SYSTEME_MAINTENANCE.md
+
+
+CONTACT :
+========
+En cas de probleme avec le systeme de build,
+consulter la documentation ou restaurer depuis la sauvegarde.
+
+================================================================================

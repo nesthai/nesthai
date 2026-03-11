@@ -1,0 +1,27 @@
+{
+  "name": "beaulieu-property-website",
+  "version": "3.0.0",
+  "description": "Site immobilier Beaulieu Property Management - Générateur statique unifié",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js",
+    "watch": "node build.js --watch",
+    "dev": "npm run watch",
+    "clean": "node -e \"const fs=require('fs');if(fs.existsSync('dist'))fs.rmSync('dist',{recursive:true});console.log('dist/ nettoyé');\""
+  },
+  "keywords": [
+    "immobilier",
+    "pattaya",
+    "thailande",
+    "static-site",
+    "handlebars"
+  ],
+  "author": "Beaulieu Property Management",
+  "license": "PRIVATE",
+  "devDependencies": {
+    "chokidar": "^3.6.0"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.8"
+  }
+}

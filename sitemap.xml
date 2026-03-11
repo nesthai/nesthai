@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- PAGE D'ACCUEIL - Priorité maximale -->
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/</loc>
+    <lastmod>2025-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.beaulieu-pattaya.com/images/hero-pattaya.jpg</image:loc>
+      <image:title>Beaulieu Property Management - Immobilier de luxe Pattaya</image:title>
+      <image:caption>Villa de luxe avec piscine à Pattaya</image:caption>
+    </image:image>
+  </url>
+
+  <!-- PAGES PRINCIPALES - Navigation -->
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/condos.html</loc>
+    <lastmod>2025-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/maisons.html</loc>
+    <lastmod>2025-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/terrains.html</loc>
+    <lastmod>2025-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/projets.html</loc>
+    <lastmod>2025-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/contact.html</loc>
+    <lastmod>2025-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/politique-confidentialite.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/mentions-legales.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/service-concierge.html</loc>
+    <lastmod>2025-02-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/alertes-prix.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/recherche.html</loc>
+    <lastmod>2025-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- CONDOS - Pages détail (Priorité haute car pages conversion) -->
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/condo-panora-estuaria.html</loc>
+    <lastmod>2025-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.beaulieu-pattaya.com/images/condo-panora-estuaria.jpg</image:loc>
+      <image:title>The Panora Estuaria - Condo front de mer Baan Amphur</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/condo-copacabana.html</loc>
+    <lastmod>2025-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/condo-centric-sea.html</loc>
+    <lastmod>2025-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/condo-wongamat-tower.html</loc>
+    <lastmod>2025-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/condo-the-base.html</loc>
+    <lastmod>2025-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/condo-northpoint.html</loc>
+    <lastmod>2025-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- MAISONS - Pages détail -->
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/maison-chaknok-villa.html</loc>
+    <lastmod>2025-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/maison-royale-jomtien.html</loc>
+    <lastmod>2025-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/maison-pratumnak-hill.html</loc>
+    <lastmod>2025-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/maison-architecte-naklua.html</loc>
+    <lastmod>2025-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- TERRAINS - Pages détail -->
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/terrain-chaknok.html</loc>
+    <lastmod>2025-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/terrain-jomtien-beach.html</loc>
+    <lastmod>2025-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/terrain-naklua-hills.html</loc>
+    <lastmod>2025-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/terrain-centre-pattaya.html</loc>
+    <lastmod>2025-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- PROJETS NEUFS - Pages détail -->
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/projet-residence-chaknok.html</loc>
+    <lastmod>2025-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/projet-panora-estuaria.html</loc>
+    <lastmod>2025-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/projet-ocean-horizon.html</loc>
+    <lastmod>2025-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- GUIDES SEO LONG-TAIL - Référence francophone (Priorité haute) -->
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/guides.html</loc>
+    <lastmod>2024-02-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.beaulieu-pattaya.com/images/guides-og.jpg</image:loc>
+      <image:title>Guides Immobilier Pattaya - Thailande Immo Decoded</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/avis-clients.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/temoignages-video.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <video:video>
+      <video:thumbnail_loc>https://www.beaulieu-pattaya.com/images/video-thumb-marc.jpg</video:thumbnail_loc>
+      <video:title>Témoignage Marc - Achat condo retraite Pattaya</video:title>
+      <video:description>Marc, 68 ans, partage son expérience d'achat d'un condo à Pattaya pour sa retraite</video:description>
+      <video:content_loc>https://www.beaulieu-pattaya.com/videos/temoignage-marc-dupont.mp4</video:content_loc>
+      <video:duration>900</video:duration>
+      <video:publication_date>2026-02-12</video:publication_date>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/guide-achat-condo-pattaya-avis.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/guide-acheter-appartement-thailande.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/guide-risques-immobilier-pattaya.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/guide-impots-france-condo-pattaya.html</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/guide-leasehold-vs-freehold.html</loc>
+    <lastmod>2024-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.beaulieu-pattaya.com/images/guide-leasehold-og.jpg</image:loc>
+      <image:title>Leasehold vs Freehold Thaïlande - Guide Juridique</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/guide-nom-thai-titre-propriete.html</loc>
+    <lastmod>2024-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.beaulieu-pattaya.com/images/guide-titre-og.jpg</image:loc>
+      <image:title>Vérifier un Titre de Propriété Thaïlande - Chanote</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/guide-impot-francais-location-condo.html</loc>
+    <lastmod>2024-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.beaulieu-pattaya.com/images/guide-fiscalite-og.jpg</image:loc>
+      <image:title>Fiscalité Française Location Condo Pattaya - Guide 2024</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/guide-quartiers-eviter-pattaya.html</loc>
+    <lastmod>2024-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.beaulieu-pattaya.com/images/guide-quartiers-og.jpg</image:loc>
+      <image:title>Quartiers à Éviter Pattaya 2024 - Guide Investisseur</image:title>
+    </image:image>
+  </url>
+
+  <!-- ACTUALITÉS - Blog Immobilier (Nouveau) -->
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/actualites.html</loc>
+    <lastmod>2025-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.beaulieu-pattaya.com/images/actualites-og.jpg</image:loc>
+      <image:title>Actualités Immobilières Pattaya - Guides & Conseils Juridiques</image:title>
+    </image:image>
+  </url>
+
+  <!-- SERVICE CONCIERGERIE ACHAT -->
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/acheteur.html</loc>
+    <lastmod>2025-02-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.beaulieu-pattaya.com/images/conciergerie-og.jpg</image:loc>
+      <image:title>Accompagnement Achat Immobilier Pattaya - Due Diligence</image:title>
+    </image:image>
+  </url>
+
+  <!-- ARTICLES DROIT & LÉGAL (High Priority - Forte intention d'achat) -->
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/actualites/foreign-quota-condo-thailande.html</loc>
+    <lastmod>2025-02-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.beaulieu-pattaya.com/images/foreign-quota-og.jpg</image:loc>
+      <image:title>Foreign Quota 49% - Guide Juridique Condo Thaïlande</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/actualites/leasehold-30-ans-securite.html</loc>
+    <lastmod>2025-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/actualites/frais-caches-achat-pattaya.html</loc>
+    <lastmod>2025-02-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/actualites/societe-thai-achat-terrain-risques.html</loc>
+    <lastmod>2025-02-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/actualites/verifier-chanote-nor-sor-4.html</loc>
+    <lastmod>2025-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.beaulieu-pattaya.com/actualites/meilleurs-quartiers-acheter-pattaya-2025.html</loc>
+    <lastmod>2025-01-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- PAGES À CORRIGER / SUPPRIMER (doublons détectés) -->
+  <!-- Ces pages ont des contenus dupliqués - à fusionner ou canonicaliser -->
+  <!-- condo-axis.html → rediriger vers condo-panora-estuaria.html -->
+  <!-- condo-centric.html → rediriger vers condo-panora-estuaria.html -->
+  <!-- condo-panora.html → rediriger vers condo-panora-estuaria.html -->
+  <!-- condo-wongamat.html → rediriger vers condo-wongamat-tower.html -->
+
+</urlset>

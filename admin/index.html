@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel Admin | Beaulieu Immobilier</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="admin-container">
+    <h1>Panel Administrateur - Propriétés</h1>
+    <div class="admin-actions" style="display:flex;gap:10px;margin-bottom:20px;flex-wrap:wrap;">
+      <button class="btn" id="add-property-btn">➕ Ajouter une propriété</button>
+      <button class="btn" id="export-btn" onclick="exportJSON()">📥 Exporter properties.json</button>
+      <button class="btn" id="import-btn" onclick="document.getElementById('import-file').click()">📤 Importer JSON</button>
+      <input type="file" id="import-file" accept=".json" style="display:none" onchange="importJSON(event)">
+      <button class="btn" id="reset-btn" onclick="resetToServer()" style="background:#e74c3c;color:white;">🔄 Recharger depuis serveur</button>
+    </div>
+    <p id="status-msg" style="color:#27ae60;display:none;"></p>
+    <section id="properties-list-section">
+      <div id="properties-list"></div>
+    </section>
+    <section id="form-section" class="form-section" style="display:none;"></section>
+  </div>
+  <script src="admin.js"></script>
+</body>
+</html>

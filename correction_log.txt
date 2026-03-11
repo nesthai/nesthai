@@ -1,0 +1,25 @@
+Correction complète des fichiers HTML...
+
+[CORRIGÉ] condo-axis.html
+[CORRIGÉ] condo-centric-sea.html
+[CORRIGÉ] condo-centric.html
+[CORRIGÉ] condo-copacabana.html
+[CORRIGÉ] condo-northpoint.html
+[CORRIGÉ] condo-panora-estuaria.html
+[CORRIGÉ] condo-panora.html
+[CORRIGÉ] condo-the-base.html
+[CORRIGÉ] condo-wongamat-tower.html
+[CORRIGÉ] condo-wongamat.html
+[CORRIGÉ] maison-architecte-naklua.html
+[CORRIGÉ] maison-chaknok-villa.html
+[CORRIGÉ] maison-pratumnak-hill.html
+[CORRIGÉ] maison-royale-jomtien.html
+[CORRIGÉ] terrain-centre-pattaya.html
+[CORRIGÉ] terrain-chaknok.html
+[CORRIGÉ] terrain-jomtien-beach.html
+[CORRIGÉ] terrain-naklua-hills.html
+[CORRIGÉ] projet-ocean-horizon.html
+[CORRIGÉ] projet-panora-estuaria.html
+[CORRIGÉ] projet-residence-chaknok.html
+
+Terminé!

@@ -1,0 +1,73 @@
+VÉRIFICATION FINALE DES FICHIERS HTML
+============================================================
+
+[OK] admin-alertes.html
+[OK] alertes-prix.html
+[OK] avis-clients.html
+[PROBLÈME] condo-axis.html:
+  - ?? (3x)
+[PROBLÈME] condo-centric-sea.html:
+  - ?? (3x)
+[PROBLÈME] condo-centric.html:
+  - ?? (2x)
+[PROBLÈME] condo-copacabana.html:
+  - ?? (3x)
+[PROBLÈME] condo-northpoint.html:
+  - ?? (3x)
+[PROBLÈME] condo-panora-estuaria.html:
+  - ?? (3x)
+[PROBLÈME] condo-panora.html:
+  - ?? (3x)
+[PROBLÈME] condo-the-base.html:
+  - ?? (3x)
+[PROBLÈME] condo-wongamat-tower.html:
+  - ?? (3x)
+[PROBLÈME] condo-wongamat.html:
+  - ?? (3x)
+[OK] condos.html
+[OK] contact.html
+[OK] guide-achat-condo-pattaya-avis.html
+[OK] guide-acheter-appartement-thailande.html
+[OK] guide-impot-francais-location-condo.html
+[OK] guide-impots-france-condo-pattaya.html
+[OK] guide-leasehold-vs-freehold.html
+[OK] guide-nom-thai-titre-propriete.html
+[OK] guide-quartiers-eviter-pattaya.html
+[OK] guide-risques-immobilier-pattaya.html
+[OK] guides.html
+[OK] index.html
+[PROBLÈME] maison-architecte-naklua.html:
+  - ?? (3x)
+[PROBLÈME] maison-chaknok-villa.html:
+  - ?? (3x)
+[PROBLÈME] maison-pratumnak-hill.html:
+  - ?? (3x)
+[PROBLÈME] maison-royale-jomtien.html:
+  - ?? (3x)
+[OK] maisons.html
+[OK] mentions-legales.html
+[OK] plan-site.html
+[OK] politique-confidentialite.html
+[PROBLÈME] projet-ocean-horizon.html:
+  - ?? (21x)
+[PROBLÈME] projet-panora-estuaria.html:
+  - ?? (21x)
+[PROBLÈME] projet-residence-chaknok.html:
+  - ?? (9x)
+[OK] projets.html
+[OK] recherche.html
+[OK] service-concierge.html
+[OK] temoignages-video.html
+[PROBLÈME] terrain-centre-pattaya.html:
+  - ?? (14x)
+[PROBLÈME] terrain-chaknok.html:
+  - ?? (17x)
+[PROBLÈME] terrain-jomtien-beach.html:
+  - ?? (13x)
+[PROBLÈME] terrain-naklua-hills.html:
+  - ?? (13x)
+[OK] terrains.html
+
+============================================================
+⚠️  149 problèmes trouvés dans 21 fichiers
+============================================================

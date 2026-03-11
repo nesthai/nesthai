@@ -1,0 +1,139 @@
+{{!-- Template: Page de détail d'une propriété --}}
+<style>
+    .property-detail { padding-top: 100px; background: #f8f8f8; }
+    .detail-header { background: white; padding: 30px 0; border-bottom: 1px solid #e0e0e0; }
+    .detail-ref { color: #999; font-size: 0.85rem; margin-bottom: 10px; }
+    .detail-title { font-family: var(--font-serif); font-size: 2rem; margin-bottom: 15px; }
+    .detail-price { font-family: var(--font-serif); font-size: 2.5rem; color: var(--gold); font-weight: 600; }
+    .detail-gallery { display: grid; grid-template-columns: 2fr 1fr; gap: 10px; margin: 30px 0; }
+    .gallery-main { height: 500px; border-radius: 8px; overflow: hidden; cursor: zoom-in; }
+    .gallery-main img { width: 100%; height: 100%; object-fit: cover; }
+    .gallery-thumbs { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .gallery-thumb { height: 245px; border-radius: 8px; overflow: hidden; cursor: pointer; }
+    .gallery-thumb img { width: 100%; height: 100%; object-fit: cover; }
+    .detail-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 30px; margin: 30px 0; }
+    .detail-content { background: white; padding: 40px; border-radius: 8px; }
+    .detail-section { margin-bottom: 40px; }
+    .detail-section h2 { font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid var(--gold); }
+    .features-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-top: 20px; }
+    .feature-item { display: flex; align-items: center; gap: 10px; padding: 15px; background: #f8f8f8; border-radius: 4px; }
+    .detail-sidebar { display: flex; flex-direction: column; gap: 20px; }
+    .sidebar-card { background: white; padding: 30px; border-radius: 8px; }
+    .contact-card { background: var(--primary); color: white; padding: 30px; border-radius: 8px; text-align: center; }
+    .contact-phone { font-size: 1.5rem; color: var(--gold); margin-bottom: 20px; display: block; text-decoration: none; }
+    .legal-disclaimer { background: #1a1a1a; border-top: 3px solid #C9A962; padding: 25px 0; }
+    @media (max-width: 768px) {
+        .detail-gallery { grid-template-columns: 1fr; }
+        .gallery-main { height: 300px; }
+        .detail-grid { grid-template-columns: 1fr; }
+    }
+</style>
+
+<div class="property-detail">
+    <div class="detail-header">
+        <div class="container">
+            {{#if ref}}<div class="detail-ref">Réf: {{ref}}</div>{{/if}}
+            <h1 class="detail-title">{{title}}</h1>
+            <div class="detail-price-container">
+                <div class="detail-price" data-thb="{{price}}">{{formatPrice price}} THB</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        {{#if images.length}}
+        <div class="detail-gallery">
+            <div class="gallery-main">
+                <img id="main-photo" src="{{{images.[0]}}}" alt="{{title}}">
+            </div>
+            {{#if (gt images.length 1)}}
+            <div class="gallery-thumbs">
+                {{#each images}}
+                {{#if @index}}
+                <div class="gallery-thumb" onclick="document.getElementById('main-photo').src='{{{this}}}'">
+                    <img src="{{{this}}}" alt="Vue {{@index}}">
+                </div>
+                {{/if}}
+                {{/each}}
+            </div>
+            {{/if}}
+        </div>
+        {{/if}}
+
+        <div class="detail-grid">
+            <div class="detail-content">
+                <div class="detail-section">
+                    <h2>📋 Description</h2>
+                    <p>{{{descriptionHtml}}}</p>
+                </div>
+
+                {{#if features.length}}
+                <div class="detail-section">
+                    <h2>📋 Caractéristiques</h2>
+                    <div class="features-grid">
+                        {{#each features}}
+                        <div class="feature-item">
+                            <span>{{icon}}</span>
+                            <div><strong>{{label}}</strong><br>{{value}}</div>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+                {{/if}}
+            </div>
+
+            <div class="detail-sidebar">
+                <div class="sidebar-card">
+                    <h3>Informations</h3>
+                    <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #eee;">
+                        <span>Prix</span>
+                        <span style="font-weight: 600; color: var(--gold);">{{formatPriceShort price}} THB</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #eee;">
+                        <span>Type</span>
+                        <span style="font-weight: 600;">{{capitalize type}}</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #eee;">
+                        <span>Statut</span>
+                        <span style="font-weight: 600;">{{statusLabel status}}</span>
+                    </div>
+                    {{#if surface}}
+                    <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #eee;">
+                        <span>Surface</span>
+                        <span style="font-weight: 600;">{{surface}} m²</span>
+                    </div>
+                    {{/if}}
+                    <div style="display: flex; justify-content: space-between; padding: 12px 0;">
+                        <span>Localisation</span>
+                        <span style="font-weight: 600;">{{location.district}}</span>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Intéressé ?</h3>
+                    <p>Contactez-nous pour une visite</p>
+                    <a href="tel:{{site.phone}}" class="contact-phone">📞 {{site.phoneDisplay}}</a>
+                    <a href="mailto:{{site.email}}" class="btn btn-primary" style="width: 100%; margin-bottom: 10px;">Envoyer un email</a>
+                    <a href="https://wa.me/{{site.whatsapp}}" class="btn btn-outline" style="width: 100%; border-color: white; color: white;" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- DISCLAIMER JURIDIQUE -->
+<section class="legal-disclaimer">
+    <div class="container">
+        <div style="display: flex; align-items: flex-start; gap: 15px; max-width: 900px; margin: 0 auto;">
+            <span style="font-size: 24px; flex-shrink: 0;">🔍</span>
+            <div>
+                <h4 style="color: #C9A962; margin: 0 0 8px 0; font-size: 1rem;">Information légale</h4>
+                <p style="color: rgba(255,255,255,0.85); margin: 0; font-size: 0.9rem; line-height: 1.6;">
+                    Les étrangers peuvent acquérir des condos en freehold dans la limite de 49% de la superficie totale du bâtiment.
+                    Pour les maisons et terrains, des structures juridiques alternatives existent (leasehold 30+30+30 ans, usufruit,
+                    ou détention via société). Nos conseillers vous accompagnent dans le choix de la structure adaptée à votre projet.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

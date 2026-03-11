@@ -1,0 +1,86 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="author" content="Beaulieu Property Management Co., Ltd.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="googlebot" content="index, follow">
+<meta name="bingbot" content="index, follow">
+
+<!-- Canonical & Hreflang -->
+<link rel="canonical" href="{{canonicalUrl}}">
+<link rel="alternate" hreflang="fr" href="{{canonicalUrl}}">
+<link rel="alternate" hreflang="en" href="{{replace canonicalUrl '.html' '/en.html'}}">
+<link rel="alternate" hreflang="x-default" href="{{canonicalUrl}}">
+
+<!-- RSS Feed -->
+<link rel="alternate" type="application/rss+xml" title="Beaulieu Pattaya - Nouveautés" href="https://www.beaulieu-pattaya.com/rss.xml" />
+
+<!-- Open Graph -->
+<meta property="og:locale" content="fr_FR">
+<meta property="og:type" content="{{ogType}}">
+<meta property="og:title" content="{{ogTitle}}">
+<meta property="og:description" content="{{ogDescription}}">
+<meta property="og:url" content="{{canonicalUrl}}">
+<meta property="og:site_name" content="Beaulieu Property Management">
+<meta property="og:image" content="{{{ogImage}}}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@BeaulieuPattaya">
+<meta name="twitter:creator" content="@BeaulieuPattaya">
+<meta name="twitter:title" content="{{twitterTitle}}">
+<meta name="twitter:description" content="{{twitterDescription}}">
+<meta name="twitter:image" content="{{{twitterImage}}}">
+
+<!-- Apple / iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Beaulieu Immobilier">
+<meta name="format-detection" content="telephone=yes">
+
+<!-- Microsoft -->
+<meta name="msapplication-TileColor" content="#C9A962">
+<meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#C9A962">
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+
+<!-- Preconnect & DNS-Prefetch -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://www.google-analytics.com">
+<link rel="dns-prefetch" href="https://connect.facebook.net">
+
+<!-- Preload Critical Resources -->
+<link rel="preload" href="./css/style.css" as="style">
+<link rel="preload" href="./js/main.js" as="script">
+
+<!-- Stylesheets -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+{{#if extraCss}}
+<link rel="stylesheet" href="./css/{{extraCss}}">
+{{/if}}
+
+<!-- Critical CSS Inline -->
+<style>
+.css-test{display:none!important}
+:root{--gold:#C9A962;--primary:#1a1a1a;--font-serif:'Playfair Display',serif;--font-sans:'Inter',sans-serif}
+body{font-family:var(--font-sans);margin:0;padding:0;background:#fff;color:var(--primary)}
+.header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px)}
+</style>

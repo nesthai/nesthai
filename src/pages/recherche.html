@@ -1,0 +1,38 @@
+<div class="search-header">
+            <div class="container">
+                <h1 style="text-align: center; margin-bottom: 30px; font-family: var(--font-serif);">Rechercher un bien</h1>
+                
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Rechercher par nom, localisation, type..." autocomplete="off">
+                    <button onclick="performSearch()">🔍</button>
+                </div>
+                
+                <div class="search-filters">
+                    <span class="filter-chip active" onclick="filterByType('all')">Tous</span>
+                    <span class="filter-chip" onclick="filterByType('condo')">Condos</span>
+                    <span class="filter-chip" onclick="filterByType('maison')">Maisons</span>
+                    <span class="filter-chip" onclick="filterByType('terrain')">Terrains</span>
+                    <span class="filter-chip" onclick="filterByType('projet')">Projets</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="search-results">
+            <div class="container">
+                <div class="results-header">
+                    <h2>Résultats de la recherche</h2>
+                    <span class="results-count" id="results-count">Chargement...</span>
+                </div>
+                
+                <div id="search-results-grid" class="properties-grid">
+                    <!-- Les résultats s'affichent ici -->
+                </div>
+                
+                <div id="no-results" class="no-results" style="display: none;">
+                    <div class="no-results-icon">🔍</div>
+                    <h3>Aucun résultat trouvé</h3>
+                    <p>Essayez avec d'autres termes ou consultez nos catégories</p>
+                    <a href="condos.html" class="btn btn-primary" style="margin-top: 20px;">Voir tous les condos</a>
+                </div>
+            </div>
+        </section>

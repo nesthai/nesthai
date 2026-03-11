@@ -1,0 +1,59 @@
+﻿<!-- Skip Link Accessibility -->
+<a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+<!-- Header -->
+<header class="header" role="banner">
+    <div class="container">
+        <div class="logo" itemscope itemtype="https://schema.org/Organization">
+            <a href="index.html" itemprop="url" aria-label="Beaulieu Property Management - Accueil">
+                <span class="logo-text" itemprop="name">B|L</span>
+                <span class="logo-subtitle">BEAULIEU</span>
+                <span class="logo-tagline">GESTION IMMOBILIÈRE</span>
+            </a>
+        </div>
+        
+        <nav class="nav-desktop" role="navigation" aria-label="Navigation principale">
+            <ul>
+                <li><a href="index.html" {{#if activeAccueil}}class="active" aria-current="page"{{/if}}>ACCUEIL</a></li>
+                <li><a href="acheteur.html">ACHETEUR</a></li>
+                <li><a href="condos.html" {{#if activeCondos}}class="active" aria-current="page"{{/if}}>CONDOS</a></li>
+                <li><a href="maisons.html" {{#if activeMaisons}}class="active" aria-current="page"{{/if}}>MAISONS</a></li>
+                <li><a href="terrains.html" {{#if activeTerrains}}class="active" aria-current="page"{{/if}}>TERRAINS</a></li>
+                <li><a href="projets.html" {{#if activeProjets}}class="active" aria-current="page"{{/if}}>PROJETS</a></li>
+                <li><a href="guides.html" {{#if activeGuides}}class="active" aria-current="page"{{/if}}>GUIDES</a></li>
+                <li><a href="alertes-prix.html">🔔 ALERTES</a></li>
+                <li><a href="actualites.html">ACTUALITÉS</a></li>
+                <li><a href="service-concierge.html">CONCIERGE</a></li>
+                <li><a href="contact.html" {{#if activeContact}}class="active" aria-current="page"{{/if}}>CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <a href="recherche.html" class="btn-search" title="Rechercher un bien" aria-label="Rechercher">🔍</a>
+            <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Menu Mobile -->
+<div class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Navigation mobile" hidden>
+    <ul>
+        <li><a href="index.html">ACCUEIL</a></li>
+        <li><a href="acheteur.html">ACHETEUR</a></li>
+        <li><a href="condos.html">CONDOS</a></li>
+        <li><a href="maisons.html">MAISONS</a></li>
+        <li><a href="terrains.html">TERRAINS</a></li>
+        <li><a href="projets.html">PROJETS NEUFS</a></li>
+        <li><a href="guides.html">GUIDES</a></li>
+        <li><a href="actualites.html">ACTUALITÉS</a></li>
+        <li><a href="alertes-prix.html">🔔 ALERTES</a></li>
+        <li><a href="actualites.html">ACTUALITÉS</a></li>
+        <li><a href="service-concierge.html">CONCIERGE</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+<!-- Correction : suppression du div en trop -->
+</div>

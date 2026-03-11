@@ -1,0 +1,41 @@
+{
+  "name": "Beaulieu Property Management",
+  "legalName": "Beaulieu Property Management Co., Ltd.",
+  "url": "https://www.beaulieu-pattaya.com",
+  "phone": "+66-92-449-9960",
+  "phoneDisplay": "+66 92 449 9960",
+  "whatsapp": "66924499960",
+  "email": "contact@beaulieu-pattaya.com",
+  "address": {
+    "street": "123 Pattaya Sai 3",
+    "city": "Pattaya City",
+    "region": "Chon Buri",
+    "postalCode": "20150",
+    "country": "TH",
+    "countryName": "Thaïlande"
+  },
+  "social": {
+    "facebook": "https://facebook.com/beaulieupattaya",
+    "instagram": "https://instagram.com/beaulieu_pattaya",
+    "youtube": "https://youtube.com/@beaulieupattaya",
+    "tiktok": "https://tiktok.com/@beaulieu_pattaya"
+  },
+  "branding": {
+    "logoText": "B|L",
+    "logoSubtitle": "BEAULIEU",
+    "logoTagline": "GESTION IMMOBILIÈRE",
+    "goldColor": "#C9A962",
+    "primaryColor": "#1a1a1a"
+  },
+  "seo": {
+    "defaultOgImage": "https://www.beaulieu-pattaya.com/images/og-image.jpg",
+    "twitterSite": "@BeaulieuPattaya"
+  },
+  "listingTypes": {
+    "condo": { "label": "Condos", "slug": "condos", "icon": "🏢" },
+    "maison": { "label": "Maisons & Villas", "slug": "maisons", "icon": "🏠" },
+    "villa": { "label": "Maisons & Villas", "slug": "maisons", "icon": "🏡" },
+    "terrain": { "label": "Terrains", "slug": "terrains", "icon": "🌿" },
+    "projet": { "label": "Projets Neufs", "slug": "projets", "icon": "🏗️" }
+  }
+}

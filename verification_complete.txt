@@ -1,0 +1,52 @@
+VÉRIFICATION COMPLÈTE DES FICHIERS HTML
+============================================================
+
+[OK] admin-alertes.html
+[OK] alertes-prix.html
+[OK] avis-clients.html
+[OK] condo-axis.html
+[OK] condo-centric-sea.html
+[OK] condo-centric.html
+[OK] condo-copacabana.html
+[OK] condo-northpoint.html
+[OK] condo-panora-estuaria.html
+[OK] condo-panora.html
+[OK] condo-the-base.html
+[OK] condo-wongamat-tower.html
+[OK] condo-wongamat.html
+[OK] condos.html
+[OK] contact.html
+[OK] guide-achat-condo-pattaya-avis.html
+[OK] guide-acheter-appartement-thailande.html
+[OK] guide-impot-francais-location-condo.html
+[OK] guide-impots-france-condo-pattaya.html
+[OK] guide-leasehold-vs-freehold.html
+[OK] guide-nom-thai-titre-propriete.html
+[OK] guide-quartiers-eviter-pattaya.html
+[OK] guide-risques-immobilier-pattaya.html
+[OK] guides.html
+[OK] index.html
+[OK] maison-architecte-naklua.html
+[OK] maison-chaknok-villa.html
+[OK] maison-pratumnak-hill.html
+[OK] maison-royale-jomtien.html
+[OK] maisons.html
+[OK] mentions-legales.html
+[OK] plan-site.html
+[OK] politique-confidentialite.html
+[OK] projet-ocean-horizon.html
+[OK] projet-panora-estuaria.html
+[OK] projet-residence-chaknok.html
+[OK] projets.html
+[OK] recherche.html
+[OK] service-concierge.html
+[OK] temoignages-video.html
+[OK] terrain-centre-pattaya.html
+[OK] terrain-chaknok.html
+[OK] terrain-jomtien-beach.html
+[OK] terrain-naklua-hills.html
+[OK] terrains.html
+
+============================================================
+RÉSULTAT: 0 fichiers avec problèmes, 0 caractères mal encodés
+============================================================

@@ -1,0 +1,243 @@
+#!/usr/bin/env node
+
+/**
+ * Système de Build - Beaulieu Property Management
+ * Génère les pages HTML statiques à partir de templates Handlebars
+ * 
+ * Usage:
+ *   node build.js           # Build toutes les pages
+ *   node build.js --watch   # Mode développement avec watcher
+ *   node build.js --page=index  # Build une page spécifique
+ */
+
+const fs = require('fs');
+const path = require('path');
+const Handlebars = require('handlebars');
+
+// Configuration
+const CONFIG = {
+  templatesDir: './templates',
+  partialsDir: './templates/partials',
+  layoutsDir: './templates/layouts',
+  srcDir: './src',
+  outputDir: './dist',
+  dataFile: './src/data/pages.json'
+};
+
+// Helper: Get current year
+Handlebars.registerHelper('currentYear', () => new Date().getFullYear());
+
+// Helper: JSON stringify for structured data
+Handlebars.registerHelper('json', (context) => JSON.stringify(context, null, 2));
+
+// Helper: Replace string
+Handlebars.registerHelper('replace', (str, search, replace) => {
+  return str ? str.replace(search, replace) : '';
+});
+
+// Helper: Conditional block
+Handlebars.registerHelper('if', function(conditional, options) {
+  if (conditional) {
+    return options.fn(this);
+  } else {
+    return options.inverse(this);
+  }
+});
+
+// Helper: Each loop
+Handlebars.registerHelper('each', function(context, options) {
+  let ret = '';
+  if (context && context.length) {
+    for (let i = 0, j = context.length; i < j; i++) {
+      ret = ret + options.fn(context[i]);
+    }
+  }
+  return ret;
+});
+
+/**
+ * Charge tous les partials (composants réutilisables)
+ */
+function loadPartials() {
+  const partials = {};
+  
+  if (!fs.existsSync(CONFIG.partialsDir)) {
+    console.warn(`⚠️  Dossier partials non trouvé: ${CONFIG.partialsDir}`);
+    return partials;
+  }
+  
+  const files = fs.readdirSync(CONFIG.partialsDir);
+  
+  files.forEach(file => {
+    if (file.endsWith('.html')) {
+      const name = path.basename(file, '.html');
+      const content = fs.readFileSync(path.join(CONFIG.partialsDir, file), 'utf8');
+      partials[name] = content;
+      console.log(`  📦 Partial chargé: ${name}`);
+    }
+  });
+  
+  return partials;
+}
+
+/**
+ * Compile un template Handlebars
+ */
+function compileTemplate(templateName) {
+  const templatePath = path.join(CONFIG.layoutsDir, `${templateName}.html`);
+  
+  if (!fs.existsSync(templatePath)) {
+    throw new Error(`Template non trouvé: ${templatePath}`);
+  }
+  
+  const templateContent = fs.readFileSync(templatePath, 'utf8');
+  return Handlebars.compile(templateContent);
+}
+
+/**
+ * Process une page individuelle
+ */
+function buildPage(pageConfig, partials) {
+  const { template, output, data: pageData } = pageConfig;
+  // Enregistrer les partials pour cette compilation
+  Object.keys(partials).forEach(name => {
+    Handlebars.registerPartial(name, partials[name]);
+  });
+  // Compiler le template
+  const compiledTemplate = compileTemplate(template);
+  // Log temporaire pour debug structuredData
+  console.log("structuredData before stringify:", pageData.structuredData);
+  // Préparer l'objet data avec structuredData stringifié
+  const data = {
+    ...pageData,
+    structuredData: pageData.structuredData
+      ? JSON.stringify(pageData.structuredData, null, 2)
+      : null
+  };
+  // Générer le HTML
+  const html = compiledTemplate(data);
+  // Écrire le fichier
+  const outputPath = path.join(CONFIG.outputDir, output);
+  fs.writeFileSync(outputPath, html, 'utf8');
+  console.log(`  ✅ ${output} généré`);
+}
+
+/**
+ * Build toutes les pages
+ */
+function buildAll() {
+  console.log('\n🔨 Beaulieu Property - Build System\n');
+
+  // Supprimer le dossier dist s'il existe
+  if (fs.existsSync(CONFIG.outputDir)) {
+    fs.rmSync(CONFIG.outputDir, { recursive: true, force: true });
+  }
+  fs.mkdirSync(CONFIG.outputDir);
+
+  // Vérifier que le fichier de données existe
+  if (!fs.existsSync(CONFIG.dataFile)) {
+    console.error(`❌ Fichier de données non trouvé: ${CONFIG.dataFile}`);
+    process.exit(1);
+  }
+
+  // Charger les données
+  const pagesData = JSON.parse(fs.readFileSync(CONFIG.dataFile, 'utf8'));
+
+  // Charger les partials
+  console.log('📂 Chargement des partials...');
+  const partials = loadPartials();
+  console.log(`   ${Object.keys(partials).length} partials chargés\n`);
+
+  // Build chaque page
+  console.log('🏗️  Génération des pages...');
+  pagesData.pages.forEach(page => {
+    buildPage(page, partials);
+  });
+  console.log('\n✨ Build terminé avec succès!\n');
+}
+
+/**
+ * Mode watch - Surveille les changements
+ */
+function watchMode() {
+  console.log('\n👀 Mode watch activé - Surveillance des fichiers...\n');
+  
+  const chokidar = require('chokidar');
+  
+  const watcher = chokidar.watch([
+    `${CONFIG.templatesDir}/**/*.html`,
+    `${CONFIG.srcDir}/**/*.json`
+  ], {
+    ignored: /node_modules/,
+    persistent: true
+  });
+  
+  watcher.on('change', (filepath) => {
+    console.log(`📝 Fichier modifié: ${filepath}`);
+    console.log('🔄 Rebuild...\n');
+    buildAll();
+  });
+  
+  console.log('Appuyez sur Ctrl+C pour arrêter\n');
+}
+
+/**
+ * Build une page spécifique
+ */
+function buildSinglePage(pageName) {
+  console.log(`\n🔨 Build page: ${pageName}\n`);
+  
+  const pagesData = JSON.parse(fs.readFileSync(CONFIG.dataFile, 'utf8'));
+  const page = pagesData.pages.find(p => p.output === pageName || p.output === `${pageName}.html`);
+  
+  if (!page) {
+    console.error(`❌ Page non trouvée: ${pageName}`);
+    process.exit(1);
+  }
+  
+  const partials = loadPartials();
+  buildPage(page, partials);
+  
+  console.log('\n✨ Terminé!\n');
+}
+
+// CLI
+const args = process.argv.slice(2);
+
+if (args.includes('--help') || args.includes('-h')) {
+  console.log(`
+Usage: node build.js [options]
+
+Options:
+  --watch, -w       Mode développement avec surveillance des fichiers
+  --page=<name>     Build une page spécifique (ex: --page=index)
+  --help, -h        Affiche cette aide
+
+Exemples:
+  node build.js              # Build toutes les pages
+  node build.js --watch      # Mode développement
+  node build.js --page=condos # Build uniquement condos.html
+  `);
+  process.exit(0);
+}
+
+if (args.includes('--watch') || args.includes('-w')) {
+  // Vérifier si chokidar est installé
+  try {
+    require.resolve('chokidar');
+    buildAll();
+    watchMode();
+  } catch (e) {
+    console.log('📦 Installation de chokidar (nécessaire pour le mode watch)...');
+    const { execSync } = require('child_process');
+    execSync('npm install chokidar --save-dev', { stdio: 'inherit' });
+    console.log('✅ chokidar installé, redémarrage...\n');
+    watchMode();
+  }
+} else if (args.some(arg => arg.startsWith('--page='))) {
+  const pageArg = args.find(arg => arg.startsWith('--page='));
+  const pageName = pageArg.split('=')[1];
+  buildSinglePage(pageName);
+} else {
+  buildAll();
+}
