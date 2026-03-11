@@ -356,6 +356,7 @@ const propertiesDB = [
 let currentFilter = 'all';
 let searchQuery = '';
 
+// Récupérer les paramètres URL
 function getUrlParams() {
     const params = new URLSearchParams(window.location.search);
     return {
@@ -364,209 +365,51 @@ function getUrlParams() {
     };
 }
 
+// Effectuer la recherche
 function performSearch() {
     searchQuery = document.getElementById('search-input').value.toLowerCase().trim();
     updateResults();
 }
 
+// Filtrer par type
 function filterByType(type) {
     currentFilter = type;
-    document.querySelectorAll('.filter-chip').forEach(function(chip) {
-        chip.classList.remove('active');
-        if (chip.getAttribute('data-type') === type) {
-            chip.classList.add('active');
-        }
-    });
-    // Synchroniser le select type avancé
-    var typeEl = document.getElementById('filter-type');
-    if (typeEl) typeEl.value = type === 'all' ? 'all' : type;
-    updateResults();
-}
 
-function updateFilterCounts() {
-    var labels = { all: 'Tous', condo: 'Condos', maison: 'Maisons', terrain: 'Terrains', projet: 'Projets' };
-    document.querySelectorAll('.filter-chip').forEach(function(chip) {
-        var type = chip.getAttribute('data-type');
-        if (!type) return;
-        var count = type === 'all' ? propertiesDB.length : propertiesDB.filter(function(p) { return p.type === type; }).length;
-        chip.textContent = labels[type] + ' (' + count + ')';
-    });
-}
-
-function toggleAdvancedFilters() {
-    var panel = document.getElementById('advancedFiltersPanel');
-    var btn = document.getElementById('advancedFiltersToggle');
-    panel.classList.toggle('hidden');
-    btn.classList.toggle('active');
-}
-
-function applyAdvancedFilters() {
-    // Synchroniser le filtre type avancé avec les chips rapides
-    var typeEl = document.getElementById('filter-type');
-    if (typeEl && typeEl.value !== 'all') {
-        currentFilter = typeEl.value;
-        document.querySelectorAll('.filter-chip').forEach(function(chip) {
-            chip.classList.remove('active');
-        });
-    }
-    updateResults();
-}
-
-function resetAdvancedFilters() {
-    var ids = ['filter-type','filter-price-min','filter-price-max','filter-bedrooms',
-               'filter-bathrooms','filter-area-min','filter-area-max','filter-status','filter-sort'];
-    ids.forEach(function(id) {
-        var el = document.getElementById(id);
-        if (el) el.selectedIndex = 0;
-    });
-    var zoneEl = document.getElementById('filter-zone');
-    if (zoneEl) {
-        for (var i = 0; i < zoneEl.options.length; i++) {
-            zoneEl.options[i].selected = false;
-        }
-    }
-    document.querySelectorAll('.features-grid input[type="checkbox"]').forEach(function(cb) {
-        cb.checked = false;
-    });
-    currentFilter = 'all';
-    searchQuery = '';
-    document.getElementById('search-input').value = '';
-    document.querySelectorAll('.filter-chip').forEach(function(chip) {
+    // Mettre à jour l'apparence des chips
+    document.querySelectorAll('.filter-chip').forEach(chip => {
         chip.classList.remove('active');
     });
-    document.querySelector('.filter-chip').classList.add('active');
+    event.target.classList.add('active');
+
     updateResults();
 }
 
-function populateZones() {
-    var zones = [];
-    propertiesDB.forEach(function(prop) {
-        if (prop.location && zones.indexOf(prop.location) === -1) {
-            zones.push(prop.location);
-        }
-    });
-    zones.sort();
-    var select = document.getElementById('filter-zone');
-    if (!select) return;
-    zones.forEach(function(zone) {
-        var opt = document.createElement('option');
-        opt.value = zone;
-        opt.textContent = zone;
-        select.appendChild(opt);
-    });
-}
-
-function getSelectedZones() {
-    var select = document.getElementById('filter-zone');
-    if (!select) return [];
-    var selected = [];
-    for (var i = 0; i < select.options.length; i++) {
-        if (select.options[i].selected) selected.push(select.options[i].value);
-    }
-    return selected;
-}
-
-function getCheckedFeatures() {
-    var checked = [];
-    document.querySelectorAll('.features-grid input[type="checkbox"]:checked').forEach(function(cb) {
-        checked.push(cb.value);
-    });
-    return checked;
-}
-
-function matchesFeatures(prop, features) {
-    if (features.length === 0) return true;
-    var text = (prop.description + ' ' + prop.title).toLowerCase();
-    var featureKeywords = {
-        'piscine': ['piscine'],
-        'piscine-privee': ['piscine priv'],
-        'vue-mer': ['vue mer', 'vue ocean', 'sea view', 'ocean view'],
-        'vue-montagne': ['vue montagne', 'mountain view'],
-        'vue-ville': ['vue ville', 'city view'],
-        'front-de-mer': ['front de mer', 'beachfront'],
-        'acces-plage': ['acc\u00e8s plage', 'acces plage', 'acc\u00e8s direct plage', 'plage'],
-        'salle-de-sport': ['salle de sport', 'fitness', 'gym'],
-        'securite-24h': ['s\u00e9curit\u00e9 24', 'securite 24', 'gardien', '24/7'],
-        'parking': ['parking'],
-        'balcon': ['balcon'],
-        'terrasse': ['terrasse'],
-        'jardin': ['jardin'],
-        'meuble': ['meubl\u00e9', 'meuble', 'furnished'],
-        'freehold': ['freehold'],
-        'leasehold': ['leasehold'],
-        'foreign-quota': ['foreign quota', 'quota \u00e9tranger'],
-        'thai-quota': ['thai quota'],
-        'proche-ecoles': ['\u00e9cole', 'ecole', 'school'],
-        'proche-golf': ['golf'],
-        'proche-centre-commercial': ['centre commercial', 'mall', 'shopping']
-    };
-    return features.every(function(f) {
-        var keywords = featureKeywords[f] || [f];
-        return keywords.some(function(kw) { return text.indexOf(kw) !== -1; });
-    });
-}
-
+// Mettre à jour les résultats
 function updateResults() {
-    var resultsContainer = document.getElementById('search-results-grid');
-    var noResults = document.getElementById('no-results');
-    var countElement = document.getElementById('results-count');
+    const resultsContainer = document.getElementById('search-results-grid');
+    const noResults = document.getElementById('no-results');
+    const countElement = document.getElementById('results-count');
 
-    var typeEl = document.getElementById('filter-type');
-    var priceMinEl = document.getElementById('filter-price-min');
-    var priceMaxEl = document.getElementById('filter-price-max');
-    var bedroomsEl = document.getElementById('filter-bedrooms');
-    var bathroomsEl = document.getElementById('filter-bathrooms');
-    var areaMinEl = document.getElementById('filter-area-min');
-    var areaMaxEl = document.getElementById('filter-area-max');
-    var statusEl = document.getElementById('filter-status');
-    var sortEl = document.getElementById('filter-sort');
-
-    var advType = typeEl ? typeEl.value : 'all';
-    var priceMin = priceMinEl ? parseInt(priceMinEl.value) : 0;
-    var priceMax = priceMaxEl ? parseInt(priceMaxEl.value) : 0;
-    var minBedrooms = bedroomsEl ? parseInt(bedroomsEl.value) : -1;
-    var minBathrooms = bathroomsEl ? parseInt(bathroomsEl.value) : 0;
-    var areaMin = areaMinEl ? parseInt(areaMinEl.value) : 0;
-    var areaMax = areaMaxEl ? parseInt(areaMaxEl.value) : 0;
-    var statusFilter = statusEl ? statusEl.value : 'all';
-    var sortBy = sortEl ? sortEl.value : 'recent';
-    var selectedZones = getSelectedZones();
-    var checkedFeatures = getCheckedFeatures();
-
-    // Le filtre rapide (chips) a priorité sauf si le filtre avancé type est utilisé
-    var effectiveType = currentFilter !== 'all' ? currentFilter : advType;
-
-    var results = propertiesDB.filter(function(prop) {
-        if (effectiveType !== 'all' && prop.type !== effectiveType) return false;
-        if (searchQuery) {
-            var searchIn = (prop.title + ' ' + prop.location + ' ' + prop.description + ' ' + prop.type).toLowerCase();
-            if (searchIn.indexOf(searchQuery) === -1) return false;
+    // Filtrer les propriétés
+    let results = propertiesDB.filter(prop => {
+        // Filtre par type
+        if (currentFilter !== 'all' && prop.type !== currentFilter) {
+            return false;
         }
-        if (priceMin > 0 && prop.priceNum < priceMin) return false;
-        if (priceMax > 0 && prop.priceNum > priceMax) return false;
-        if (minBedrooms === 0 && (prop.bedrooms || 0) !== 0) { /* studio: only show 0-bedroom */ }
-        else if (minBedrooms === 0) { /* ok, studio matches */ }
-        else if (minBedrooms > 0 && (prop.bedrooms || 0) < minBedrooms) return false;
-        if (minBathrooms > 0 && (prop.bathrooms || 0) < minBathrooms) return false;
-        if (areaMin > 0 && (prop.area || 0) < areaMin) return false;
-        if (areaMax > 0 && (prop.area || 0) > areaMax) return false;
-        if (statusFilter !== 'all' && prop.status !== statusFilter) return false;
-        if (selectedZones.length > 0 && selectedZones.indexOf(prop.location) === -1) return false;
-        if (!matchesFeatures(prop, checkedFeatures)) return false;
+
+        // Filtre par recherche texte
+        if (searchQuery) {
+            const searchIn = `${prop.title} ${prop.location} ${prop.description} ${prop.type}`.toLowerCase();
+            return searchIn.includes(searchQuery);
+        }
+
         return true;
     });
 
-    // Tri
-    if (sortBy === 'price-asc') {
-        results.sort(function(a, b) { return a.priceNum - b.priceNum; });
-    } else if (sortBy === 'price-desc') {
-        results.sort(function(a, b) { return b.priceNum - a.priceNum; });
-    } else if (sortBy === 'area-desc') {
-        results.sort(function(a, b) { return (b.area || 0) - (a.area || 0); });
-    }
+    // Afficher le nombre de résultats
+    countElement.textContent = `${results.length} bien(s) trouvé(s)`;
 
-    countElement.textContent = results.length + ' bien(s) trouvé(s)';
-
+    // Afficher ou masquer "aucun résultat"
     if (results.length === 0) {
         resultsContainer.innerHTML = '';
         noResults.style.display = 'block';
@@ -575,33 +418,36 @@ function updateResults() {
 
     noResults.style.display = 'none';
 
-    resultsContainer.innerHTML = results.map(function(prop) {
-        return '<article class="property-card">' +
-            '<a href="' + prop.url + '" style="text-decoration: none; color: inherit; display: block;">' +
-                '<div class="card-image">' +
-                    '<img src="' + prop.image + '" alt="' + prop.title + '">' +
-                    '<span class="card-badge badge-' + prop.status + '">' + (prop.status === 'sale' ? 'À Vendre' : 'À Louer') + '</span>' +
-                    '<div class="card-price">' + prop.price + '</div>' +
-                '</div>' +
-                '<div class="card-content">' +
-                    '<h3>' + prop.title + '</h3>' +
-                    '<p class="card-location">📍 ' + prop.location + '</p>' +
-                    '<div class="card-features">' +
-                        (prop.bedrooms ? '<span>🛏️ ' + prop.bedrooms + ' Ch.</span>' : '') +
-                        (prop.bathrooms ? '<span>🛁 ' + prop.bathrooms + ' SdB</span>' : '') +
-                        '<span>📐 ' + (prop.areaWah || prop.area) + ' ' + (prop.areaWah ? 'sq.wah' : 'm²') + '</span>' +
-                    '</div>' +
-                    '<p class="card-description">' + prop.description + '...</p>' +
-                    '<span class="btn btn-outline" style="margin-top: 10px; display: inline-block; padding: 8px 20px; font-size: 0.8rem;">Voir détails →</span>' +
-                '</div>' +
-            '</a>' +
-        '</article>';
-    }).join('');
+    // Générer le HTML des résultats
+    resultsContainer.innerHTML = results.map(prop => `
+        <article class="property-card">
+            <a href="${prop.url}" style="text-decoration: none; color: inherit; display: block;">
+                <div class="card-image">
+                    <img src="${prop.image}" alt="${prop.title}">
+                    <span class="card-badge badge-${prop.status}">${prop.status === 'sale' ? 'À Vendre' : 'À Louer'}</span>
+                    <div class="card-price">${prop.price}</div>
+                </div>
+                <div class="card-content">
+                    <h3>${prop.title}</h3>
+                    <p class="card-location">📍 ${prop.location}</p>
+                    <div class="card-features">
+                        ${prop.bedrooms ? `<span>🛏️ ${prop.bedrooms} Ch.</span>` : ''}
+                        ${prop.bathrooms ? `<span>🛁 ${prop.bathrooms} SdB</span>` : ''}
+                        <span>📐 ${prop.areaWah || prop.area} ${prop.areaWah ? 'sq.wah' : 'm²'}</span>
+                    </div>
+                    <p class="card-description">${prop.description}...</p>
+                    <span class="btn btn-outline" style="margin-top: 10px; display: inline-block; padding: 8px 20px; font-size: 0.8rem;">Voir détails →</span>
+                </div>
+            </a>
+        </article>
+    `).join('');
 }
 
+// Initialisation
 document.addEventListener('DOMContentLoaded', function() {
-    var params = getUrlParams();
+    const params = getUrlParams();
 
+    // Appliquer les paramètres URL
     if (params.q) {
         document.getElementById('search-input').value = params.q;
         searchQuery = params.q.toLowerCase();
@@ -609,18 +455,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (params.type && params.type !== 'all') {
         currentFilter = params.type;
-        document.querySelectorAll('.filter-chip').forEach(function(chip) {
+        document.querySelectorAll('.filter-chip').forEach(chip => {
             chip.classList.remove('active');
-            if (chip.getAttribute('data-type') === params.type) {
+            if (chip.textContent.toLowerCase().includes(params.type)) {
                 chip.classList.add('active');
             }
         });
     }
 
-    populateZones();
-    updateFilterCounts();
+    // Lancer la recherche
     updateResults();
 
+    // Écouter la touche Entrée
     document.getElementById('search-input').addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {
             performSearch();
