@@ -215,7 +215,8 @@
         "title": "Recherche - Nes Thai Business Pattaya",
         "description": "",
         "canonicalUrl": "https://www.nesthai.com/recherche.html",
-        "bodyClass": "page-recherche"
+        "bodyClass": "page-recherche",
+        "extraCss": "recherche.css"
       }
     },
     {
