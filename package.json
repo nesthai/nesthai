@@ -1,7 +1,7 @@
 {
-  "name": "beaulieu-property-website",
+  "name": "nesthai-website",
   "version": "3.0.0",
-  "description": "Site immobilier Beaulieu Property Management - Générateur statique unifié",
+  "description": "Site immobilier Nes Thai Business - Générateur statique unifié",
   "main": "build.js",
   "scripts": {
     "build": "node build.js",
@@ -16,7 +16,7 @@
     "static-site",
     "handlebars"
   ],
-  "author": "Beaulieu Property Management",
+  "author": "Nes Thai Business",
   "license": "PRIVATE",
   "devDependencies": {
     "chokidar": "^3.6.0"

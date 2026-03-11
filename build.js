@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Système de Build Unifié - Beaulieu Property Management
+ * Système de Build Unifié - Nes Thai Business
  * 
  * Génère TOUTES les pages du site à partir de :
  * - data/properties.json → pages d'annonces + pages de listing
@@ -246,7 +246,7 @@ function buildPropertyPages(properties, site, layoutTemplate) {
     else if (prop.type === 'projet') activeNav.activeProjets = true;
     
     // Préparer les meta (fallback si seo.description vide)
-    const metaTitle = prop.seo?.title || `${prop.title} | Beaulieu Pattaya`;
+    const metaTitle = prop.seo?.title || `${prop.title} | Nes Thai Business`;
     const metaDescription = (prop.seo?.description || prop.description?.substring(0, 160) || '').trim();
     const metaImage = prop.images?.[0] || site.seo?.defaultOgImage;
     
@@ -333,7 +333,7 @@ function buildListingPages(properties, site, layoutTemplate) {
     {
       output: 'condos.html',
       types: ['condo'],
-      title: 'Condos à Vendre et Louer - Pattaya | Beaulieu',
+      title: 'Condos à Vendre et Louer - Pattaya | Nes Thai Business',
       listingTitle: 'Condos à Vendre et Louer',
       description: 'Découvrez nos condos à vendre et à louer à Pattaya. Studios, 1-3 chambres, penthouses.',
       canonicalUrl: `${site.url}/condos.html`,
@@ -343,7 +343,7 @@ function buildListingPages(properties, site, layoutTemplate) {
     {
       output: 'maisons.html',
       types: ['maison', 'villa'],
-      title: 'Maisons et Villas à Vendre - Pattaya | Beaulieu',
+      title: 'Maisons et Villas à Vendre - Pattaya | Nes Thai Business',
       listingTitle: 'Maisons & Villas à Vendre',
       description: 'Villas et maisons de luxe à vendre à Pattaya et Jomtien. Piscine privée, vue mer.',
       canonicalUrl: `${site.url}/maisons.html`,
@@ -353,7 +353,7 @@ function buildListingPages(properties, site, layoutTemplate) {
     {
       output: 'terrains.html',
       types: ['terrain'],
-      title: 'Terrains à Vendre - Pattaya | Beaulieu',
+      title: 'Terrains à Vendre - Pattaya | Nes Thai Business',
       listingTitle: 'Terrains à Vendre',
       description: 'Terrains à vendre à Pattaya pour construction ou investissement.',
       canonicalUrl: `${site.url}/terrains.html`,
@@ -363,7 +363,7 @@ function buildListingPages(properties, site, layoutTemplate) {
     {
       output: 'projets.html',
       types: ['projet'],
-      title: 'Projets Neufs Immobiliers - Pattaya | Beaulieu',
+      title: 'Projets Neufs Immobiliers - Pattaya | Nes Thai Business',
       listingTitle: 'Projets Neufs',
       description: 'Développements immobiliers neufs à Pattaya. Condos off-plan, résidences de standing.',
       canonicalUrl: `${site.url}/projets.html`,
@@ -448,7 +448,7 @@ function buildStaticPages(pagesData, site, layoutTemplate) {
     if (page.data?.extraCss) extraCss = page.data.extraCss;
     
     const html = layoutTemplate({
-      title: page.data?.title || 'Beaulieu Property Management',
+      title: page.data?.title || 'Nes Thai Business',
       description: page.data?.description || '',
       keywords: page.data?.keywords || '',
       canonicalUrl: page.data?.canonicalUrl || `${site.url}/${page.output}`,
@@ -518,7 +518,7 @@ function buildSitemap(properties, pagesData, site) {
 
 function buildAll() {
   console.log('\n🔨 ═══════════════════════════════════════════');
-  console.log('   Beaulieu Property - Build Statique Unifié');
+  console.log('   Nes Thai Business - Build Statique Unifié');
   console.log('═══════════════════════════════════════════════\n');
   
   const startTime = Date.now();
@@ -608,7 +608,7 @@ const args = process.argv.slice(2);
 
 if (args.includes('--help') || args.includes('-h')) {
   console.log(`
-Beaulieu Property - Build Statique Unifié
+Nes Thai Business - Build Statique Unifié
 
 Usage: node build.js [options]
 

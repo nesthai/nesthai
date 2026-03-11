@@ -6,7 +6,7 @@
       "data": {
         "title": "Accompagnement Achat Immobilier Pattaya | Due Diligence & Sécurité",
         "description": "Vous avez trouvé un bien à Pattaya ? Service d'accompagnement juridique et négociation. Vérification titre de propriété, sécurisation transaction. Francophone certifié.",
-        "canonicalUrl": "https://www.beaulieu-pattaya.com/acheteur.html",
+        "canonicalUrl": "https://www.nesthai.com/acheteur.html",
         "bodyClass": "page-acheteur"
       }
     },
@@ -16,7 +16,7 @@
       "data": {
         "title": "Guide Immobilier Pattaya | Actualités & Conseils Juridiques 2025",
         "description": "Tout savoir sur l'achat immobilier à Pattaya : droit des étrangers, taxes, condos, maisons. Conseils d'experts francophones certifiés.",
-        "canonicalUrl": "https://www.beaulieu-pattaya.com/actualites.html",
+        "canonicalUrl": "https://www.nesthai.com/actualites.html",
         "bodyClass": "page-actualites"
       }
     },
@@ -24,9 +24,9 @@
       "output": "admin-alertes.html",
       "contentFile": "src/pages/admin-alertes.html",
       "data": {
-        "title": "Admin - Gestion des Alertes Prix | Beaulieu Property",
+        "title": "Admin - Gestion des Alertes Prix | Nes Thai Business",
         "description": "",
-        "canonicalUrl": "https://www.beaulieu-pattaya.com/admin-alertes.html",
+        "canonicalUrl": "https://www.nesthai.com/admin-alertes.html",
         "bodyClass": "page-admin-alertes"
       }
     },
@@ -34,9 +34,9 @@
       "output": "alertes-prix.html",
       "contentFile": "src/pages/alertes-prix.html",
       "data": {
-        "title": "Alertes Prix Immobilier Pattaya | Soyez le premier informé | Beaulieu",
+        "title": "Alertes Prix Immobilier Pattaya | Soyez le premier informé | Nes Thai Business",
         "description": "Créez vos alertes prix personnalisées pour l'immobilier à Pattaya. Recevez une notification dès qu'un condo, maison ou terrain correspondant à votre budget est disponible.",
-        "canonicalUrl": "https://www.beaulieu-pattaya.com/alertes-prix.html",
+        "canonicalUrl": "https://www.nesthai.com/alertes-prix.html",
         "bodyClass": "page-alertes-prix"
       }
     },
@@ -44,9 +44,9 @@
       "output": "avis-clients.html",
       "contentFile": "src/pages/avis-clients.html",
       "data": {
-        "title": "Avis Agence Immobilière Francophone Pattaya | Beaulieu Property Reviews",
-        "description": "Avis et témoignages clients sur Beaulieu Property Management. Agence immobilière francophone à Pattaya depuis 15 ans. Reviews authentiques de français expatriés.",
-        "canonicalUrl": "https://www.beaulieu-pattaya.com/avis-clients.html",
+        "title": "Avis Agence Immobilière Francophone Pattaya | Nes Thai Business Reviews",
+        "description": "Avis et témoignages clients sur Nes Thai Business. Agence immobilière francophone à Pattaya depuis 15 ans. Reviews authentiques de français expatriés.",
+        "canonicalUrl": "https://www.nesthai.com/avis-clients.html",
         "bodyClass": "page-avis-clients"
       }
     },
@@ -56,7 +56,7 @@
       "data": {
         "title": "Accompagnement Achat Immobilier Pattaya | Due Diligence & Sécurité",
         "description": "Vous avez trouvé un bien à Pattaya ? Service d'accompagnement juridique et négociation. Vérification titre de propriété, sécurisation transaction. Francophone certifié.",
-        "canonicalUrl": "https://www.beaulieu-pattaya.com/conciergerie-achat.html",
+        "canonicalUrl": "https://www.nesthai.com/conciergerie-achat.html",
         "bodyClass": "page-conciergerie-achat"
       }
     },
@@ -64,9 +64,9 @@
       "output": "contact.html",
       "contentFile": "src/pages/contact.html",
       "data": {
-        "title": "Contact | Beaulieu Property Management Pattaya",
-        "description": "Contactez Beaulieu Property Management à Pattaya. Agence immobilière francophone. WhatsApp, email, téléphone. Visites sur rendez-vous.",
-        "canonicalUrl": "https://www.beaulieu-pattaya.com/contact.html",
+        "title": "Contact | Nes Thai Business Pattaya",
+        "description": "Contactez Nes Thai Business à Pattaya. Agence immobilière francophone. WhatsApp, email, téléphone. Visites sur rendez-vous.",
+        "canonicalUrl": "https://www.nesthai.com/contact.html",
         "bodyClass": "page-contact"
       }
     },
@@ -74,9 +74,9 @@
       "output": "guide-achat-condo-pattaya-avis.html",
       "contentFile": "src/pages/guide-achat-condo-pattaya-avis.html",
       "data": {
-        "title": "Achat Condo Pattaya : Avis & Retours d'Expérience 2024 | Beaulieu",
+        "title": "Achat Condo Pattaya : Avis & Retours d'Expérience 2024 | Nes Thai Business",
         "description": "Avis et retours d'expérience sur l'achat de condos à Pattaya. Témoignages de français ayant investi. Points positifs, pièges à éviter, conseils pratiques.",
-        "canonicalUrl": "https://www.beaulieu-pattaya.com/guide-achat-condo-pattaya-avis.html",
+        "canonicalUrl": "https://www.nesthai.com/guide-achat-condo-pattaya-avis.html",
         "bodyClass": "page-guide-achat-condo-pattaya-avis"
       }
     },
@@ -86,7 +86,7 @@
       "data": {
         "title": "Comment Acheter un Appartement en Thaïlande ? Guide Complet 2024",
         "description": "Guide complet pour acheter un appartement en Thaïlande : démarches, documents nécessaires, pièges à éviter. Accompagnement francophone à chaque étape.",
-        "canonicalUrl": "https://www.beaulieu-pattaya.com/guide-acheter-appartement-thailande.html",
+        "canonicalUrl": "https://www.nesthai.com/guide-acheter-appartement-thailande.html",
         "bodyClass": "page-guide-acheter-appartement-thailande"
       }
     },
@@ -96,7 +96,7 @@
       "data": {
         "title": "Impôt français location condo Pattaya : Guide fiscalité 2024 complète",
         "description": "Location condo Pattaya ? Guide complet fiscalité française : Micro-BIC, régime réel, convention fiscale, déclaration 2042-C. Calculez vos impôts et optimisez votre revenu locatif thaïlandais.",
-        "canonicalUrl": "https://www.beaulieu-pattaya.com/guide-impot-francais-location-condo.html",
+        "canonicalUrl": "https://www.nesthai.com/guide-impot-francais-location-condo.html",
         "bodyClass": "page-guide-impot-francais-location-condo"
       }
     },
@@ -106,7 +106,7 @@
       "data": {
         "title": "Impôts France Condo Pattaya : Guide Fiscal 2024 (Déclaration + Optimisation)",
         "description": "Guide complet sur les impôts français pour un condo à Pattaya. Comment déclarer ? Quel taux ? Optimisation fiscale légale. Conseils d'expert fiscal.",
-        "canonicalUrl": "https://www.beaulieu-pattaya.com/guide-impots-france-condo-pattaya.html",
+        "canonicalUrl": "https://www.nesthai.com/guide-impots-france-condo-pattaya.html",
         "bodyClass": "page-guide-impots-france-condo-pattaya"
       }
     },
@@ -115,8 +115,8 @@
       "contentFile": "src/pages/guide-leasehold-vs-freehold.html",
       "data": {
         "title": "Leasehold vs Freehold Thaïlande : Ce que les agences ne vous disent pas",
-        "description": "Guide complet leasehold vs freehold en Thaïlande. Pièges juridiques, superficie maximale étrangère, renouvellement bail, structures légales alternatives. Expertise Beaulieu Pattaya.",
-        "canonicalUrl": "https://www.beaulieu-pattaya.com/guide-leasehold-vs-freehold.html",
+        "description": "Guide complet leasehold vs freehold en Thaïlande. Pièges juridiques, superficie maximale étrangère, renouvellement bail, structures légales alternatives. Expertise Nes Thai Business.",
+        "canonicalUrl": "https://www.nesthai.com/guide-leasehold-vs-freehold.html",
         "bodyClass": "page-guide-leasehold-vs-freehold"
       }
     },
@@ -126,7 +126,7 @@
       "data": {
         "title": "Piège nom thaï titre propriété : Comment vérifier un Chanote en Thaïlande",
         "description": "30% des condos étrangers à Pattaya cachent un danger juridique. Apprenez à décrypter un Chanote, identifier un nominee illégal et protéger votre investissement immobilier en Thaïlande.",
-        "canonicalUrl": "https://www.beaulieu-pattaya.com/guide-nom-thai-titre-propriete.html",
+        "canonicalUrl": "https://www.nesthai.com/guide-nom-thai-titre-propriete.html",
         "bodyClass": "page-guide-nom-thai-titre-propriete"
       }
     },
@@ -136,7 +136,7 @@
       "data": {
         "title": "Quartiers à éviter Pattaya 2024 : Où investir (et ne pas investir)",
         "description": "Zones sur-saturées, secteurs à risque et pépites émergentes à Pattaya en 2024. Guide investisseur francophone : Wongamat, Jomtien, Pratumnak, Naklua analysés.",
-        "canonicalUrl": "https://www.beaulieu-pattaya.com/guide-quartiers-eviter-pattaya.html",
+        "canonicalUrl": "https://www.nesthai.com/guide-quartiers-eviter-pattaya.html",
         "bodyClass": "page-guide-quartiers-eviter-pattaya"
       }
     },
@@ -146,7 +146,7 @@
       "data": {
         "title": "Risques Immobilier Pattaya : Le Guide des Pièges à Éviter en 2024",
         "description": "Risques et pièges de l'immobilier à Pattaya : arnaques, quartiers à éviter, promoteurs peu scrupuleux. Comment investir en toute sécurité.",
-        "canonicalUrl": "https://www.beaulieu-pattaya.com/guide-risques-immobilier-pattaya.html",
+        "canonicalUrl": "https://www.nesthai.com/guide-risques-immobilier-pattaya.html",
         "bodyClass": "page-guide-risques-immobilier-pattaya"
       }
     },
@@ -156,7 +156,7 @@
       "data": {
         "title": "Thaïlande Immo Decoded | Guides & Conseils Immobilier Pattaya",
         "description": "Guides experts immobilier Thaïlande : leasehold vs freehold, fiscalité, pièges juridiques, meilleurs quartiers Pattaya. Ressources exclusives pour investisseurs francophones.",
-        "canonicalUrl": "https://www.beaulieu-pattaya.com/guides.html",
+        "canonicalUrl": "https://www.nesthai.com/guides.html",
         "bodyClass": "page-guides"
       }
     },
@@ -164,9 +164,9 @@
       "output": "index.html",
       "contentFile": "src/pages/index.html",
       "data": {
-        "title": "Beaulieu Property Management | Immobilier de Luxe Pattaya & Thaïlande",
+        "title": "Nes Thai Business | Immobilier de Luxe Pattaya & Thaïlande",
         "description": "Agence immobilière de luxe à Pattaya. Condos, villas, terrains et projets neufs. Accompagnement francophone pour investissement immobilier en Thaïlande depuis 2009.",
-        "canonicalUrl": "https://www.beaulieu-pattaya.com/index.html",
+        "canonicalUrl": "https://www.nesthai.com/index.html",
         "bodyClass": "page-index"
       }
     },
@@ -174,9 +174,9 @@
       "output": "mentions-legales.html",
       "contentFile": "src/pages/mentions-legales.html",
       "data": {
-        "title": "Mentions Légales | Beaulieu Property Management Co., Ltd.",
-        "description": "Mentions légales de Beaulieu Property Management Co., Ltd. - Agence immobilière francophone à Pattaya, Thaïlande. Informations légales et registre commercial DBD.",
-        "canonicalUrl": "https://www.beaulieu-pattaya.com/mentions-legales.html",
+        "title": "Mentions Légales | Nes Thai Business Co., Ltd.",
+        "description": "Mentions légales de Nes Thai Business Co., Ltd. - Agence immobilière francophone à Pattaya, Thaïlande. Informations légales et registre commercial DBD.",
+        "canonicalUrl": "https://www.nesthai.com/mentions-legales.html",
         "bodyClass": "page-mentions-legales"
       }
     },
@@ -184,9 +184,9 @@
       "output": "plan-site.html",
       "contentFile": "src/pages/plan-site.html",
       "data": {
-        "title": "Plan du Site | Beaulieu Property Management Pattaya",
-        "description": "Plan complet du site Beaulieu Pattaya. Retrouvez facilement tous nos condos, villas, terrains et projets neufs à Pattaya.",
-        "canonicalUrl": "https://www.beaulieu-pattaya.com/plan-site.html",
+        "title": "Plan du Site | Nes Thai Business Pattaya",
+        "description": "Plan complet du site Nes Thai Business. Retrouvez facilement tous nos condos, villas, terrains et projets neufs à Pattaya.",
+        "canonicalUrl": "https://www.nesthai.com/plan-site.html",
         "bodyClass": "page-plan-site"
       }
     },
@@ -194,9 +194,9 @@
       "output": "politique-confidentialite.html",
       "contentFile": "src/pages/politique-confidentialite.html",
       "data": {
-        "title": "Politique de Confidentialité | Protection des Données - Beaulieu Pattaya",
-        "description": "Politique de confidentialité et protection des données personnelles de Beaulieu Property Management. Conformité RGPD pour nos clients européens.",
-        "canonicalUrl": "https://www.beaulieu-pattaya.com/politique-confidentialite.html",
+        "title": "Politique de Confidentialité | Protection des Données - Nes Thai Business",
+        "description": "Politique de confidentialité et protection des données personnelles de Nes Thai Business. Conformité RGPD pour nos clients européens.",
+        "canonicalUrl": "https://www.nesthai.com/politique-confidentialite.html",
         "bodyClass": "page-politique-confidentialite"
       }
     },
@@ -204,9 +204,9 @@
       "output": "recherche.html",
       "contentFile": "src/pages/recherche.html",
       "data": {
-        "title": "Recherche - Beaulieu Property Management Pattaya",
+        "title": "Recherche - Nes Thai Business Pattaya",
         "description": "",
-        "canonicalUrl": "https://www.beaulieu-pattaya.com/recherche.html",
+        "canonicalUrl": "https://www.nesthai.com/recherche.html",
         "bodyClass": "page-recherche"
       }
     },
@@ -214,9 +214,9 @@
       "output": "service-concierge.html",
       "contentFile": "src/pages/service-concierge.html",
       "data": {
-        "title": "Concierge Achat à Distance | Beaulieu Pattaya - Buyer's Agent Virtuel",
+        "title": "Concierge Achat à Distance | Nes Thai Business - Buyer's Agent Virtuel",
         "description": "Service exclusif Concierge Achat à Distance. Visites virtuelles en live, dossier juridique personnalisé, scouting pré-voyage. Votre buyer's agent immobilier premium à Pattaya.",
-        "canonicalUrl": "https://www.beaulieu-pattaya.com/service-concierge.html",
+        "canonicalUrl": "https://www.nesthai.com/service-concierge.html",
         "bodyClass": "page-service-concierge"
       }
     },
@@ -224,9 +224,9 @@
       "output": "suivez-nous.html",
       "contentFile": "src/pages/suivez-nous.html",
       "data": {
-        "title": "Suivez-nous | Réseaux Sociaux Beaulieu Property Pattaya",
-        "description": "Suivez Beaulieu Property Management sur TikTok, Instagram, YouTube et Facebook. Découvrez nos propriétés de luxe à Pattaya en vidéo et photos.",
-        "canonicalUrl": "https://www.beaulieu-pattaya.com/suivez-nous.html",
+        "title": "Suivez-nous | Réseaux Sociaux Nes Thai Business Pattaya",
+        "description": "Suivez Nes Thai Business sur TikTok, Instagram, YouTube et Facebook. Découvrez nos propriétés de luxe à Pattaya en vidéo et photos.",
+        "canonicalUrl": "https://www.nesthai.com/suivez-nous.html",
         "bodyClass": "page-suivez-nous"
       }
     },
@@ -234,9 +234,9 @@
       "output": "temoignages-video.html",
       "contentFile": "src/pages/temoignages-video.html",
       "data": {
-        "title": "Témoignages Vidéo Clients | Achat Immobilier Pattaya | Beaulieu",
-        "description": "Témoignages vidéo authentiques de clients français ayant acheté un condo ou une maison à Pattaya avec Beaulieu Property Management. Avis en vidéo.",
-        "canonicalUrl": "https://www.beaulieu-pattaya.com/temoignages-video.html",
+        "title": "Témoignages Vidéo Clients | Achat Immobilier Pattaya | Nes Thai Business",
+        "description": "Témoignages vidéo authentiques de clients français ayant acheté un condo ou une maison à Pattaya avec Nes Thai Business. Avis en vidéo.",
+        "canonicalUrl": "https://www.nesthai.com/temoignages-video.html",
         "bodyClass": "page-temoignages-video"
       }
     },
@@ -246,7 +246,7 @@
       "data": {
         "title": "Vendre Votre Bien à Pattaya | Commission Transparente | Nes Thai Business",
         "description": "Vendez votre condo, villa ou terrain à Pattaya avec une agence francophone experte. Estimation gratuite, marketing international, commission transparente. Résultats depuis 2009.",
-        "canonicalUrl": "https://www.beaulieu-pattaya.com/vendeur.html",
+        "canonicalUrl": "https://www.nesthai.com/vendeur.html",
         "bodyClass": "page-vendeur"
       }
     }
