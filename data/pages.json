@@ -7,7 +7,8 @@
         "title": "Accompagnement Achat Immobilier Pattaya | Due Diligence & Sécurité",
         "description": "Vous avez trouvé un bien à Pattaya ? Service d'accompagnement juridique et négociation. Vérification titre de propriété, sécurisation transaction. Francophone certifié.",
         "canonicalUrl": "https://www.nesthai.com/acheteur.html",
-        "bodyClass": "page-acheteur"
+        "bodyClass": "page-acheteur",
+        "extraCss": "conciergerie.css"
       }
     },
     {
@@ -17,7 +18,8 @@
         "title": "Guide Immobilier Pattaya | Actualités & Conseils Juridiques 2025",
         "description": "Tout savoir sur l'achat immobilier à Pattaya : droit des étrangers, taxes, condos, maisons. Conseils d'experts francophones certifiés.",
         "canonicalUrl": "https://www.nesthai.com/actualites.html",
-        "bodyClass": "page-actualites"
+        "bodyClass": "page-actualites",
+        "extraCss": "actualites.css"
       }
     },
     {
@@ -57,7 +59,8 @@
         "title": "Accompagnement Achat Immobilier Pattaya | Due Diligence & Sécurité",
         "description": "Vous avez trouvé un bien à Pattaya ? Service d'accompagnement juridique et négociation. Vérification titre de propriété, sécurisation transaction. Francophone certifié.",
         "canonicalUrl": "https://www.nesthai.com/conciergerie-achat.html",
-        "bodyClass": "page-conciergerie-achat"
+        "bodyClass": "page-conciergerie-achat",
+        "extraCss": "conciergerie.css"
       }
     },
     {
@@ -97,7 +100,8 @@
         "title": "Impôt français location condo Pattaya : Guide fiscalité 2024 complète",
         "description": "Location condo Pattaya ? Guide complet fiscalité française : Micro-BIC, régime réel, convention fiscale, déclaration 2042-C. Calculez vos impôts et optimisez votre revenu locatif thaïlandais.",
         "canonicalUrl": "https://www.nesthai.com/guide-impot-francais-location-condo.html",
-        "bodyClass": "page-guide-impot-francais-location-condo"
+        "bodyClass": "page-guide-impot-francais-location-condo",
+        "extraCss": "guides.css"
       }
     },
     {
@@ -117,7 +121,8 @@
         "title": "Leasehold vs Freehold Thaïlande : Ce que les agences ne vous disent pas",
         "description": "Guide complet leasehold vs freehold en Thaïlande. Pièges juridiques, superficie maximale étrangère, renouvellement bail, structures légales alternatives. Expertise Nes Thai Business.",
         "canonicalUrl": "https://www.nesthai.com/guide-leasehold-vs-freehold.html",
-        "bodyClass": "page-guide-leasehold-vs-freehold"
+        "bodyClass": "page-guide-leasehold-vs-freehold",
+        "extraCss": "guides.css"
       }
     },
     {
@@ -127,7 +132,8 @@
         "title": "Piège nom thaï titre propriété : Comment vérifier un Chanote en Thaïlande",
         "description": "30% des condos étrangers à Pattaya cachent un danger juridique. Apprenez à décrypter un Chanote, identifier un nominee illégal et protéger votre investissement immobilier en Thaïlande.",
         "canonicalUrl": "https://www.nesthai.com/guide-nom-thai-titre-propriete.html",
-        "bodyClass": "page-guide-nom-thai-titre-propriete"
+        "bodyClass": "page-guide-nom-thai-titre-propriete",
+        "extraCss": "guides.css"
       }
     },
     {
@@ -137,7 +143,8 @@
         "title": "Quartiers à éviter Pattaya 2024 : Où investir (et ne pas investir)",
         "description": "Zones sur-saturées, secteurs à risque et pépites émergentes à Pattaya en 2024. Guide investisseur francophone : Wongamat, Jomtien, Pratumnak, Naklua analysés.",
         "canonicalUrl": "https://www.nesthai.com/guide-quartiers-eviter-pattaya.html",
-        "bodyClass": "page-guide-quartiers-eviter-pattaya"
+        "bodyClass": "page-guide-quartiers-eviter-pattaya",
+        "extraCss": "guides.css"
       }
     },
     {
@@ -157,7 +164,8 @@
         "title": "Thaïlande Immo Decoded | Guides & Conseils Immobilier Pattaya",
         "description": "Guides experts immobilier Thaïlande : leasehold vs freehold, fiscalité, pièges juridiques, meilleurs quartiers Pattaya. Ressources exclusives pour investisseurs francophones.",
         "canonicalUrl": "https://www.nesthai.com/guides.html",
-        "bodyClass": "page-guides"
+        "bodyClass": "page-guides",
+        "extraCss": "guides.css"
       }
     },
     {
@@ -227,7 +235,8 @@
         "title": "Suivez-nous | Réseaux Sociaux Nes Thai Business Pattaya",
         "description": "Suivez Nes Thai Business sur TikTok, Instagram, YouTube et Facebook. Découvrez nos propriétés de luxe à Pattaya en vidéo et photos.",
         "canonicalUrl": "https://www.nesthai.com/suivez-nous.html",
-        "bodyClass": "page-suivez-nous"
+        "bodyClass": "page-suivez-nous",
+        "extraCss": "social-enhanced.css"
       }
     },
     {
