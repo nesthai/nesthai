@@ -373,9 +373,24 @@ function filterByType(type) {
     currentFilter = type;
     document.querySelectorAll('.filter-chip').forEach(function(chip) {
         chip.classList.remove('active');
+        if (chip.getAttribute('data-type') === type) {
+            chip.classList.add('active');
+        }
     });
-    event.target.classList.add('active');
+    // Synchroniser le select type avancé
+    var typeEl = document.getElementById('filter-type');
+    if (typeEl) typeEl.value = type === 'all' ? 'all' : type;
     updateResults();
+}
+
+function updateFilterCounts() {
+    var labels = { all: 'Tous', condo: 'Condos', maison: 'Maisons', terrain: 'Terrains', projet: 'Projets' };
+    document.querySelectorAll('.filter-chip').forEach(function(chip) {
+        var type = chip.getAttribute('data-type');
+        if (!type) return;
+        var count = type === 'all' ? propertiesDB.length : propertiesDB.filter(function(p) { return p.type === type; }).length;
+        chip.textContent = labels[type] + ' (' + count + ')';
+    });
 }
 
 function toggleAdvancedFilters() {
@@ -596,13 +611,14 @@ document.addEventListener('DOMContentLoaded', function() {
         currentFilter = params.type;
         document.querySelectorAll('.filter-chip').forEach(function(chip) {
             chip.classList.remove('active');
-            if (chip.textContent.toLowerCase().indexOf(params.type) !== -1) {
+            if (chip.getAttribute('data-type') === params.type) {
                 chip.classList.add('active');
             }
         });
     }
 
     populateZones();
+    updateFilterCounts();
     updateResults();
 
     document.getElementById('search-input').addEventListener('keypress', function(e) {
