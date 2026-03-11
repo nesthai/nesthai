@@ -14,6 +14,52 @@
                     <span class="filter-chip" onclick="filterByType('terrain')">Terrains</span>
                     <span class="filter-chip" onclick="filterByType('projet')">Projets</span>
                 </div>
+
+                <div class="advanced-filters-toggle">
+                    <button id="advancedFiltersToggle" onclick="toggleAdvancedFilters()">
+                        ⚙ Filtres avancés
+                        <span class="arrow">▼</span>
+                    </button>
+                </div>
+
+                <div id="advancedFiltersPanel" class="advanced-filters hidden">
+                    <div class="filter-group">
+                        <label>Budget max (THB)</label>
+                        <select id="filter-budget" onchange="applyAdvancedFilters()">
+                            <option value="0">Tous les prix</option>
+                            <option value="3000000">≤ 3M THB</option>
+                            <option value="5000000">≤ 5M THB</option>
+                            <option value="10000000">≤ 10M THB</option>
+                            <option value="20000000">≤ 20M THB</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Chambres min</label>
+                        <select id="filter-bedrooms" onchange="applyAdvancedFilters()">
+                            <option value="0">Toutes</option>
+                            <option value="1">1+</option>
+                            <option value="2">2+</option>
+                            <option value="3">3+</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Type de transaction</label>
+                        <select id="filter-status" onchange="applyAdvancedFilters()">
+                            <option value="all">Tous</option>
+                            <option value="sale">À vendre</option>
+                            <option value="rent">À louer</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Surface min (m²)</label>
+                        <select id="filter-area" onchange="applyAdvancedFilters()">
+                            <option value="0">Toutes</option>
+                            <option value="40">40+ m²</option>
+                            <option value="80">80+ m²</option>
+                            <option value="150">150+ m²</option>
+                        </select>
+                    </div>
+                </div>
             </div>
         </div>
 

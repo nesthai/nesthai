@@ -378,10 +378,30 @@ function filterByType(type) {
     updateResults();
 }
 
+function toggleAdvancedFilters() {
+    var panel = document.getElementById('advancedFiltersPanel');
+    var btn = document.getElementById('advancedFiltersToggle');
+    panel.classList.toggle('hidden');
+    btn.classList.toggle('active');
+}
+
+function applyAdvancedFilters() {
+    updateResults();
+}
+
 function updateResults() {
     var resultsContainer = document.getElementById('search-results-grid');
     var noResults = document.getElementById('no-results');
     var countElement = document.getElementById('results-count');
+
+    var budgetEl = document.getElementById('filter-budget');
+    var bedroomsEl = document.getElementById('filter-bedrooms');
+    var statusEl = document.getElementById('filter-status');
+    var areaEl = document.getElementById('filter-area');
+    var maxBudget = budgetEl ? parseInt(budgetEl.value) : 0;
+    var minBedrooms = bedroomsEl ? parseInt(bedroomsEl.value) : 0;
+    var statusFilter = statusEl ? statusEl.value : 'all';
+    var minArea = areaEl ? parseInt(areaEl.value) : 0;
 
     var results = propertiesDB.filter(function(prop) {
         if (currentFilter !== 'all' && prop.type !== currentFilter) {
@@ -389,8 +409,12 @@ function updateResults() {
         }
         if (searchQuery) {
             var searchIn = (prop.title + ' ' + prop.location + ' ' + prop.description + ' ' + prop.type).toLowerCase();
-            return searchIn.indexOf(searchQuery) !== -1;
+            if (searchIn.indexOf(searchQuery) === -1) return false;
         }
+        if (maxBudget > 0 && prop.priceNum > maxBudget) return false;
+        if (minBedrooms > 0 && (prop.bedrooms || 0) < minBedrooms) return false;
+        if (statusFilter !== 'all' && prop.status !== statusFilter) return false;
+        if (minArea > 0 && (prop.area || 0) < minArea) return false;
         return true;
     });
 
