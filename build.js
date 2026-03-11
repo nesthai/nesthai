@@ -202,6 +202,9 @@ function copyStaticAssets() {
       console.log(`  📄 ${file}`);
     }
   }
+  // .nojekyll pour GitHub Pages
+  fs.writeFileSync(path.join(CONFIG.outputDir, '.nojekyll'), '');
+  console.log('  📄 .nojekyll');
 }
 
 // ═══════════════════════════════════════════════════════════════

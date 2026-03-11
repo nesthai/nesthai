@@ -10,6 +10,8 @@
         "/^node -e \"const d=require\\('\\./data/properties\\.json'\\); const districts=\\[\\.\\.\\.new Set\\(d\\.map\\(p=>p\\.location\\.district\\)\\)\\]\\.sort\\(\\); console\\.log\\('Districts:', JSON\\.stringify\\(districts\\)\\); console\\.log\\('Types:', JSON\\.stringify\\(\\[\\.\\.\\.new Set\\(d\\.map\\(p=>p\\.type\\)\\)\\]\\)\\); console\\.log\\('Statuses:', JSON\\.stringify\\(\\[\\.\\.\\.new Set\\(d\\.map\\(p=>p\\.status\\)\\)\\]\\)\\); console\\.log\\('Bedrooms:', JSON\\.stringify\\(\\[\\.\\.\\.new Set\\(d\\.map\\(p=>p\\.bedrooms\\)\\)\\]\\.sort\\(\\)\\)\\); console\\.log\\('Bathrooms:', JSON\\.stringify\\(\\[\\.\\.\\.new Set\\(d\\.map\\(p=>p\\.bathrooms\\)\\)\\]\\.sort\\(\\)\\)\\); console\\.log\\('Surfaces:', d\\.map\\(p=>\\(\\{id:p\\.id,s:p\\.surface\\}\\)\\)\\.sort\\(\\(a,b\\)=>a\\.s-b\\.s\\)\\); console\\.log\\('Prices:', d\\.map\\(p=>\\(\\{id:p\\.id,p:p\\.price\\}\\)\\)\\.sort\\(\\(a,b\\)=>a\\.p-b\\.p\\)\\);\"$/": {
             "approve": true,
             "matchCommandLine": true
-        }
+        },
+        "git remote": true,
+        "git credential": true
     }
 }
