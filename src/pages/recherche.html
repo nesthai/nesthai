@@ -23,42 +23,166 @@
                 </div>
 
                 <div id="advancedFiltersPanel" class="advanced-filters hidden">
+
+                    <!-- TYPE DE BIEN -->
                     <div class="filter-group">
-                        <label>Budget max (THB)</label>
-                        <select id="filter-budget" onchange="applyAdvancedFilters()">
-                            <option value="0">Tous les prix</option>
-                            <option value="3000000">≤ 3M THB</option>
-                            <option value="5000000">≤ 5M THB</option>
-                            <option value="10000000">≤ 10M THB</option>
-                            <option value="20000000">≤ 20M THB</option>
+                        <label>Type de bien</label>
+                        <select id="filter-type" onchange="applyAdvancedFilters()">
+                            <option value="all">Tous</option>
+                            <option value="condo">Condo</option>
+                            <option value="maison">Maison / Villa</option>
+                            <option value="terrain">Terrain</option>
+                            <option value="projet">Projet neuf</option>
                         </select>
                     </div>
+
+                    <!-- QUARTIER / ZONE -->
+                    <div class="filter-group filter-group-wide">
+                        <label>Quartier / Zone</label>
+                        <select id="filter-zone" multiple size="4" onchange="applyAdvancedFilters()">
+                            <!-- Généré dynamiquement par JS -->
+                        </select>
+                        <small class="filter-hint">Ctrl+clic pour sélection multiple</small>
+                    </div>
+
+                    <!-- PRIX MIN -->
                     <div class="filter-group">
-                        <label>Chambres min</label>
+                        <label>Prix min (THB)</label>
+                        <select id="filter-price-min" onchange="applyAdvancedFilters()">
+                            <option value="0">Pas de min</option>
+                            <option value="1000000">1M THB</option>
+                            <option value="3000000">3M THB</option>
+                            <option value="5000000">5M THB</option>
+                            <option value="10000000">10M THB</option>
+                            <option value="15000000">15M THB</option>
+                            <option value="20000000">20M THB</option>
+                        </select>
+                    </div>
+
+                    <!-- PRIX MAX -->
+                    <div class="filter-group">
+                        <label>Prix max (THB)</label>
+                        <select id="filter-price-max" onchange="applyAdvancedFilters()">
+                            <option value="0">Pas de max</option>
+                            <option value="3000000">3M THB</option>
+                            <option value="5000000">5M THB</option>
+                            <option value="10000000">10M THB</option>
+                            <option value="15000000">15M THB</option>
+                            <option value="20000000">20M THB</option>
+                            <option value="30000000">30M THB</option>
+                            <option value="50000000">50M THB</option>
+                        </select>
+                    </div>
+
+                    <!-- CHAMBRES -->
+                    <div class="filter-group">
+                        <label>Chambres</label>
                         <select id="filter-bedrooms" onchange="applyAdvancedFilters()">
+                            <option value="-1">Toutes</option>
+                            <option value="0">Studio</option>
+                            <option value="1">1+</option>
+                            <option value="2">2+</option>
+                            <option value="3">3+</option>
+                            <option value="4">4+</option>
+                            <option value="5">5+</option>
+                        </select>
+                    </div>
+
+                    <!-- SALLES DE BAIN -->
+                    <div class="filter-group">
+                        <label>Salles de bain</label>
+                        <select id="filter-bathrooms" onchange="applyAdvancedFilters()">
                             <option value="0">Toutes</option>
                             <option value="1">1+</option>
                             <option value="2">2+</option>
                             <option value="3">3+</option>
+                            <option value="4">4+</option>
                         </select>
                     </div>
+
+                    <!-- SURFACE MIN -->
                     <div class="filter-group">
-                        <label>Type de transaction</label>
+                        <label>Surface min (m²)</label>
+                        <select id="filter-area-min" onchange="applyAdvancedFilters()">
+                            <option value="0">Pas de min</option>
+                            <option value="30">30 m²</option>
+                            <option value="50">50 m²</option>
+                            <option value="80">80 m²</option>
+                            <option value="150">150 m²</option>
+                            <option value="300">300 m²</option>
+                            <option value="500">500 m²</option>
+                        </select>
+                    </div>
+
+                    <!-- SURFACE MAX -->
+                    <div class="filter-group">
+                        <label>Surface max (m²)</label>
+                        <select id="filter-area-max" onchange="applyAdvancedFilters()">
+                            <option value="0">Pas de max</option>
+                            <option value="50">50 m²</option>
+                            <option value="100">100 m²</option>
+                            <option value="200">200 m²</option>
+                            <option value="500">500 m²</option>
+                            <option value="1000">1 000 m²</option>
+                            <option value="5000">5 000 m²</option>
+                        </select>
+                    </div>
+
+                    <!-- STATUT -->
+                    <div class="filter-group">
+                        <label>Statut</label>
                         <select id="filter-status" onchange="applyAdvancedFilters()">
                             <option value="all">Tous</option>
                             <option value="sale">À vendre</option>
                             <option value="rent">À louer</option>
                         </select>
                     </div>
+
+                    <!-- CARACTÉRISTIQUES -->
+                    <div class="filter-group filter-group-full">
+                        <label>Caractéristiques</label>
+                        <div class="features-grid">
+                            <label class="feature-check"><input type="checkbox" value="piscine" onchange="applyAdvancedFilters()"> Piscine commune</label>
+                            <label class="feature-check"><input type="checkbox" value="piscine-privee" onchange="applyAdvancedFilters()"> Piscine privée</label>
+                            <label class="feature-check"><input type="checkbox" value="vue-mer" onchange="applyAdvancedFilters()"> Vue mer</label>
+                            <label class="feature-check"><input type="checkbox" value="vue-montagne" onchange="applyAdvancedFilters()"> Vue montagne</label>
+                            <label class="feature-check"><input type="checkbox" value="vue-ville" onchange="applyAdvancedFilters()"> Vue ville</label>
+                            <label class="feature-check"><input type="checkbox" value="front-de-mer" onchange="applyAdvancedFilters()"> Front de mer</label>
+                            <label class="feature-check"><input type="checkbox" value="acces-plage" onchange="applyAdvancedFilters()"> Accès plage</label>
+                            <label class="feature-check"><input type="checkbox" value="salle-de-sport" onchange="applyAdvancedFilters()"> Salle de sport</label>
+                            <label class="feature-check"><input type="checkbox" value="securite-24h" onchange="applyAdvancedFilters()"> Sécurité 24h</label>
+                            <label class="feature-check"><input type="checkbox" value="parking" onchange="applyAdvancedFilters()"> Parking</label>
+                            <label class="feature-check"><input type="checkbox" value="balcon" onchange="applyAdvancedFilters()"> Balcon</label>
+                            <label class="feature-check"><input type="checkbox" value="terrasse" onchange="applyAdvancedFilters()"> Terrasse</label>
+                            <label class="feature-check"><input type="checkbox" value="jardin" onchange="applyAdvancedFilters()"> Jardin</label>
+                            <label class="feature-check"><input type="checkbox" value="meuble" onchange="applyAdvancedFilters()"> Meublé</label>
+                            <label class="feature-check"><input type="checkbox" value="freehold" onchange="applyAdvancedFilters()"> Freehold</label>
+                            <label class="feature-check"><input type="checkbox" value="leasehold" onchange="applyAdvancedFilters()"> Leasehold</label>
+                            <label class="feature-check"><input type="checkbox" value="foreign-quota" onchange="applyAdvancedFilters()"> Foreign quota</label>
+                            <label class="feature-check"><input type="checkbox" value="thai-quota" onchange="applyAdvancedFilters()"> Thai quota</label>
+                            <label class="feature-check"><input type="checkbox" value="proche-ecoles" onchange="applyAdvancedFilters()"> Proche écoles int.</label>
+                            <label class="feature-check"><input type="checkbox" value="proche-golf" onchange="applyAdvancedFilters()"> Proche golf</label>
+                            <label class="feature-check"><input type="checkbox" value="proche-centre-commercial" onchange="applyAdvancedFilters()"> Proche centre commercial</label>
+                        </div>
+                    </div>
+
+                    <!-- TRI -->
                     <div class="filter-group">
-                        <label>Surface min (m²)</label>
-                        <select id="filter-area" onchange="applyAdvancedFilters()">
-                            <option value="0">Toutes</option>
-                            <option value="40">40+ m²</option>
-                            <option value="80">80+ m²</option>
-                            <option value="150">150+ m²</option>
+                        <label>Trier par</label>
+                        <select id="filter-sort" onchange="applyAdvancedFilters()">
+                            <option value="recent">Plus récent</option>
+                            <option value="price-asc">Prix croissant</option>
+                            <option value="price-desc">Prix décroissant</option>
+                            <option value="area-desc">Surface décroissante</option>
                         </select>
                     </div>
+
+                    <!-- BOUTONS -->
+                    <div class="filter-group filter-group-full filter-actions">
+                        <button class="btn btn-primary btn-filter" onclick="applyAdvancedFilters()">Appliquer les filtres</button>
+                        <button class="btn btn-outline btn-filter" onclick="resetAdvancedFilters()">Réinitialiser</button>
+                    </div>
+
                 </div>
             </div>
         </div>
