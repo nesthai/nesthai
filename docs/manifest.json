@@ -1,0 +1,10 @@
+{
+  "name": "Beaulieu Immobilier",
+  "short_name": "Beaulieu",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#C9A962",
+  "theme_color": "#C9A962",
+  "description": "Panel immobilier Beaulieu Pattaya",
+  "icons": []
+}

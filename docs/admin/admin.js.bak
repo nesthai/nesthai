@@ -1,0 +1,214 @@
+// admin.js : Mini panel admin immobilier
+
+// ENUMS stricts
+const TYPE_ENUM = ["condo", "villa", "maison", "terrain", "local", "autre"];
+const STATUS_ENUM = ["for-sale", "sold", "reserved", "off-market"];
+const CURRENCY_ENUM = ["EUR", "THB", "USD"];
+
+// Utilitaire : calcul prix au m²
+function calculatePricePerSqm(price, surface) {
+  if (!price || !surface || surface === 0) return 0;
+  return Math.round(price / surface);
+}
+
+// Génère un ID unique
+function generateId() {
+  return 'prop-' + Date.now();
+}
+
+// Récupère les propriétés (localStorage ou JSON)
+async function getProperties() {
+  let props = localStorage.getItem("properties");
+  if (props) return JSON.parse(props);
+  // Sinon, charger le JSON
+  try {
+    const res = await fetch("../data/properties.json");
+    const data = await res.json();
+    localStorage.setItem("properties", JSON.stringify(data));
+    return data;
+  } catch (e) {
+    console.error("Erreur chargement JSON", e);
+    return [];
+  }
+}
+
+// Sauvegarde dans localStorage
+function saveProperties(props) {
+  localStorage.setItem("properties", JSON.stringify(props));
+}
+
+// Affiche la liste des propriétés
+async function renderPropertiesList() {
+  const listDiv = document.getElementById("properties-list");
+  const props = await getProperties();
+  if (!props.length) {
+    listDiv.innerHTML = "<p>Aucune propriété enregistrée.</p>";
+    return;
+  }
+  let html = `<table class='property-table'><thead><tr>
+    <th>Titre</th><th>Type</th><th>Prix</th><th>Ville</th><th>Status</th><th>Actions</th>
+  </tr></thead><tbody>`;
+  for (const p of props) {
+    html += `<tr>
+      <td>${p.title}</td>
+      <td>${p.type}</td>
+      <td>${p.price.toLocaleString()} ${p.currency}</td>
+      <td>${p.location.city}</td>
+      <td>${p.status}</td>
+      <td>
+        <button class='btn' onclick='editProperty("${p.id}")'>Modifier</button>
+        <button class='btn' onclick='deleteProperty("${p.id}")'>Supprimer</button>
+      </td>
+    </tr>`;
+  }
+  html += "</tbody></table>";
+  listDiv.innerHTML = html;
+}
+
+// Affiche le formulaire (ajout ou édition)
+function showForm(property = null) {
+  const section = document.getElementById("form-section");
+  section.style.display = "block";
+  section.innerHTML = generateFormHTML(property);
+}
+
+// Génère le HTML du formulaire
+function generateFormHTML(p) {
+  return `
+    <form id="property-form">
+      <label>Titre<input type="text" name="title" value="${p ? p.title : ''}" required></label>
+      <label>Type
+        <select name="type" required>
+          ${TYPE_ENUM.map(t => `<option value="${t}"${p && p.type === t ? ' selected' : ''}>${t}</option>`).join('')}
+        </select>
+      </label>
+      <label>Prix<input type="number" name="price" value="${p ? p.price : ''}" required></label>
+      <label>Devise
+        <select name="currency" required>
+          ${CURRENCY_ENUM.map(c => `<option value="${c}"${p && p.currency === c ? ' selected' : ''}>${c}</option>`).join('')}
+        </select>
+      </label>
+      <label>Ville<input type="text" name="city" value="${p ? p.location.city : ''}" required></label>
+      <label>District<input type="text" name="district" value="${p ? p.location.district : ''}" required></label>
+      <label>Pays<input type="text" name="country" value="${p ? p.location.country : ''}" required></label>
+      <label>Latitude<input type="number" step="any" name="lat" value="${p ? p.location.coordinates.lat : ''}" required></label>
+      <label>Longitude<input type="number" step="any" name="lng" value="${p ? p.location.coordinates.lng : ''}" required></label>
+      <label>Surface (m²)<input type="number" name="surface" value="${p ? p.surface : ''}" required></label>
+      <label>Pièces<input type="number" name="rooms" value="${p ? p.rooms : ''}" required></label>
+      <label>Chambres<input type="number" name="bedrooms" value="${p ? p.bedrooms : ''}" required></label>
+      <label>Salles de bain<input type="number" name="bathrooms" value="${p ? p.bathrooms : ''}" required></label>
+      <label>Description<textarea name="description" required>${p ? p.description : ''}</textarea></label>
+      <label>Atouts (séparés par virgules)<textarea name="features">${p ? p.features.join(', ') : ''}</textarea></label>
+      <label>Images (séparés par virgules)<textarea name="images">${p ? p.images.join(', ') : ''}</textarea></label>
+      <label>Status
+        <select name="status" required>
+          ${STATUS_ENUM.map(s => `<option value="${s}"${p && p.status === s ? ' selected' : ''}>${s}</option>`).join('')}
+        </select>
+      </label>
+      <label>Publié <input type="checkbox" name="isPublished"${p && p.isPublished ? ' checked' : ''}></label>
+      <div class="form-actions">
+        <button class="btn" type="submit">${p ? 'Enregistrer' : 'Ajouter'}</button>
+        <button class="btn" type="button" onclick="hideForm()">Annuler</button>
+      </div>
+    </form>
+  `;
+}
+
+// Ajout d'une propriété
+function addProperty() {
+  showForm();
+  document.getElementById("property-form").onsubmit = async function(e) {
+    e.preventDefault();
+    const props = await getProperties();
+    const form = e.target;
+    const newProp = formToProperty(form);
+    newProp.id = generateId();
+    newProp.createdAt = new Date().toISOString();
+    newProp.updatedAt = newProp.createdAt;
+    newProp.metrics = {
+      pricePerSqm: calculatePricePerSqm(newProp.price, newProp.surface),
+      estimatedValue: 0,
+      score: 0
+    };
+    props.push(newProp);
+    saveProperties(props);
+    hideForm();
+    renderPropertiesList();
+  };
+}
+
+// Edition d'une propriété
+window.editProperty = async function(id) {
+  const props = await getProperties();
+  const prop = props.find(p => p.id === id);
+  showForm(prop);
+  document.getElementById("property-form").onsubmit = async function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const updatedProp = formToProperty(form);
+    updatedProp.id = prop.id;
+    updatedProp.createdAt = prop.createdAt;
+    updatedProp.updatedAt = new Date().toISOString();
+    updatedProp.metrics = {
+      pricePerSqm: calculatePricePerSqm(updatedProp.price, updatedProp.surface),
+      estimatedValue: 0,
+      score: 0
+    };
+    const idx = props.findIndex(p => p.id === id);
+    props[idx] = updatedProp;
+    saveProperties(props);
+    hideForm();
+    renderPropertiesList();
+  };
+};
+
+// Supprimer une propriété
+window.deleteProperty = async function(id) {
+  if (!confirm("Confirmer la suppression ?")) return;
+  const props = await getProperties();
+  const idx = props.findIndex(p => p.id === id);
+  if (idx > -1) {
+    props.splice(idx, 1);
+    saveProperties(props);
+    renderPropertiesList();
+  }
+};
+
+// Convertit le formulaire en objet propriété
+function formToProperty(form) {
+  return {
+    title: form.title.value,
+    type: form.type.value,
+    price: Number(form.price.value),
+    currency: form.currency.value,
+    location: {
+      city: form.city.value,
+      district: form.district.value,
+      country: form.country.value,
+      coordinates: {
+        lat: Number(form.lat.value),
+        lng: Number(form.lng.value)
+      }
+    },
+    surface: Number(form.surface.value),
+    rooms: Number(form.rooms.value),
+    bedrooms: Number(form.bedrooms.value),
+    bathrooms: Number(form.bathrooms.value),
+    description: form.description.value,
+    features: form.features.value.split(',').map(f => f.trim()).filter(f => f),
+    images: form.images.value.split(',').map(i => i.trim()).filter(i => i),
+    status: form.status.value,
+    isPublished: form.isPublished.checked
+  };
+}
+
+// Cache le formulaire
+window.hideForm = function() {
+  document.getElementById("form-section").style.display = "none";
+};
+
+// Initialisation
+window.onload = function() {
+  renderPropertiesList();
+  document.getElementById("add-property-btn").onclick = addProperty;
+};
