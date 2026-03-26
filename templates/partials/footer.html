@@ -1,0 +1,70 @@
+<!-- Bouton Alertes Prix -->
+<div id="alertes-prix-container"></div>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <svg class="logo-svg" viewBox="0 0 520 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nes Thai Business" width="400" height="200"><text x="175" y="160" font-size="140" text-anchor="middle" fill="#C9A962" font-family="'Playfair Display',serif" font-weight="600">N</text><text x="345" y="160" font-size="140" text-anchor="middle" fill="#C9A962" font-family="'Playfair Display',serif" font-weight="600">B</text><line x1="175" y1="52" x2="345" y2="52" stroke="#C9A962" stroke-width="8" stroke-linecap="square"/><line x1="260" y1="52" x2="260" y2="185" stroke="#C9A962" stroke-width="8" stroke-linecap="square"/><text x="260" y="235" text-anchor="middle" font-size="26" letter-spacing="3" fill="#C9A962" font-family="'Playfair Display',serif" font-weight="600">NES THAI BUSINESS</text></svg>
+                </div>
+                <p>Votre partenaire immobilier de confiance à Pattaya depuis 2009.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Biens immobiliers</h4>
+                <ul>
+                    <li><a href="condos.html">Condos à vendre</a></li>
+                    <li><a href="maisons.html">Maisons &amp; Villas</a></li>
+                    <li><a href="terrains.html">Terrains à vendre</a></li>
+                    <li><a href="projets.html">Projets neufs</a></li>
+                    <li><a href="recherche.html">Recherche avancée</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="alertes-prix.html">🔔 Alertes Prix</a></li>
+                    <li><a href="vendeur.html">Vendre votre bien</a></li>
+                    <li><a href="service-concierge.html">Concierge Achat</a></li>
+                    <li><a href="guides.html">Guides &amp; Conseils</a></li>
+                    <li><a href="avis-clients.html">Avis clients</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Ressources</h4>
+                <ul>
+                    <li><a href="plan-site.html">Plan du site</a></li>
+                    <li><a href="sitemap.xml" target="_blank">Sitemap XML</a></li>
+                    <li><a href="rss.xml" target="_blank">Flux RSS 📡</a></li>
+                    <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; {{currentYear}}  Nes Thai Business Co., Ltd. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="js/main.js"></script>
+<script src="js/alertes-bouton.js"></script>
+{{#if extraScripts}}
+{{#each extraScripts}}
+<script src="js/{{this}}"></script>
+{{/each}}
+{{/if}}
+
+<!-- Mise à jour automatique de l'année -->
+<script>
+(function() {
+    var el = document.getElementById('current-year');
+    if (el) el.textContent = new Date().getFullYear();
+})();
+</script>

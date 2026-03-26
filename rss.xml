@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+    xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+    xmlns:media="http://search.yahoo.com/mrss/">
+
+<channel>
+    <title>Nes Thai Business - Nouveautés Immobilières</title>
+    <atom:link href="https://www.nesthai.com/rss.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.nesthai.com/</link>
+    <description>Découvrez les dernières annonces immobilières à Pattaya : condos, villas, terrains et projets neufs. Mise à jour quotidienne par Nes Thai Business.</description>
+    <lastBuildDate>Sun, 09 Feb 2025 12:00:00 +0700</lastBuildDate>
+    <language>fr</language>
+    <sy:updatePeriod>daily</sy:updatePeriod>
+    <sy:updateFrequency>1</sy:updateFrequency>
+    
+    <image>
+        <url>https://www.nesthai.com/images/logo-rss.png</url>
+        <title>Nes Thai Business</title>
+        <link>https://www.nesthai.com/</link>
+        <width>144</width>
+        <height>144</height>
+    </image>
+
+    <!-- DERNIERES ANNONCES - CONDOS -->
+    <item>
+        <title>🆕 The Panora Estuaria - Condo front de mer à Baan Amphur</title>
+        <link>https://www.nesthai.com/condo-panora-estuaria.html</link>
+        <pubDate>Sun, 09 Feb 2025 10:00:00 +0700</pubDate>
+        <dc:creator>Nes Thai Business</dc:creator>
+        <category>Condos</category>
+        <category>À Vendre</category>
+        <category>Baan Amphur</category>
+        <guid isPermaLink="true">https://www.nesthai.com/condo-panora-estuaria.html</guid>
+        <description><![CDATA[
+            <p><strong>4,500,000 THB</strong> - Condo d'exception en front de mer à Baan Amphur. 1 chambre, 45 m², vue mer imprenable, piscine rooftop, onsen privé. À 90 min de Bangkok.</p>
+        ]]></description>
+        <content:encoded><![CDATA[
+            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800" alt="The Panora Estuaria" />
+            <h2>The Panora Estuaria - Condo Front de Mer</h2>
+            <p><strong>Prix :</strong> 4,500,000 THB</p>
+            <p><strong>Localisation :</strong> Baan Amphur, Pattaya</p>
+            <p><strong>Surface :</strong> 45 m² | 1 chambre | 1 salle de bain</p>
+            <p>Là où l'océan chuchote et le luxe vous enlace. Condo d'exception avec vue mer imprenable depuis votre balcon privé, piscine à débordement sur le toit, onsen privé et accès direct plage.</p>
+            <p><a href="https://www.nesthai.com/condo-panora-estuaria.html">Voir l'annonce complète →</a></p>
+        ]]></content:encoded>
+        <media:content url="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800" type="image/jpeg" medium="image" />
+    </item>
+
+    <item>
+        <title>🏢 Copacabana Beach Jomtien - Condo moderne près de la plage</title>
+        <link>https://www.nesthai.com/condo-copacabana.html</link>
+        <pubDate>Sun, 09 Feb 2025 09:30:00 +0700</pubDate>
+        <dc:creator>Nes Thai Business</dc:creator>
+        <category>Condos</category>
+        <category>À Vendre</category>
+        <category>Jomtien</category>
+        <guid isPermaLink="true">https://www.nesthai.com/condo-copacabana.html</guid>
+        <description><![CDATA[
+            <p><strong>3,200,000 THB</strong> - Condo moderne à 200m de Jomtien Beach. 1 chambre, 38 m², design contemporain, piscine panoramique. Excellent investissement locatif.</p>
+        ]]></description>
+        <media:content url="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800" type="image/jpeg" medium="image" />
+    </item>
+
+    <item>
+        <title>🔑 Centric Sea Pattaya - 2 chambres en location centre-ville</title>
+        <link>https://www.nesthai.com/condo-centric-sea.html</link>
+        <pubDate>Sun, 09 Feb 2025 09:00:00 +0700</pubDate>
+        <dc:creator>Nes Thai Business</dc:creator>
+        <category>Condos</category>
+        <category>À Louer</category>
+        <category>Centre Pattaya</category>
+        <guid isPermaLink="true">https://www.nesthai.com/condo-centric-sea.html</guid>
+        <description><![CDATA[
+            <p><strong>25,000 THB/mois</strong> - Spacieux condo de 2 chambres en plein centre de Pattaya. 62 m², piscine rooftop panoramique, fitness, sauna & spa. Proche Central Festival.</p>
+        ]]></description>
+        <media:content url="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800" type="image/jpeg" medium="image" />
+    </item>
+
+    <!-- VILLAS -->
+    <item>
+        <title>🏡 Villa Royale Jomtien - Vue mer avec accès plage privé</title>
+        <link>https://www.nesthai.com/maison-royale-jomtien.html</link>
+        <pubDate>Sat, 08 Feb 2025 14:00:00 +0700</pubDate>
+        <dc:creator>Nes Thai Business</dc:creator>
+        <category>Maisons</category>
+        <category>Villas</category>
+        <category>À Vendre</category>
+        <category>Jomtien</category>
+        <guid isPermaLink="true">https://www.nesthai.com/maison-royale-jomtien.html</guid>
+        <description><![CDATA[
+            <p><strong>22,000,000 THB</strong> - Villa d'architecte contemporaine de 450 m². 4 suites, piscine à débordement vue mer, accès plage privé. Design luxueux et finitions haut de gamme.</p>
+        ]]></description>
+        <media:content url="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800" type="image/jpeg" medium="image" />
+    </item>
+
+    <item>
+        <title>🏠 Résidence Chaknok Villa - 3 chambres avec piscine privée</title>
+        <link>https://www.nesthai.com/maison-chaknok-villa.html</link>
+        <pubDate>Sat, 08 Feb 2025 12:00:00 +0700</pubDate>
+        <dc:creator>Nes Thai Business</dc:creator>
+        <category>Maisons</category>
+        <category>Villas</category>
+        <category>À Vendre</category>
+        <category>Chak Nok</category>
+        <guid isPermaLink="true">https://www.nesthai.com/maison-chaknok-villa.html</guid>
+        <description><![CDATA[
+            <p><strong>15,000,000 THB</strong> - Villa luxueuse de 280 m² sur terrain de 400 m². 3 chambres, piscine privée 8x4m, jardin tropical, garage double. À 300m du lac Chaknok.</p>
+        ]]></description>
+        <media:content url="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800" type="image/jpeg" medium="image" />
+    </item>
+
+    <!-- TERRAINS -->
+    <item>
+        <title>🌳 Terrain Chaknok Lake - 204 sq.wah viabilisé, vue lac</title>
+        <link>https://www.nesthai.com/terrain-chaknok.html</link>
+        <pubDate>Fri, 07 Feb 2025 16:00:00 +0700</pubDate>
+        <dc:creator>Nes Thai Business</dc:creator>
+        <category>Terrains</category>
+        <category>À Vendre</category>
+        <category>Chak Nok</category>
+        <guid isPermaLink="true">https://www.nesthai.com/terrain-chaknok.html</guid>
+        <description><![CDATA[
+            <p><strong>8,000,000 THB</strong> - Terrain viabilisé de 204 sq.wah (816 m²) à 300m du lac Chaknok. Vue lac, accès route goudronnée, électricité et eau sur place. Idéal pour villa familiale.</p>
+        ]]></description>
+        <media:content url="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800" type="image/jpeg" medium="image" />
+    </item>
+
+    <!-- PROJETS NEUFS -->
+    <item>
+        <title>🏗️ [PRÉ-LANCEMENT] Ocean Horizon - Tour résidentielle vue mer 360°</title>
+        <link>https://www.nesthai.com/projet-ocean-horizon.html</link>
+        <pubDate>Thu, 06 Feb 2025 10:00:00 +0700</pubDate>
+        <dc:creator>Nes Thai Business</dc:creator>
+        <category>Projets Neufs</category>
+        <category>Pré-lancement</category>
+        <category>Centre Pattaya</category>
+        <guid isPermaLink="true">https://www.nesthai.com/projet-ocean-horizon.html</guid>
+        <description><![CDATA[
+            <p><strong>À partir de 3,800,000 THB</strong> - Tour résidentielle de 32 étages avec vue mer 360°. Studios à penthouses, sky facilities, restaurant rooftop. Livraison 2026. Profitez de 10% de réduction en pré-lancement !</p>
+        ]]></description>
+        <media:content url="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800" type="image/jpeg" medium="image" />
+    </item>
+
+    <item>
+        <title>🆕 [NOUVEAU] The Panora Estuaria - Condo front de mer, livraison 2025</title>
+        <link>https://www.nesthai.com/projet-panora-estuaria.html</link>
+        <pubDate>Wed, 05 Feb 2025 09:00:00 +0700</pubDate>
+        <dc:creator>Nes Thai Business</dc:creator>
+        <category>Projets Neufs</category>
+        <category>Nouveau</category>
+        <category>Baan Amphur</category>
+        <guid isPermaLink="true">https://www.nesthai.com/projet-panora-estuaria.html</guid>
+        <description><![CDATA[
+            <p><strong>À partir de 4,500,000 THB</strong> - Condo neuf front de mer avec accès direct plage. 320 unités, infinity pool, onsen, fitness vue mer. Construction 85% complétée, livraison Q1 2025. Pack mobilier offert !</p>
+        ]]></description>
+        <media:content url="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800" type="image/jpeg" medium="image" />
+    </item>
+
+    <item>
+        <title>🏘️ [CONSTRUCTION] Résidence Chaknok - 8 villas d'exception</title>
+        <link>https://www.nesthai.com/projet-residence-chaknok.html</link>
+        <pubDate>Tue, 04 Feb 2025 11:00:00 +0700</pubDate>
+        <dc:creator>Nes Thai Business</dc:creator>
+        <category>Projets Neufs</category>
+        <category>En Construction</category>
+        <category>Chak Nok</category>
+        <guid isPermaLink="true">https://www.nesthai.com/projet-residence-chaknok.html</guid>
+        <description><![CDATA[
+            <p><strong>À partir de 15,000,000 THB</strong> - Développement exclusif de 8 villas contemporaines. 3 à 4 chambres, piscine privée, jardin tropical, sécurité 24/7. Livraison Q4 2027. 35% de l'avancement réalisé.</p>
+        ]]></description>
+        <media:content url="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800" type="image/jpeg" medium="image" />
+    </item>
+
+</channel>
+</rss>

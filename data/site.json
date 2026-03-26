@@ -1,0 +1,41 @@
+{
+  "name": "Nes Thai Business",
+  "legalName": "Nes Thai Business Co., Ltd.",
+  "url": "https://www.nesthai.com",
+  "phone": "+66-92-449-9960",
+  "phoneDisplay": "+66 92 449 9960",
+  "whatsapp": "66924499960",
+  "email": "contact@nesthai.com",
+  "address": {
+    "street": "123 Pattaya Sai 3",
+    "city": "Pattaya City",
+    "region": "Chon Buri",
+    "postalCode": "20150",
+    "country": "TH",
+    "countryName": "Thaïlande"
+  },
+  "social": {
+    "facebook": "https://facebook.com/nesthaibusiness",
+    "instagram": "https://instagram.com/nesthai_business",
+    "youtube": "https://youtube.com/@nesthaibusiness",
+    "tiktok": "https://tiktok.com/@nesthai_business"
+  },
+  "branding": {
+    "logoText": "N|B",
+    "logoSubtitle": "NES THAI",
+    "logoTagline": "IMMOBILIER PREMIUM",
+    "goldColor": "#C9A962",
+    "primaryColor": "#1a1a1a"
+  },
+  "seo": {
+    "defaultOgImage": "https://www.nesthai.com/images/og-image.jpg",
+    "twitterSite": "@NesThaiB"
+  },
+  "listingTypes": {
+    "condo": { "label": "Condos", "slug": "condos", "icon": "🏢" },
+    "maison": { "label": "Maisons & Villas", "slug": "maisons", "icon": "🏠" },
+    "villa": { "label": "Maisons & Villas", "slug": "maisons", "icon": "🏡" },
+    "terrain": { "label": "Terrains", "slug": "terrains", "icon": "🌿" },
+    "projet": { "label": "Projets Neufs", "slug": "projets", "icon": "🏗️" }
+  }
+}

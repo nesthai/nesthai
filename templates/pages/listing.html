@@ -1,0 +1,91 @@
+{{!-- Template: Page de listing (condos, maisons, terrains, projets) --}}
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+    <div class="container">
+        <div class="hero-badge">
+            <span class="hero-badge-icon">🇫🇷</span>
+            <div class="hero-badge-text">
+                <div class="hero-badge-title">Francophone Certifié</div>
+                <div class="hero-badge-subtitle">
+                    <span class="highlight-year">6 ans</span> d'expertise
+                </div>
+            </div>
+        </div>
+        <h1>{{listingTitle}}</h1>
+        <p class="results-count">{{properties.length}} propriété{{#if (gt properties.length 1)}}s{{/if}} trouvée{{#if (gt properties.length 1)}}s{{/if}}</p>
+    </div>
+</section>
+
+<!-- FILTRES -->
+<section class="filters-bar">
+    <div class="container">
+        <div class="filters-wrapper">
+            <div class="filter-group">
+                <label>Emplacement</label>
+                <select id="filter-location" onchange="applyFilters()">
+                    <option value="all">Tous</option>
+                    {{#each locations}}
+                    <option value="{{this}}">{{this}}</option>
+                    {{/each}}
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Prix max</label>
+                <select id="filter-price" onchange="applyFilters()">
+                    <option value="all">Tous budgets</option>
+                    <option value="3000000">≤ 3M THB</option>
+                    <option value="5000000">≤ 5M THB</option>
+                    <option value="10000000">≤ 10M THB</option>
+                    <option value="20000000">≤ 20M THB</option>
+                    <option value="50000000">≤ 50M THB</option>
+                </select>
+            </div>
+            <button class="btn btn-outline" onclick="resetFilters()">Réinitialiser</button>
+        </div>
+    </div>
+</section>
+
+<!-- GRILLE PROPRIÉTÉS -->
+<section class="properties-grid-section">
+    <div class="container">
+        <div class="properties-grid" id="properties-grid">
+            {{#each properties}}
+            {{> property-card this}}
+            {{/each}}
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Vous ne trouvez pas votre bonheur ?</h2>
+        <p>Notre équipe vous aide à trouver le bien idéal selon vos critères</p>
+        <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+            <a href="contact.html" class="btn btn-primary">Nous contacter</a>
+            <a href="alertes-prix.html" class="btn btn-outline">🔔 Créer une alerte</a>
+        </div>
+    </div>
+</section>
+
+<script>
+function applyFilters() {
+    const location = document.getElementById('filter-location').value;
+    const priceMax = document.getElementById('filter-price').value;
+    const cards = document.querySelectorAll('.property-card');
+    let visible = 0;
+    cards.forEach(card => {
+        let show = true;
+        if (location !== 'all' && card.dataset.location !== location) show = false;
+        if (priceMax !== 'all' && parseInt(card.dataset.price) > parseInt(priceMax)) show = false;
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
+    });
+}
+function resetFilters() {
+    document.getElementById('filter-location').value = 'all';
+    document.getElementById('filter-price').value = 'all';
+    document.querySelectorAll('.property-card').forEach(c => c.style.display = '');
+}
+</script>

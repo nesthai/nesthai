@@ -1,0 +1,106 @@
+{{!-- Template: Page d'article actualité --}}
+
+<!-- BREADCRUMB -->
+<nav class="breadcrumb-nav" aria-label="Fil d'Ariane">
+    <div class="container">
+        <ol class="breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="./index.html" itemprop="item"><span itemprop="name">Accueil</span></a>
+                <meta itemprop="position" content="1">
+            </li>
+            <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="./actualites.html" itemprop="item"><span itemprop="name">Actualités</span></a>
+                <meta itemprop="position" content="2">
+            </li>
+            <li class="breadcrumb-item active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" aria-current="page">
+                <span itemprop="name">{{breadcrumbTitle}}</span>
+                <meta itemprop="position" content="3">
+            </li>
+        </ol>
+    </div>
+</nav>
+
+<!-- ARTICLE HEADER -->
+<header class="article-header">
+    <div class="container">
+        <div class="article-header-content">
+            <span class="article-category-badge {{categoryClass}}">{{categoryIcon}} {{category}}</span>
+            <h1 class="article-main-title">{{headline}}</h1>
+            <p class="article-lead">{{lead}}</p>
+            
+            <div class="article-meta-bar">
+                <div class="article-author">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop" alt="Expert immobilier" class="author-avatar">
+                    <div class="author-info">
+                        <span class="author-name">{{site.name}}</span>
+                        <span class="author-title">Expert immobilier francophone</span>
+                    </div>
+                </div>
+                <div class="article-meta-details">
+                    <time datetime="{{date}}" class="article-date">{{dateFormatted}}</time>
+                    <span class="article-reading-time">⏱️ {{readingTime}}</span>
+                </div>
+            </div>
+            
+            <div class="article-share">
+                <span>Partager :</span>
+                <button onclick="shareArticle('facebook', window.location.href, document.title)" aria-label="Partager sur Facebook">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </button>
+                <button onclick="shareArticle('twitter', window.location.href, document.title)" aria-label="Partager sur Twitter">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                </button>
+                <button onclick="shareArticle('email', window.location.href, document.title)" aria-label="Partager par email">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </button>
+            </div>
+        </div>
+        
+        {{#if heroImage}}
+        <div class="article-hero-image">
+            <img src="{{heroImage}}" alt="{{heroAlt}}" loading="eager">
+        </div>
+        {{/if}}
+    </div>
+</header>
+
+<!-- ARTICLE CONTENT -->
+<div class="article-main">
+    <div class="container">
+        <div class="article-layout">
+            <article class="article-content" itemscope itemtype="https://schema.org/Article">
+                {{{articleBody}}}
+            </article>
+
+            <!-- SIDEBAR -->
+            <aside class="article-sidebar" role="complementary">
+                <div class="sidebar-widget widget-newsletter">
+                    <h3>🔔 Alertes articles</h3>
+                    <p>Recevez les nouveaux articles sur l'immobilier thaïlandais.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Votre email" required>
+                        <button type="submit" class="btn btn-primary btn-full">S'inscrire</button>
+                    </form>
+                </div>
+
+                <div class="sidebar-widget widget-cta">
+                    <h3>📋 Articles récents</h3>
+                    <ul class="download-list">
+                        {{#each recentArticles}}
+                        <li><a href="{{this.slug}}.html">→ {{this.headline}}</a></li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+</div>
+
+<!-- CTA SECTION -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Vous ne trouvez pas votre bonheur ?</h2>
+        <p>Contactez-nous pour une recherche personnalisée</p>
+        <a href="./contact.html" class="btn btn-primary">Nous Contacter</a>
+    </div>
+</section>

@@ -1,0 +1,336 @@
+<!-- HERO SECTION -->
+    <section class="alerts-hero">
+        <div class="alerts-hero-content">
+            <h1 class="alerts-hero-title">
+                <span class="bell-icon">🔔</span>
+                <span>Alertes Prix Immobilier</span>
+            </h1>
+            <p class="alerts-hero-subtitle">
+                Soyez le premier informé des nouvelles opportunités à Pattaya. Créez votre alerte personnalisée et recevez une notification dès qu'un bien correspondant à vos critères est disponible.
+            </p>
+        </div>
+    </section>
+
+    <!-- FORMULAIRE -->
+    <section class="alerts-form-section">
+        <div class="alerts-form-container">
+            <div class="alerts-form-header">
+                <h2>Créer votre alerte personnalisée</h2>
+                <p class="subtitle">Remplissez le formulaire ci-dessous. Vous serez notifié par email dès qu'un bien correspondant est disponible.</p>
+            </div>
+            
+            <form id="alerts-form" class="alerts-form" action="#" method="POST">
+                
+                <!-- Prénom -->
+                <div class="form-group">
+                    <label for="firstName">Prénom <span class="required">*</span></label>
+                    <input type="text" id="firstName" name="firstName" required placeholder="Votre prénom">
+                </div>
+                
+                <!-- Nom -->
+                <div class="form-group">
+                    <label for="lastName">Nom <span class="required">*</span></label>
+                    <input type="text" id="lastName" name="lastName" required placeholder="Votre nom">
+                </div>
+                
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                </div>
+                
+                <!-- Téléphone -->
+                <div class="form-group">
+                    <label for="phone">Téléphone (WhatsApp)</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+33 6 12 34 56 78">
+                </div>
+                
+                <!-- Type de bien -->
+                <div class="form-group full-width">
+                    <label>Type de bien recherché <span class="required">*</span></label>
+                    <div class="type-checkboxes">
+                        <label class="checkbox-item selected">
+                            <input type="checkbox" name="propertyType" value="condo" checked>
+                            <span>🏢 Condo / Appartement</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="propertyType" value="house">
+                            <span>🏠 Maison / Villa</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="propertyType" value="land">
+                            <span>🌿 Terrain</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Budget -->
+                <div class="form-group full-width">
+                    <label>Budget (THB)</label>
+                    <div class="price-range">
+                        <select name="minPrice" id="minPrice">
+                            <option value="0">Prix min</option>
+                            <option value="1000000">1M THB</option>
+                            <option value="2000000">2M THB</option>
+                            <option value="3000000">3M THB</option>
+                            <option value="5000000">5M THB</option>
+                            <option value="10000000">10M THB</option>
+                        </select>
+                        <span>à</span>
+                        <select name="maxPrice" id="maxPrice">
+                            <option value="999999999">Prix max</option>
+                            <option value="3000000" selected>3M THB</option>
+                            <option value="4000000">4M THB</option>
+                            <option value="5000000">5M THB</option>
+                            <option value="7000000">7M THB</option>
+                            <option value="10000000">10M THB</option>
+                            <option value="15000000">15M THB</option>
+                            <option value="20000000">20M+ THB</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Localisation -->
+                <div class="form-group full-width">
+                    <label>Zone souhaitée <span class="required">*</span> (plusieurs choix possibles)</label>
+                    <div class="location-checkboxes">
+                        <label class="location-item selected">
+                            <input type="checkbox" name="location" value="central-pattaya" checked>
+                            <span>Central Pattaya</span>
+                        </label>
+                        <label class="location-item selected">
+                            <input type="checkbox" name="location" value="jomtien" checked>
+                            <span>Jomtien</span>
+                        </label>
+                        <label class="location-item">
+                            <input type="checkbox" name="location" value="wongamat">
+                            <span>Wongamat</span>
+                        </label>
+                        <label class="location-item">
+                            <input type="checkbox" name="location" value="pratumnak">
+                            <span>Pratumnak</span>
+                        </label>
+                        <label class="location-item">
+                            <input type="checkbox" name="location" value="naklua">
+                            <span>Naklua</span>
+                        </label>
+                        <label class="location-item">
+                            <input type="checkbox" name="location" value="east-pattaya">
+                            <span>East Pattaya</span>
+                        </label>
+                        <label class="location-item">
+                            <input type="checkbox" name="location" value="bang-saray">
+                            <span>Bang Saray</span>
+                        </label>
+                        <label class="location-item">
+                            <input type="checkbox" name="location" value="all">
+                            <span>Toutes zones</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Chambres -->
+                <div class="form-group">
+                    <label for="bedrooms">Nombre de chambres minimum</label>
+                    <select name="bedrooms" id="bedrooms">
+                        <option value="0">Studio</option>
+                        <option value="1" selected>1 chambre</option>
+                        <option value="2">2 chambres</option>
+                        <option value="3">3 chambres</option>
+                        <option value="4">4+ chambres</option>
+                    </select>
+                </div>
+                
+                <!-- Critères optionnels -->
+                <div class="form-group full-width">
+                    <label>Critères additionnels</label>
+                    <div class="features-grid">
+                        <label class="feature-item">
+                            <input type="checkbox" name="features" value="seaview">
+                            <span>Vue mer</span>
+                        </label>
+                        <label class="feature-item">
+                            <input type="checkbox" name="features" value="pool">
+                            <span>Piscine</span>
+                        </label>
+                        <label class="feature-item">
+                            <input type="checkbox" name="features" value="gym">
+                            <span>Salle de sport</span>
+                        </label>
+                        <label class="feature-item">
+                            <input type="checkbox" name="features" value="furnished">
+                            <span>Meublé</span>
+                        </label>
+                        <label class="feature-item">
+                            <input type="checkbox" name="features" value="foreign-quota">
+                            <span>Quota étranger</span>
+                        </label>
+                        <label class="feature-item">
+                            <input type="checkbox" name="features" value="new">
+                            <span>Neuf / Projet</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Commentaires -->
+                <div class="form-group full-width">
+                    <label for="comments">Commentaires additionnels</label>
+                    <input type="text" id="comments" name="comments" placeholder="Ex: Recherche un investissement locatif, pied-à-terre pour la retraite...">
+                </div>
+                
+                <!-- Consentement -->
+                <div class="form-group full-width">
+                    <div class="consent-box">
+                        <label>
+                            <input type="checkbox" name="consent" required>
+                            <span class="consent-text">
+                                J'accepte de recevoir des alertes email concernant les biens immobiliers correspondant à mes critères. 
+                                Je peux me désinscrire à tout moment. Mes données sont traitées conformément à la 
+                                <a href="politique-confidentialite.html" target="_blank">politique de confidentialité</a>.
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Bouton submit -->
+                <div class="btn-submit-container">
+                    <button type="submit" class="btn-submit">🚀 Créer mon alerte gratuite</button>
+                </div>
+                
+            </form>
+        </div>
+    </section>
+
+    <!-- CONTENU ADDITIONNEL -->
+    <div class="alerts-content">
+        <div class="alerts-content-inner">
+            
+            <!-- Comment ça marche -->
+            <div class="how-it-works">
+                <h3>Comment fonctionnent les alertes ?</h3>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h4>Définissez vos critères</h4>
+                        <p>Budget, zone, type de bien, nombre de chambres...</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h4>Nous surveillons le marché</h4>
+                        <p>Notre équipe analyse les nouvelles annonces quotidiennement</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h4>Recevez l'alerte</h4>
+                        <p>Email dès qu'un bien correspondant est disponible</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <h4>Visitez en priorité</h4>
+                        <p>Soyez le premier à visiter et négocier</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bénéfices -->
+            <div class="benefits">
+                <h3>Pourquoi créer une alerte ?</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">⚡</div>
+                        <div class="benefit-text">
+                            <h4>Soyez le premier</h4>
+                            <p>Les meilleures opportunités partent en 24-48h. Les alertes vous donnent une longueur d'avance.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🎯</div>
+                        <div class="benefit-text">
+                            <h4>Personnalisé</h4>
+                            <p>Ne recevez que les biens correspondant EXACTEMENT à vos critères. Fini le spam.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">💰</div>
+                        <div class="benefit-text">
+                            <h4>100% Gratuit</h4>
+                            <p>Service sans engagement. Vous ne payez que si vous achetez via notre agence.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Témoignages -->
+            <div class="testimonials-alerts">
+                <h3>Ils ont trouvé grâce aux alertes</h3>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"J'avais créé une alerte pour un condo < 4M THB à Jomtien. 3 semaines plus tard, j'ai reçu une notification pour un studio à 3.8M avec vue mer. J'ai visité le jour même et signé dans la semaine !"</p>
+                    <p class="testimonial-author">Marc D., Lyon</p>
+                    <p class="testimonial-result">✓ Condo acheté à Jomtien en mars 2024</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Alerte configurée pour une maison 3 chambres à Pratumnak. J'ai été alerté d'une baisse de prix sur une villa qui correspondait parfaitement. J'ai économisé 800K THB grâce à la rapidité."</p>
+                    <p class="testimonial-author">Sophie et Pierre L., Bordeaux</p>
+                    <p class="testimonial-result">✓ Villa achetée à Pratumnak Hill en novembre 2023</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- MODAL DE CONFIRMATION -->
+    <div class="modal-overlay" id="confirmationModal">
+        <div class="modal-content">
+            <div class="icon">✅</div>
+            <h3>Alerte créée avec succès !</h3>
+            <p>Vous recevrez un email de confirmation dans quelques minutes. Dès qu'un bien correspondant à vos critères sera disponible, vous serez immédiatement notifié.</p>
+            <button class="btn-close" onclick="closeModal()">Parfait, merci !</button>
+        </div>
+    </div>
+
+        <!-- DISCLAIMER JURIDIQUE -->
+    <section class="legal-disclaimer" style="background: #1a1a1a; border-top: 3px solid #C9A962; padding: 25px 0;">
+        <div class="container">
+            <div style="display: flex; align-items: flex-start; gap: 15px; max-width: 900px; margin: 0 auto;">
+                <span style="font-size: 24px; flex-shrink: 0;">⚖️</span>
+                <div>
+                    <h4 style="color: #C9A962; margin: 0 0 8px 0; font-size: 1rem;">Information légale</h4>
+                    <p style="color: rgba(255,255,255,0.85); margin: 0; font-size: 0.9rem; line-height: 1.6;">
+                        Les étrangers peuvent acquérir des condos en freehold dans la limite de 49% de la superficie totale du bâtiment. 
+                        Pour les maisons et terrains, des structures juridiques alternatives existent (leasehold 30+30+30 ans, usufruit, 
+                        ou détention via société). Nos conseillers vous accompagnent dans le choix de la structure adaptée à votre projet.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUIVEZ-NOUS + ICÔNES SOCIALES -->
+    <section style="background: #111; padding: 30px 0;">
+        <div class="container">
+            <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 25px;">
+                <div style="text-align: center;">
+                    <h4 style="color: #C9A962; margin: 0 0 8px 0; font-size: 1.1rem; font-family: var(--font-serif);">Suivez-nous</h4>
+                    <a href="suivez-nous.html" style="color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9rem;">📱 Tous nos réseaux</a>
+                </div>
+                <div style="display: flex; align-items: center; gap: 16px;">
+                    <a href="https://tiktok.com/@nesthai_business" target="_blank" rel="noopener" aria-label="TikTok" onclick="trackSocialClick('tiktok_footer')" class="social-icon-btn">
+                        <svg viewBox="0 0 24 24" width="30" height="30" fill="#C9A962"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                    </a>
+                    <a href="https://instagram.com/nesthai_business" target="_blank" rel="noopener" aria-label="Instagram" onclick="trackSocialClick('instagram_footer')" class="social-icon-btn">
+                        <svg viewBox="0 0 24 24" width="30" height="30" fill="#C9A962"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                    </a>
+                    <a href="https://youtube.com/@nesthaibusiness" target="_blank" rel="noopener" aria-label="YouTube" onclick="trackSocialClick('youtube_footer')" class="social-icon-btn">
+                        <svg viewBox="0 0 24 24" width="30" height="30" fill="#C9A962"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                    <a href="https://facebook.com/nesthaibusiness" target="_blank" rel="noopener" aria-label="Facebook" onclick="trackSocialClick('facebook_footer')" class="social-icon-btn">
+                        <svg viewBox="0 0 24 24" width="30" height="30" fill="#C9A962"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>

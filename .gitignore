@@ -1,0 +1,12 @@
+# Environnement local
+.env
+
+# Node
+node_modules/
+
+# Build output
+# dist/ est versionné pour GitHub Pages
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,58 @@
+﻿<!-- Skip Link Accessibility -->
+<a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+<!-- Header -->
+<header class="header" role="banner">
+    <div class="container">
+        <div class="logo" itemscope itemtype="https://schema.org/Organization">
+            <a href="index.html" itemprop="url" aria-label="Nes Thai Business - Accueil" title="Nes Thai Business - Immobilier Premium Pattaya">
+                <svg class="logo-svg" viewBox="0 0 520 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nes Thai Business" width="400" height="200"><text x="175" y="160" font-size="140" text-anchor="middle" fill="#C9A962" font-family="'Playfair Display',serif" font-weight="600">N</text><text x="345" y="160" font-size="140" text-anchor="middle" fill="#C9A962" font-family="'Playfair Display',serif" font-weight="600">B</text><line x1="175" y1="52" x2="345" y2="52" stroke="#C9A962" stroke-width="8" stroke-linecap="square"/><line x1="260" y1="52" x2="260" y2="185" stroke="#C9A962" stroke-width="8" stroke-linecap="square"/><text x="260" y="235" text-anchor="middle" font-size="26" letter-spacing="3" fill="#C9A962" font-family="'Playfair Display',serif" font-weight="600">NES THAI BUSINESS</text></svg>
+                <meta itemprop="name" content="Nes Thai Business">
+            </a>
+        </div>
+        
+        <nav class="nav-desktop" role="navigation" aria-label="Navigation principale">
+            <ul>
+                <li><a href="index.html" {{#if activeAccueil}}class="active" aria-current="page"{{/if}}>ACCUEIL</a></li>
+                <li><a href="acheteur.html">ACHETEUR</a></li>
+                <li><a href="condos.html" {{#if activeCondos}}class="active" aria-current="page"{{/if}}>CONDOS</a></li>
+                <li><a href="maisons.html" {{#if activeMaisons}}class="active" aria-current="page"{{/if}}>MAISONS</a></li>
+                <li><a href="terrains.html" {{#if activeTerrains}}class="active" aria-current="page"{{/if}}>TERRAINS</a></li>
+                <li><a href="projets.html" {{#if activeProjets}}class="active" aria-current="page"{{/if}}>PROJETS</a></li>
+                <li><a href="guides.html" {{#if activeGuides}}class="active" aria-current="page"{{/if}}>GUIDES</a></li>
+                <li><a href="alertes-prix.html">🔔 ALERTES</a></li>
+                <li><a href="actualites.html">ACTUALITÉS</a></li>
+                <li><a href="service-concierge.html">CONCIERGE</a></li>
+                <li><a href="contact.html" {{#if activeContact}}class="active" aria-current="page"{{/if}}>CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <a href="recherche.html" class="btn-search" title="Rechercher un bien" aria-label="Rechercher">🔍</a>
+            <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Menu Mobile -->
+<div class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Navigation mobile" hidden>
+    <ul>
+        <li><a href="index.html">ACCUEIL</a></li>
+        <li><a href="acheteur.html">ACHETEUR</a></li>
+        <li><a href="condos.html">CONDOS</a></li>
+        <li><a href="maisons.html">MAISONS</a></li>
+        <li><a href="terrains.html">TERRAINS</a></li>
+        <li><a href="projets.html">PROJETS NEUFS</a></li>
+        <li><a href="guides.html">GUIDES</a></li>
+        <li><a href="actualites.html">ACTUALITÉS</a></li>
+        <li><a href="alertes-prix.html">🔔 ALERTES</a></li>
+        <li><a href="actualites.html">ACTUALITÉS</a></li>
+        <li><a href="service-concierge.html">CONCIERGE</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+<!-- Correction : suppression du div en trop -->
+</div>

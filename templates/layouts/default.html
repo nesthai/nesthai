@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <title>{{title}}</title>
+    <meta name="description" content="{{description}}">
+    {{#if keywords}}<meta name="keywords" content="{{keywords}}">{{/if}}
+    {{> head}}
+    {{#if structuredData}}
+    <script type="application/ld+json">
+    {{{structuredData}}}
+    </script>
+    {{/if}}
+    {{#if extraHead}}
+    {{{extraHead}}}
+    {{/if}}
+</head>
+<body class="{{bodyClass}}">
+    {{> header}}
+    
+    <main id="main-content" role="main">
+        {{{content}}}
+    </main>
+    
+    {{> whatsapp}}
+    {{> footer}}
+</body>
+</html>

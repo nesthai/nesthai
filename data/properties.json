@@ -1,0 +1,2177 @@
+[
+  {
+    "id": "condo-axis",
+    "slug": "condo-axis",
+    "title": "The Panora Estuaria à Condo Front de Mer à Baan Amphur, Pattaya",
+    "type": "condo",
+    "price": 4500000,
+    "currency": "THB",
+    "location": {
+      "city": "Pattaya",
+      "district": "Baan Amphur",
+      "country": "Thaïlande"
+    },
+    "surface": 45,
+    "rooms": 1,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "description": "The Panora Estuaria à Là où l'océan chuchote et le luxe vous enlace. Condo d'exception en front de mer à Baan Amphur, Pattaya. à seulement 90 minutes de Bangkok, ce sanctuaire vous enveloppe de sérénité, de style et de design inspiré. ✓ Vue mer imprenable depuis votre balcon privé ✓ Piscine à débordement sur le toit ✓ Onsen privé pour une relaxation totale ✓ Accès direct plage à quelques pas ✓ Conciergerie 24/7 à votre service",
+    "features": [
+      {
+        "label": "Chambres",
+        "value": "1 chambre"
+      },
+      {
+        "label": "Salles de bain",
+        "value": "1 salle de bain"
+      },
+      {
+        "label": "Surface",
+        "value": "45 m²"
+      },
+      {
+        "label": "Piscine",
+        "value": "Commune + rooftop"
+      },
+      {
+        "label": "Plage",
+        "value": "Accàs direct"
+      },
+      {
+        "label": "Parking",
+        "value": "Inclus"
+      }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=400&h=300&fit=crop"
+    ],
+    "status": "for-sale",
+    "isPublished": true,
+    "ref": "2025020502",
+    "seo": {
+      "title": "The Panora Estuaria - Condo à Vendre | Nes Thai Business",
+      "description": "",
+      "canonicalUrl": "https://www.nesthai.com/condo-axis.html"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "RealEstateListing",
+      "name": "The Panora Estuaria à Condo Front de Mer à Baan Amphur, Pattaya",
+      "description": "Condo d'exception en front de mer à Baan Amphur, Pattaya avec vue mer imprenable, piscine à débordement sur le toit et accès direct plage",
+      "url": "https://www.nesthai.com/condo-axis.html",
+      "datePosted": "2026-02-12",
+      "price": "4500000",
+      "priceCurrency": "THB",
+      "propertyType": "Condo",
+      "numberOfRooms": "1",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": "45",
+        "unitCode": "MTK"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pattaya",
+        "addressRegion": "Chonburi",
+        "addressCountry": "TH"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "4500000",
+        "priceCurrency": "THB",
+        "availability": "https://schema.org/InStock",
+        "businessFunction": "http://purl.org/goodrelations/v1#Sell"
+      },
+      "agent": {
+        "@type": "RealEstateAgent",
+        "name": "Nes Thai Business Co., Ltd.",
+        "telephone": "+66-92-449-9960",
+        "email": "contact@nesthai.com",
+        "url": "https://www.nesthai.com"
+      }
+    }
+  },
+  {
+    "id": "condo-central-2bed",
+    "slug": "condo-central-2bed",
+    "title": "Appartement 2 Chambres Centre-ville",
+    "type": "condo",
+    "price": 4500000,
+    "currency": "THB",
+    "location": {
+      "city": "Pattaya",
+      "district": "Central Pattaya",
+      "country": "Thaïlande"
+    },
+    "surface": 68,
+    "rooms": 2,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "description": "Appartement 2 Chambres Centre-ville — Le confort urbain au cœur de Pattaya. Bel appartement de 68 m² au cœur de Pattaya avec accès salle de sport, piscine et toutes les commodités à proximité. Idéal pour une famille ou un investissement locatif avec un fort potentiel de rendement. ✓ Emplacement central — Au cœur de Central Pattaya ✓ 2 chambres spacieuses — Parfait pour famille ou colocation ✓ 2 salles de bain — Confort et intimité ✓ Piscine commune — Grande piscine avec espace détente ✓ Salle de sport — Fitness entièrement équipé ✓ Proximité commerces — Centres commerciaux, restaurants, transports",
+    "features": [
+      {
+        "label": "Chambres",
+        "value": "2 chambres"
+      },
+      {
+        "label": "Salles de bain",
+        "value": "2 salles de bain"
+      },
+      {
+        "label": "Surface",
+        "value": "68 m²"
+      },
+      {
+        "label": "Piscine",
+        "value": "Piscine commune"
+      },
+      {
+        "label": "Fitness",
+        "value": "Salle de sport équipée"
+      },
+      {
+        "label": "Sécurité",
+        "value": "24h/24 7j/7"
+      }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400&h=300&fit=crop"
+    ],
+    "status": "for-sale",
+    "isPublished": true,
+    "ref": "CONDO-011",
+    "seo": {
+      "title": "Appartement 2 Chambres Centre-ville - Condo à Vendre | Nes Thai Business",
+      "description": "",
+      "canonicalUrl": "https://www.nesthai.com/condo-central-2bed.html"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "RealEstateListing",
+      "name": "Appartement 2 Chambres Centre-ville Pattaya",
+      "description": "Bel appartement de 2 chambres au cœur de Pattaya avec accès salle de sport, piscine et proximité de tous les services.",
+      "url": "https://www.nesthai.com/condo-central-2bed.html",
+      "datePosted": "2026-02-12",
+      "price": "4500000",
+      "priceCurrency": "THB",
+      "propertyType": "Condo",
+      "numberOfRooms": "2",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": "68",
+        "unitCode": "MTK"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pattaya",
+        "addressRegion": "Chonburi",
+        "addressCountry": "TH"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "4500000",
+        "priceCurrency": "THB",
+        "availability": "https://schema.org/InStock",
+        "businessFunction": "http://purl.org/goodrelations/v1#Sell"
+      },
+      "agent": {
+        "@type": "RealEstateAgent",
+        "name": "Nes Thai Business Co., Ltd.",
+        "telephone": "+66-92-449-9960",
+        "email": "contact@nesthai.com",
+        "url": "https://www.nesthai.com"
+      }
+    }
+  },
+  {
+    "id": "condo-centric-sea",
+    "slug": "condo-centric-sea",
+    "title": "Centric Sea Pattaya à 2 Chambres Centre-Ville à Location",
+    "type": "condo",
+    "price": 25000,
+    "currency": "THB",
+    "location": {
+      "city": "Pattaya",
+      "district": "Centre Pattaya",
+      "country": "Thaïlande"
+    },
+    "surface": 62,
+    "rooms": 2,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "description": "Centric Sea Pattaya à L'àlàgance urbaine au càur de la ville. Spacieux condo de 2 chambres situé en plein centre de Pattaya, à proximità imm²diate de Central Festival et de la càlàbre Walking Street. Idéal pour les expatriàs ou les professionnels. ? Emplacement premium à Centre-ville de Pattaya ✓ Piscine sur le toit à Vue panoramique 360à ? 2 chambres spacieuses à Parfait pour colocation ou famille ? Fitness centre à Salle de sport dans l'immeuble ? Sauna & spa à Espace bien-àtre privatif ? Meublà haut de gamme à Design contemporain",
+    "features": [
+      {
+        "label": "Chambres",
+        "value": "2 chambres"
+      },
+      {
+        "label": "Salles de bain",
+        "value": "2 salles de bain"
+      },
+      {
+        "label": "Surface",
+        "value": "62 m²"
+      },
+      {
+        "label": "Piscine",
+        "value": "Rooftop panoramique"
+      },
+      {
+        "label": "Fitness",
+        "value": "Salle de sport"
+      },
+      {
+        "label": "Spa",
+        "value": "Sauna & bien-àtre"
+      }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&h=300&fit=crop"
+    ],
+    "status": "for-sale",
+    "isPublished": true,
+    "ref": "CONDO-003",
+    "seo": {
+      "title": "Centric Sea Pattaya - Condo à Louer | Nes Thai Business",
+      "description": "",
+      "canonicalUrl": "https://www.nesthai.com/condo-centric-sea.html"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "RealEstateListing",
+      "name": "Centric Sea Pattaya à 2 Chambres Centre-Ville à Location",
+      "description": "Spacieux condo de 2 chambres situé en plein centre de Pattaya, à proximità imm²diate de Central Festival et de la càlàbre Walking Street",
+      "url": "https://www.nesthai.com/condo-centric-sea.html",
+      "datePosted": "2026-02-12",
+      "price": "25000",
+      "priceCurrency": "THB",
+      "propertyType": "Condo",
+      "numberOfRooms": "2",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": "62",
+        "unitCode": "MTK"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pattaya",
+        "addressRegion": "Chonburi",
+        "addressCountry": "TH"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "25000",
+        "priceCurrency": "THB",
+        "availability": "https://schema.org/InStock",
+        "businessFunction": "http://purl.org/goodrelations/v1#LeaseOut"
+      },
+      "agent": {
+        "@type": "RealEstateAgent",
+        "name": "Nes Thai Business Co., Ltd.",
+        "telephone": "+66-92-449-9960",
+        "email": "contact@nesthai.com",
+        "url": "https://www.nesthai.com"
+      }
+    }
+  },
+  {
+    "id": "condo-centric",
+    "slug": "condo-centric",
+    "title": "The Panora Estuaria à Condo Front de Mer à Baan Amphur, Pattaya",
+    "type": "condo",
+    "price": 4500000,
+    "currency": "THB",
+    "location": {
+      "city": "Pattaya",
+      "district": "Baan Amphur",
+      "country": "Thaïlande"
+    },
+    "surface": 45,
+    "rooms": 1,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "description": "The Panora Estuaria à Là où l'océan chuchote et le luxe vous enlace. Condo d'exception en front de mer à Baan Amphur, Pattaya. à seulement 90 minutes de Bangkok, ce sanctuaire vous enveloppe de sérénité, de style et de design inspiré. ✓ Vue mer imprenable depuis votre balcon privé ✓ Piscine à débordement sur le toit ✓ Onsen privé pour une relaxation totale ✓ Accès direct plage à quelques pas ✓ Conciergerie 24/7 à votre service",
+    "features": [
+      {
+        "label": "Chambres",
+        "value": "1 chambre"
+      },
+      {
+        "label": "Salles de bain",
+        "value": "1 salle de bain"
+      },
+      {
+        "label": "Surface",
+        "value": "45 m²"
+      },
+      {
+        "label": "Piscine",
+        "value": "Commune + rooftop"
+      },
+      {
+        "label": "Plage",
+        "value": "Accàs direct"
+      },
+      {
+        "label": "Parking",
+        "value": "Inclus"
+      }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=400&h=300&fit=crop"
+    ],
+    "status": "for-sale",
+    "isPublished": true,
+    "ref": "2025020502",
+    "seo": {
+      "title": "The Panora Estuaria - Condo à Vendre | Nes Thai Business",
+      "description": "",
+      "canonicalUrl": "https://www.nesthai.com/condo-centric.html"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "RealEstateListing",
+      "name": "The Panora Estuaria à Condo Front de Mer à Baan Amphur, Pattaya",
+      "description": "Condo d'exception en front de mer à Baan Amphur, Pattaya avec vue mer imprenable, piscine à débordement sur le toit et accès direct plage",
+      "url": "https://www.nesthai.com/condo-centric.html",
+      "datePosted": "2026-02-12",
+      "price": "4500000",
+      "priceCurrency": "THB",
+      "propertyType": "Condo",
+      "numberOfRooms": "1",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": "45",
+        "unitCode": "MTK"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pattaya",
+        "addressRegion": "Chonburi",
+        "addressCountry": "TH"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "4500000",
+        "priceCurrency": "THB",
+        "availability": "https://schema.org/InStock",
+        "businessFunction": "http://purl.org/goodrelations/v1#Sell"
+      },
+      "agent": {
+        "@type": "RealEstateAgent",
+        "name": "Nes Thai Business Co., Ltd.",
+        "telephone": "+66-92-449-9960",
+        "email": "contact@nesthai.com",
+        "url": "https://www.nesthai.com"
+      }
+    }
+  },
+  {
+    "id": "condo-copacabana",
+    "slug": "condo-copacabana",
+    "title": "Copacabana Beach Jomtien à Condo Moderne à Jomtien Beach, Pattaya",
+    "type": "condo",
+    "price": 3200000,
+    "currency": "THB",
+    "location": {
+      "city": "Pattaya",
+      "district": "Jomtien Beach",
+      "country": "Thaïlande"
+    },
+    "surface": 38,
+    "rooms": 1,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "description": "Copacabana Beach Jomtien à Le style de vie balnàaire au meilleur prix. Condo moderne et àlàgant situé à quelques pas de la càlàbre plage de Jomtien. Profitez d'un cadre de vie dynamique avec toutes les commodités à proximità. ? à 200m de la plage à Accàs direct Jomtien Beach ? Design contemporain à Architecture moderne soignàe ✓ Piscine panoramique à Vue sur le golfe de Thaïlande ? Quartier anim² à Restaurants, bars et commerces ? Investissement locatif à Forte demande touristique ? Meublà et équipé à Pràt à emm²nager",
+    "features": [
+      {
+        "label": "Chambres",
+        "value": "1 chambre"
+      },
+      {
+        "label": "Salles de bain",
+        "value": "1 salle de bain"
+      },
+      {
+        "label": "Surface",
+        "value": "38 m²"
+      },
+      {
+        "label": "Piscine",
+        "value": "Panoramique rooftop"
+      },
+      {
+        "label": "Plage",
+        "value": "200m à pied"
+      },
+      {
+        "label": "Meublà",
+        "value": "Entiàrement équipé"
+      }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=400&h=300&fit=crop"
+    ],
+    "status": "for-sale",
+    "isPublished": true,
+    "ref": "CONDO-002",
+    "seo": {
+      "title": "Copacabana Beach Jomtien - Condo à Vendre | Nes Thai Business",
+      "description": "",
+      "canonicalUrl": "https://www.nesthai.com/condo-copacabana.html"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "RealEstateListing",
+      "name": "Copacabana Beach Jomtien à Condo Moderne à Jomtien Beach, Pattaya",
+      "description": "Condo moderne et àlàgant situé à quelques pas de la càlàbre plage de Jomtien avec piscine panoramique et design contemporain",
+      "url": "https://www.nesthai.com/condo-copacabana.html",
+      "datePosted": "2026-02-12",
+      "price": "3200000",
+      "priceCurrency": "THB",
+      "propertyType": "Condo",
+      "numberOfRooms": "1",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": "38",
+        "unitCode": "MTK"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pattaya",
+        "addressRegion": "Chonburi",
+        "addressCountry": "TH"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "3200000",
+        "priceCurrency": "THB",
+        "availability": "https://schema.org/InStock",
+        "businessFunction": "http://purl.org/goodrelations/v1#Sell"
+      },
+      "agent": {
+        "@type": "RealEstateAgent",
+        "name": "Nes Thai Business Co., Ltd.",
+        "telephone": "+66-92-449-9960",
+        "email": "contact@nesthai.com",
+        "url": "https://www.nesthai.com"
+      }
+    }
+  },
+  {
+    "id": "condo-jomtien-studio",
+    "slug": "condo-jomtien-studio",
+    "title": "Studio Moderne Jomtien",
+    "type": "condo",
+    "price": 2890000,
+    "currency": "THB",
+    "location": {
+      "city": "Pattaya",
+      "district": "Jomtien, 100m plage",
+      "country": "Thaïlande"
+    },
+    "surface": 35,
+    "rooms": 1,
+    "bedrooms": 0,
+    "bathrooms": 1,
+    "description": "Studio Moderne Jomtien — Un pied-à-terre idéal à deux pas de la plage. Studio moderne et lumineux à seulement 100m de la plage de Jomtien. Parfait pour un investissement locatif ou comme résidence secondaire en Thaïlande. Finitions soignées, mobilier contemporain et vue dégagée. ✓ Emplacement premium — À 100m de la plage de Jomtien ✓ Entièrement meublé — Prêt à vivre ou à louer ✓ Piscine commune — Grande piscine avec espace détente ✓ Sécurité 24/7 — Gardiennage et vidéosurveillance ✓ Parking — Place de parking incluse ✓ Rendement locatif — Fort potentiel de location saisonnière",
+    "features": [
+      {
+        "label": "Type",
+        "value": "Studio"
+      },
+      {
+        "label": "Salle de bain",
+        "value": "1 salle de bain"
+      },
+      {
+        "label": "Surface",
+        "value": "35 m²"
+      },
+      {
+        "label": "Piscine",
+        "value": "Piscine commune"
+      },
+      {
+        "label": "Fitness",
+        "value": "Salle de sport"
+      },
+      {
+        "label": "Sécurité",
+        "value": "24h/24 7j/7"
+      }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400&h=300&fit=crop"
+    ],
+    "status": "for-sale",
+    "isPublished": true,
+    "ref": "CONDO-010",
+    "seo": {
+      "title": "Studio Moderne Jomtien - Condo à Vendre | Nes Thai Business",
+      "description": "",
+      "canonicalUrl": "https://www.nesthai.com/condo-jomtien-studio.html"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "RealEstateListing",
+      "name": "Studio Moderne Jomtien",
+      "description": "Studio moderne et lumineux à seulement 100m de la plage de Jomtien. Idéal pour investissement locatif ou pied-à-terre en Thaïlande.",
+      "url": "https://www.nesthai.com/condo-jomtien-studio.html",
+      "datePosted": "2026-02-12",
+      "price": "2890000",
+      "priceCurrency": "THB",
+      "propertyType": "Condo",
+      "numberOfRooms": "1",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": "35",
+        "unitCode": "MTK"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pattaya",
+        "addressRegion": "Chonburi",
+        "addressCountry": "TH"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "2890000",
+        "priceCurrency": "THB",
+        "availability": "https://schema.org/InStock",
+        "businessFunction": "http://purl.org/goodrelations/v1#Sell"
+      },
+      "agent": {
+        "@type": "RealEstateAgent",
+        "name": "Nes Thai Business Co., Ltd.",
+        "telephone": "+66-92-449-9960",
+        "email": "contact@nesthai.com",
+        "url": "https://www.nesthai.com"
+      }
+    }
+  },
+  {
+    "id": "condo-northpoint",
+    "slug": "condo-northpoint",
+    "title": "Northpoint Pattaya à Penthouse 3 Chambres Luxe à Wongamat",
+    "type": "condo",
+    "price": 12000000,
+    "currency": "THB",
+    "location": {
+      "city": "Pattaya",
+      "district": "Wongamat, Pattaya",
+      "country": "Thaïlande"
+    },
+    "surface": 145,
+    "rooms": 3,
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "description": "Northpoint Pattaya à Le sommet du luxe à Wongamat. Penthouse d'exception de 145 m² avec piscine privée sur le toit, offrant une vue mer imprenable sur la baie de Pattaya. L'un des condominiums les plus prestigieux de la càte, alliant espace, exclusività et services haut de gamme. ✓ Piscine privée sur le toit avec vue 360à ? 3 chambres en suite avec dressing ✓ Vue mer panoramique à Baie de Pattaya ? Grande terrasse à 80 m² d'espaces extàrieurs ? Plage de Wongamat à Accàs direct privé ✓ Conciergerie 5 àtoiles à Service VIP 24/7 ? 2 parkings privés à Accàs ràservà",
+    "features": [
+      {
+        "label": "Chambres",
+        "value": "3 suites"
+      },
+      {
+        "label": "Salles de bain",
+        "value": "3 salles de bain"
+      },
+      {
+        "label": "Surface",
+        "value": "145 m² + 80 m² terrasse"
+      },
+      {
+        "label": "Piscine",
+        "value": "Privée rooftop"
+      },
+      {
+        "label": "Vue",
+        "value": "Mer panoramique"
+      },
+      {
+        "label": "Parking",
+        "value": "2 places privées"
+      }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=300&fit=crop"
+    ],
+    "status": "for-sale",
+    "isPublished": true,
+    "ref": "CONDO-006",
+    "seo": {
+      "title": "Northpoint Pattaya - Penthouse à Vendre | Nes Thai Business",
+      "description": "",
+      "canonicalUrl": "https://www.nesthai.com/condo-northpoint.html"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "RealEstateListing",
+      "name": "Northpoint Pattaya à Penthouse 3 Chambres Luxe à Wongamat",
+      "description": "Penthouse d'exception de 145 m² avec piscine privée sur le toit, offrant une vue mer imprenable sur la baie de Pattaya",
+      "url": "https://www.nesthai.com/condo-northpoint.html",
+      "datePosted": "2026-02-12",
+      "price": "12000000",
+      "priceCurrency": "THB",
+      "propertyType": "Condo",
+      "numberOfRooms": "3",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": "145",
+        "unitCode": "MTK"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pattaya",
+        "addressRegion": "Chonburi",
+        "addressCountry": "TH"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "12000000",
+        "priceCurrency": "THB",
+        "availability": "https://schema.org/InStock",
+        "businessFunction": "http://purl.org/goodrelations/v1#Sell"
+      },
+      "agent": {
+        "@type": "RealEstateAgent",
+        "name": "Nes Thai Business Co., Ltd.",
+        "telephone": "+66-92-449-9960",
+        "email": "contact@nesthai.com",
+        "url": "https://www.nesthai.com"
+      }
+    }
+  },
+  {
+    "id": "condo-panora-estuaria",
+    "slug": "condo-panora-estuaria",
+    "title": "The Panora Estuaria à Condo Front de Mer à Baan Amphur, Pattaya",
+    "type": "condo",
+    "price": 4500000,
+    "currency": "THB",
+    "location": {
+      "city": "Pattaya",
+      "district": "Baan Amphur",
+      "country": "Thaïlande"
+    },
+    "surface": 45,
+    "rooms": 1,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "description": "The Panora Estuaria à Là où l'océan chuchote et le luxe vous enlace. Condo d'exception en front de mer à Baan Amphur, Pattaya. à seulement 90 minutes de Bangkok, ce sanctuaire vous enveloppe de sérénité, de style et de design inspiré. ✓ Vue mer imprenable depuis votre balcon privé ✓ Piscine à débordement sur le toit ✓ Onsen privé pour une relaxation totale ✓ Accès direct plage à quelques pas ✓ Conciergerie 24/7 à votre service",
+    "features": [
+      {
+        "label": "Chambres",
+        "value": "1 chambre"
+      },
+      {
+        "label": "Salles de bain",
+        "value": "1 salle de bain"
+      },
+      {
+        "label": "Surface",
+        "value": "45 m²"
+      },
+      {
+        "label": "Piscine",
+        "value": "Commune + rooftop"
+      },
+      {
+        "label": "Plage",
+        "value": "Accàs direct"
+      },
+      {
+        "label": "Parking",
+        "value": "Inclus"
+      }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=400&h=300&fit=crop"
+    ],
+    "status": "for-sale",
+    "isPublished": true,
+    "ref": "CONDO-001",
+    "seo": {
+      "title": "The Panora Estuaria - Condo à Vendre | Nes Thai Business",
+      "description": "",
+      "canonicalUrl": "https://www.nesthai.com/condo-panora-estuaria.html"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "RealEstateListing",
+      "name": "The Panora Estuaria à Condo Front de Mer à Baan Amphur, Pattaya",
+      "description": "Condo d'exception en front de mer à Baan Amphur, Pattaya avec vue mer imprenable, piscine à débordement sur le toit et accès direct plage",
+      "url": "https://www.nesthai.com/condo-panora-estuaria.html",
+      "datePosted": "2026-02-12",
+      "price": "4500000",
+      "priceCurrency": "THB",
+      "propertyType": "Condo",
+      "numberOfRooms": "1",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": "45",
+        "unitCode": "MTK"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pattaya",
+        "addressRegion": "Chonburi",
+        "addressCountry": "TH"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "4500000",
+        "priceCurrency": "THB",
+        "availability": "https://schema.org/InStock",
+        "businessFunction": "http://purl.org/goodrelations/v1#Sell"
+      },
+      "agent": {
+        "@type": "RealEstateAgent",
+        "name": "Nes Thai Business Co., Ltd.",
+        "telephone": "+66-92-449-9960",
+        "email": "contact@nesthai.com",
+        "url": "https://www.nesthai.com"
+      }
+    }
+  },
+  {
+    "id": "condo-panora",
+    "slug": "condo-panora",
+    "title": "The Panora Estuaria à Condo Front de Mer à Baan Amphur, Pattaya",
+    "type": "condo",
+    "price": 4500000,
+    "currency": "THB",
+    "location": {
+      "city": "Pattaya",
+      "district": "Baan Amphur",
+      "country": "Thaïlande"
+    },
+    "surface": 45,
+    "rooms": 1,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "description": "The Panora Estuaria à Là où l'océan chuchote et le luxe vous enlace. Condo d'exception en front de mer à Baan Amphur, Pattaya. à seulement 90 minutes de Bangkok, ce sanctuaire vous enveloppe de sérénité, de style et de design inspiré. ✓ Vue mer imprenable depuis votre balcon privé ✓ Piscine à débordement sur le toit ✓ Onsen privé pour une relaxation totale ✓ Accès direct plage à quelques pas ✓ Conciergerie 24/7 à votre service",
+    "features": [
+      {
+        "label": "Chambres",
+        "value": "1 chambre"
+      },
+      {
+        "label": "Salles de bain",
+        "value": "1 salle de bain"
+      },
+      {
+        "label": "Surface",
+        "value": "45 m²"
+      },
+      {
+        "label": "Piscine",
+        "value": "Commune + rooftop"
+      },
+      {
+        "label": "Plage",
+        "value": "Accàs direct"
+      },
+      {
+        "label": "Parking",
+        "value": "Inclus"
+      }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=400&h=300&fit=crop"
+    ],
+    "status": "for-sale",
+    "isPublished": true,
+    "ref": "2025020502",
+    "seo": {
+      "title": "The Panora Estuaria - Condo à Vendre | Nes Thai Business",
+      "description": "",
+      "canonicalUrl": "https://www.nesthai.com/condo-panora.html"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "RealEstateListing",
+      "name": "The Panora Estuaria à Condo Front de Mer à Baan Amphur, Pattaya",
+      "description": "Condo d'exception en front de mer à Baan Amphur, Pattaya avec vue mer imprenable, piscine à débordement sur le toit et accès direct plage",
+      "url": "https://www.nesthai.com/condo-panora.html",
+      "datePosted": "2026-02-12",
+      "price": "4500000",
+      "priceCurrency": "THB",
+      "propertyType": "Condo",
+      "numberOfRooms": "1",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": "45",
+        "unitCode": "MTK"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pattaya",
+        "addressRegion": "Chonburi",
+        "addressCountry": "TH"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "4500000",
+        "priceCurrency": "THB",
+        "availability": "https://schema.org/InStock",
+        "businessFunction": "http://purl.org/goodrelations/v1#Sell"
+      },
+      "agent": {
+        "@type": "RealEstateAgent",
+        "name": "Nes Thai Business Co., Ltd.",
+        "telephone": "+66-92-449-9960",
+        "email": "contact@nesthai.com",
+        "url": "https://www.nesthai.com"
+      }
+    }
+  },
+  {
+    "id": "condo-the-base",
+    "slug": "condo-the-base",
+    "title": "The Base Pattaya à 2 Chambres Design à Centre-Ville Location",
+    "type": "condo",
+    "price": 35000,
+    "currency": "THB",
+    "location": {
+      "city": "Pattaya",
+      "district": "Centre Pattaya",
+      "country": "Thaïlande"
+    },
+    "surface": 58,
+    "rooms": 2,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "description": "The Base Pattaya à Design urbain au càur de l'action. Condo contemporain de 2 chambres situé en plein centre de Pattaya, à quelques minutes de la plage et de tous les divertissements. Architecture moderne et àquipements haut de gamme pour un style de vie dynamique. ? Emplacement central à Pattaya Centre, proche de tout ? Architecture design à Bàtiment iconique de Pattaya ? Sky pool à Piscine suspendue avec vue ville ? Fitness 24/7 à Salle de sport ouverte en continu ✓ Jardin suspendu à Espace vert en hauteur ? Meublà design à Mobilier contemporain sàlectionnà",
+    "features": [
+      {
+        "label": "Chambres",
+        "value": "2 chambres"
+      },
+      {
+        "label": "Salles de bain",
+        "value": "2 salles de bain"
+      },
+      {
+        "label": "Surface",
+        "value": "58 m²"
+      },
+      {
+        "label": "Piscine",
+        "value": "Sky pool suspendue"
+      },
+      {
+        "label": "Fitness",
+        "value": "24/7 équipé"
+      },
+      {
+        "label": "Jardin",
+        "value": "Suspendu panoramique"
+      }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&h=300&fit=crop"
+    ],
+    "status": "for-sale",
+    "isPublished": true,
+    "ref": "CONDO-005",
+    "seo": {
+      "title": "The Base Pattaya - Condo à Louer | Nes Thai Business",
+      "description": "",
+      "canonicalUrl": "https://www.nesthai.com/condo-the-base.html"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "RealEstateListing",
+      "name": "The Base Pattaya à 2 Chambres Design à Centre-Ville Location",
+      "description": "Condo contemporain de 2 chambres situé en plein centre de Pattaya avec sky pool suspendue, fitness 24/7 et design urbain",
+      "url": "https://www.nesthai.com/condo-the-base.html",
+      "datePosted": "2026-02-12",
+      "price": "35000",
+      "priceCurrency": "THB",
+      "propertyType": "Condo",
+      "numberOfRooms": "2",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": "58",
+        "unitCode": "MTK"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pattaya",
+        "addressRegion": "Chonburi",
+        "addressCountry": "TH"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "35000",
+        "priceCurrency": "THB",
+        "availability": "https://schema.org/InStock",
+        "businessFunction": "http://purl.org/goodrelations/v1#LeaseOut"
+      },
+      "agent": {
+        "@type": "RealEstateAgent",
+        "name": "Nes Thai Business Co., Ltd.",
+        "telephone": "+66-92-449-9960",
+        "email": "contact@nesthai.com",
+        "url": "https://www.nesthai.com"
+      }
+    }
+  },
+  {
+    "id": "condo-wongamat-penthouse",
+    "slug": "condo-wongamat-penthouse",
+    "title": "Penthouse Vue Mer Wongamat",
+    "type": "condo",
+    "price": 12900000,
+    "currency": "THB",
+    "location": {
+      "city": "Pattaya",
+      "district": "Wongamat Beach",
+      "country": "Thaïlande"
+    },
+    "surface": 156,
+    "rooms": 3,
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "description": "Penthouse Vue Mer Wongamat — L'excellence du luxe face à la mer. Penthouse d'exception de 156 m² avec vue mer panoramique à 360° sur la plage de Wongamat. Trois chambres spacieuses, finitions haut de gamme et prestations de standing. Une opportunité rare sur l'un des plus beaux emplacements de Pattaya. ✓ Vue mer panoramique — Vue à 360° sur la mer et la ville ✓ 3 chambres luxueuses — Suite parentale avec dressing ✓ 3 salles de bain — Marbre et robinetterie premium ✓ Terrasse privée — Grande terrasse avec vue imprenable ✓ Piscine infinity — Piscine à débordement face à la mer ✓ Accès plage direct — Wongamat Beach à quelques pas",
+    "features": [
+      {
+        "label": "Chambres",
+        "value": "3 chambres"
+      },
+      {
+        "label": "Salles de bain",
+        "value": "3 salles de bain"
+      },
+      {
+        "label": "Surface",
+        "value": "156 m²"
+      },
+      {
+        "label": "Piscine",
+        "value": "Infinity pool vue mer"
+      },
+      {
+        "label": "Vue",
+        "value": "Panoramique 360° mer"
+      },
+      {
+        "label": "Sécurité",
+        "value": "24h/24 + parking privé"
+      }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&h=300&fit=crop"
+    ],
+    "status": "for-sale",
+    "isPublished": true,
+    "ref": "CONDO-012",
+    "seo": {
+      "title": "Penthouse Vue Mer Wongamat - Condo à Vendre | Nes Thai Business",
+      "description": "",
+      "canonicalUrl": "https://www.nesthai.com/condo-wongamat-penthouse.html"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "RealEstateListing",
+      "name": "Penthouse Vue Mer Wongamat",
+      "description": "Penthouse d'exception avec vue mer panoramique à 360° sur Wongamat Beach. 3 chambres, 156 m², finitions luxueuses.",
+      "url": "https://www.nesthai.com/condo-wongamat-penthouse.html",
+      "datePosted": "2026-02-12",
+      "price": "12900000",
+      "priceCurrency": "THB",
+      "propertyType": "Condo",
+      "numberOfRooms": "3",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": "156",
+        "unitCode": "MTK"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pattaya",
+        "addressRegion": "Chonburi",
+        "addressCountry": "TH"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "12900000",
+        "priceCurrency": "THB",
+        "availability": "https://schema.org/InStock",
+        "businessFunction": "http://purl.org/goodrelations/v1#Sell"
+      },
+      "agent": {
+        "@type": "RealEstateAgent",
+        "name": "Nes Thai Business Co., Ltd.",
+        "telephone": "+66-92-449-9960",
+        "email": "contact@nesthai.com",
+        "url": "https://www.nesthai.com"
+      }
+    }
+  },
+  {
+    "id": "condo-wongamat-tower",
+    "slug": "condo-wongamat-tower",
+    "title": "Wongamat Tower à 2 Chambres Vue Mer à Naklua, Pattaya",
+    "type": "condo",
+    "price": 8500000,
+    "currency": "THB",
+    "location": {
+      "city": "Pattaya",
+      "district": "Wongamat Beach",
+      "country": "Thaïlande"
+    },
+    "surface": 85,
+    "rooms": 2,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "description": "Wongamat Tower à Le luxe à son sommet. Condo haut standing de 2 chambres offrant une vue mer panoramique imprenable sur la baie de Pattaya. Situà dans la prestigieuse zone de Wongamat Beach, ràputàe pour ses plages tranquilles et son atmosphàre exclusive. ✓ Vue mer panoramique à Baie de Pattaya à 180à ? Grande terrasse à 20 m² avec jacuzzi privatif ? Plage de Wongamat à 300m à pied ? Quartier exclusif à Ràsidentiel et tranquille ? 2 chambres en suite à Dressing dans chaque chambre ✓ Cuisine équipée à àlectrom²nager haut de gamme",
+    "features": [
+      {
+        "label": "Chambres",
+        "value": "2 suites"
+      },
+      {
+        "label": "Salles de bain",
+        "value": "2 salles de bain"
+      },
+      {
+        "label": "Surface",
+        "value": "85 m² + 20 m² terrasse"
+      },
+      {
+        "label": "Piscine",
+        "value": "Infinity rooftop"
+      },
+      {
+        "label": "Vue",
+        "value": "Mer panoramique"
+      },
+      {
+        "label": "Parking",
+        "value": "2 places privées"
+      }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&h=300&fit=crop"
+    ],
+    "status": "for-sale",
+    "isPublished": true,
+    "ref": "CONDO-004",
+    "seo": {
+      "title": "Wongamat Tower - Condo à Vendre | Nes Thai Business",
+      "description": "",
+      "canonicalUrl": "https://www.nesthai.com/condo-wongamat-tower.html"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "RealEstateListing",
+      "name": "Wongamat Tower à 2 Chambres Vue Mer à Naklua, Pattaya",
+      "description": "Condo haut standing de 2 chambres offrant une vue mer panoramique imprenable sur la baie de Pattaya, situé dans la prestigieuse zone de Wongamat Beach",
+      "url": "https://www.nesthai.com/condo-wongamat-tower.html",
+      "datePosted": "2026-02-12",
+      "price": "8500000",
+      "priceCurrency": "THB",
+      "propertyType": "Condo",
+      "numberOfRooms": "2",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": "85",
+        "unitCode": "MTK"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pattaya",
+        "addressRegion": "Chonburi",
+        "addressCountry": "TH"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "8500000",
+        "priceCurrency": "THB",
+        "availability": "https://schema.org/InStock",
+        "businessFunction": "http://purl.org/goodrelations/v1#Sell"
+      },
+      "agent": {
+        "@type": "RealEstateAgent",
+        "name": "Nes Thai Business Co., Ltd.",
+        "telephone": "+66-92-449-9960",
+        "email": "contact@nesthai.com",
+        "url": "https://www.nesthai.com"
+      }
+    }
+  },
+  {
+    "id": "condo-wongamat",
+    "slug": "condo-wongamat",
+    "title": "The Panora Estuaria à Condo Front de Mer à Baan Amphur, Pattaya",
+    "type": "condo",
+    "price": 4500000,
+    "currency": "THB",
+    "location": {
+      "city": "Pattaya",
+      "district": "Baan Amphur",
+      "country": "Thaïlande"
+    },
+    "surface": 45,
+    "rooms": 1,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "description": "The Panora Estuaria à Là où l'océan chuchote et le luxe vous enlace. Condo d'exception en front de mer à Baan Amphur, Pattaya. à seulement 90 minutes de Bangkok, ce sanctuaire vous enveloppe de sérénité, de style et de design inspiré. ✓ Vue mer imprenable depuis votre balcon privé ✓ Piscine à débordement sur le toit ✓ Onsen privé pour une relaxation totale ✓ Accès direct plage à quelques pas ✓ Conciergerie 24/7 à votre service",
+    "features": [
+      {
+        "label": "Chambres",
+        "value": "1 chambre"
+      },
+      {
+        "label": "Salles de bain",
+        "value": "1 salle de bain"
+      },
+      {
+        "label": "Surface",
+        "value": "45 m²"
+      },
+      {
+        "label": "Piscine",
+        "value": "Commune + rooftop"
+      },
+      {
+        "label": "Plage",
+        "value": "Accàs direct"
+      },
+      {
+        "label": "Parking",
+        "value": "Inclus"
+      }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=400&h=300&fit=crop"
+    ],
+    "status": "for-sale",
+    "isPublished": true,
+    "ref": "2025020502",
+    "seo": {
+      "title": "The Panora Estuaria - Condo à Vendre | Nes Thai Business",
+      "description": "",
+      "canonicalUrl": "https://www.nesthai.com/condo-wongamat.html"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "RealEstateListing",
+      "name": "The Panora Estuaria à Condo Front de Mer à Baan Amphur, Pattaya",
+      "description": "Condo d'exception en front de mer à Baan Amphur, Pattaya avec vue mer imprenable, piscine à débordement sur le toit et accès direct plage",
+      "url": "https://www.nesthai.com/condo-wongamat.html",
+      "datePosted": "2026-02-12",
+      "price": "4500000",
+      "priceCurrency": "THB",
+      "propertyType": "Condo",
+      "numberOfRooms": "1",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": "45",
+        "unitCode": "MTK"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pattaya",
+        "addressRegion": "Chonburi",
+        "addressCountry": "TH"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "4500000",
+        "priceCurrency": "THB",
+        "availability": "https://schema.org/InStock",
+        "businessFunction": "http://purl.org/goodrelations/v1#Sell"
+      },
+      "agent": {
+        "@type": "RealEstateAgent",
+        "name": "Nes Thai Business Co., Ltd.",
+        "telephone": "+66-92-449-9960",
+        "email": "contact@nesthai.com",
+        "url": "https://www.nesthai.com"
+      }
+    }
+  },
+  {
+    "id": "maison-architecte-naklua",
+    "slug": "maison-architecte-naklua",
+    "title": "Villa d'Architecte Naklua à Design & Vue Panoramique à Wongamat, Pattaya",
+    "type": "maison",
+    "price": 35000000,
+    "currency": "THB",
+    "location": {
+      "city": "Pattaya",
+      "district": "Naklua, Wongamat",
+      "country": "Thaïlande"
+    },
+    "surface": 680,
+    "rooms": 5,
+    "bedrooms": 5,
+    "bathrooms": 5,
+    "description": "Villa d'Architecte Naklua à Un chef-d'àuvre architectural avec vue panoramique. Villa d'exception de 680 m² conàue par un architecte renomm², perchàe sur les hauteurs de Naklua avec vue imprenable sur la baie de Pattaya. ? Design unique à Architecture contemporaine prim²e ✓ Vue panoramique 360à sur la baie de Pattaya ? 5 suites parentales avec salles de bain privatives ✓ Piscine à débordement avec spa intàgrà ? Cinàma privé et salle de sport ? Ascenseur privatif reliant les 3 niveaux ✓ Garage 4 voitures avec stationnement visiteurs",
+    "features": [
+      {
+        "label": "Chambres",
+        "value": "5 suites"
+      },
+      {
+        "label": "Salles de bain",
+        "value": "5 + 2 WC invitàs"
+      },
+      {
+        "label": "Surface habitable",
+        "value": "680 m²"
+      },
+      {
+        "label": "Terrain",
+        "value": "800 m² (200 sq.wah)"
+      },
+      {
+        "label": "Piscine",
+        "value": "à débordement + spa"
+      },
+      {
+        "label": "Extras",
+        "value": "Cinàma + salle de sport"
+      }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=400&h=300&fit=crop"
+    ],
+    "status": "for-sale",
+    "isPublished": true,
+    "ref": "MAISON-004",
+    "seo": {
+      "title": "Villa d'Architecte Naklua - Maison à Vendre | Nes Thai Business",
+      "description": "",
+      "canonicalUrl": "https://www.nesthai.com/maison-architecte-naklua.html"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "RealEstateListing",
+      "name": "Villa d'Architecte Naklua à Design & Vue Panoramique à Wongamat, Pattaya",
+      "description": "Villa d'exception de 680 m² conàue par un architecte renomm², perchàe sur les hauteurs de Naklua avec vue imprenable sur la baie de Pattaya.",
+      "url": "https://www.nesthai.com/maison-architecte-naklua.html",
+      "datePosted": "2026-02-12",
+      "price": "35000000",
+      "priceCurrency": "THB",
+      "propertyType": "House",
+      "numberOfRooms": "5",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": "680",
+        "unitCode": "MTK"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pattaya",
+        "addressRegion": "Chonburi",
+        "addressCountry": "TH"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "35000000",
+        "priceCurrency": "THB",
+        "availability": "https://schema.org/InStock",
+        "businessFunction": "http://purl.org/goodrelations/v1#Sell"
+      },
+      "agent": {
+        "@type": "RealEstateAgent",
+        "name": "Nes Thai Business Co., Ltd.",
+        "telephone": "+66-92-449-9960",
+        "email": "contact@nesthai.com",
+        "url": "https://www.nesthai.com"
+      }
+    }
+  },
+  {
+    "id": "maison-chaknok-villa",
+    "slug": "maison-chaknok-villa",
+    "title": "Résidence Chaknok Villa à 3 Chambres avec Piscine à Chak Nok, Pattaya",
+    "type": "maison",
+    "price": 15000000,
+    "currency": "THB",
+    "location": {
+      "city": "Pattaya",
+      "district": "Chak Nok",
+      "country": "Thaïlande"
+    },
+    "surface": 280,
+    "rooms": 3,
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "description": "Résidence Chaknok Villa à Votre oasis de tranquillité à seulement 300m du lac Chaknok. Villa luxueuse de 280 m² sur un terrain de 400 m², comprenant 3 chambres spacieuses, 3 salles de bain modernes et une magnifique piscine privée. ✓ Piscine privée avec terrasse en bois ✓ Jardin tropical paysagé et entretenu ✓ Cuisine équipée avec îlot central ✓ Garage double avec porte automatique ✓ Sécurité 24/7 dans le quartier résidentiel ✓ Proche commodités à 10 min de Sukhumvit",
+    "features": [
+      {
+        "label": "Chambres",
+        "value": "3 chambres"
+      },
+      {
+        "label": "Salles de bain",
+        "value": "3 salles de bain"
+      },
+      {
+        "label": "Surface habitable",
+        "value": "280 m²"
+      },
+      {
+        "label": "Terrain",
+        "value": "400 m² (100 sq.wah)"
+      },
+      {
+        "label": "Piscine",
+        "value": "Privée 8x4m"
+      },
+      {
+        "label": "Garage",
+        "value": "2 voitures"
+      }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=400&h=300&fit=crop"
+    ],
+    "status": "for-sale",
+    "isPublished": true,
+    "ref": "MAISON-001",
+    "seo": {
+      "title": "Résidence Chaknok Villa - Maison à Vendre | Nes Thai Business",
+      "description": "",
+      "canonicalUrl": "https://www.nesthai.com/maison-chaknok-villa.html"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "RealEstateListing",
+      "name": "Résidence Chaknok Villa à 3 Chambres avec Piscine à Chak Nok, Pattaya",
+      "description": "Villa luxueuse de 280 m² sur un terrain de 400 m², comprenant 3 chambres spacieuses, 3 salles de bain modernes et une magnifique piscine privée.",
+      "url": "https://www.nesthai.com/maison-chaknok-villa.html",
+      "datePosted": "2026-02-12",
+      "price": "15000000",
+      "priceCurrency": "THB",
+      "propertyType": "House",
+      "numberOfRooms": "3",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": "280",
+        "unitCode": "MTK"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pattaya",
+        "addressRegion": "Chonburi",
+        "addressCountry": "TH"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "15000000",
+        "priceCurrency": "THB",
+        "availability": "https://schema.org/InStock",
+        "businessFunction": "http://purl.org/goodrelations/v1#Sell"
+      },
+      "agent": {
+        "@type": "RealEstateAgent",
+        "name": "Nes Thai Business Co., Ltd.",
+        "telephone": "+66-92-449-9960",
+        "email": "contact@nesthai.com",
+        "url": "https://www.nesthai.com"
+      }
+    }
+  },
+  {
+    "id": "maison-pratumnak-hill",
+    "slug": "maison-pratumnak-hill",
+    "title": "Maison Pratumnak Hill à Jardin Tropical & Calme à Pratumnak, Pattaya",
+    "type": "maison",
+    "price": 85000,
+    "currency": "THB",
+    "location": {
+      "city": "Pattaya",
+      "district": "Pratumnak Hill",
+      "country": "Thaïlande"
+    },
+    "surface": 200,
+    "rooms": 3,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "description": "Maison Pratumnak Hill à Votre havre de paix dans un quartier résidentiel prisà. Maison familiale de 200 m² avec jardin tropical privatif, idéale pour une famille ou des expatriàs cherchant tranquillité et proximità des commodités. ✓ Jardin tropical de 300 m² avec terrasse ? Quartier résidentiel calme et sécurisé ✓ Proche de tout à 5 min de la plage, 10 min du centre ? 3 chambres spacieuses avec rangements ✓ Cuisine moderne entiàrement équipée ? Parking privatif pour 2 vàhicules",
+    "features": [
+      {
+        "label": "Chambres",
+        "value": "3 chambres"
+      },
+      {
+        "label": "Salles de bain",
+        "value": "2 salles de bain"
+      },
+      {
+        "label": "Surface habitable",
+        "value": "200 m²"
+      },
+      {
+        "label": "Jardin",
+        "value": "300 m² paysagé"
+      },
+      {
+        "label": "Parking",
+        "value": "2 voitures"
+      },
+      {
+        "label": "Sécurité",
+        "value": "Quartier surveillà"
+      }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=400&h=300&fit=crop"
+    ],
+    "status": "for-sale",
+    "isPublished": true,
+    "ref": "MAISON-003",
+    "seo": {
+      "title": "Maison Pratumnak Hill - Location | Nes Thai Business",
+      "description": "",
+      "canonicalUrl": "https://www.nesthai.com/maison-pratumnak-hill.html"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "RealEstateListing",
+      "name": "Maison Pratumnak Hill à Jardin Tropical & Calme à Pratumnak, Pattaya",
+      "description": "Maison familiale de 200 m² avec jardin tropical privatif, idéale pour une famille ou des expatriàs cherchant tranquillité et proximità des commodités.",
+      "url": "https://www.nesthai.com/maison-pratumnak-hill.html",
+      "datePosted": "2026-02-12",
+      "price": "85000",
+      "priceCurrency": "THB",
+      "propertyType": "House",
+      "numberOfRooms": "3",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": "200",
+        "unitCode": "MTK"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pattaya",
+        "addressRegion": "Chonburi",
+        "addressCountry": "TH"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "85000",
+        "priceCurrency": "THB",
+        "availability": "https://schema.org/InStock",
+        "businessFunction": "http://purl.org/goodrelations/v1#LeaseOut"
+      },
+      "agent": {
+        "@type": "RealEstateAgent",
+        "name": "Nes Thai Business Co., Ltd.",
+        "telephone": "+66-92-449-9960",
+        "email": "contact@nesthai.com",
+        "url": "https://www.nesthai.com"
+      }
+    }
+  },
+  {
+    "id": "maison-royale-jomtien",
+    "slug": "maison-royale-jomtien",
+    "title": "Villa Royale Jomtien à Vue Mer & Accàs Plage à Jomtien Beach, Pattaya",
+    "type": "maison",
+    "price": 22000000,
+    "currency": "THB",
+    "location": {
+      "city": "Pattaya",
+      "district": "Jomtien Beach",
+      "country": "Thaïlande"
+    },
+    "surface": 450,
+    "rooms": 4,
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "description": "Villa Royale Jomtien à L'àlàgance contemporaine face à la mer. Villa d'architecte de 450 m² avec vue imprenable sur le Golfe de Thaïlande. Accàs direct à la plage de Jomtien par chemin privé. ✓ Vue mer panoramique depuis toutes les chambres ✓ Piscine à débordement face à l'océan ? Accàs plage privé à 2 minutes à pied ? Design contemporain avec finitions haut de gamme ? 4 suites parentales avec dressing ✓ Cuisine extàrieure avec barbecue et bar",
+    "features": [
+      {
+        "label": "Chambres",
+        "value": "4 suites"
+      },
+      {
+        "label": "Salles de bain",
+        "value": "4 salles de bain + 1 WC"
+      },
+      {
+        "label": "Surface habitable",
+        "value": "450 m²"
+      },
+      {
+        "label": "Terrain",
+        "value": "600 m² (150 sq.wah)"
+      },
+      {
+        "label": "Piscine",
+        "value": "à débordement vue mer"
+      },
+      {
+        "label": "Accàs plage",
+        "value": "Privà direct"
+      }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=400&h=300&fit=crop"
+    ],
+    "status": "for-sale",
+    "isPublished": true,
+    "ref": "MAISON-002",
+    "seo": {
+      "title": "Villa Royale Jomtien - Maison à Vendre | Nes Thai Business",
+      "description": "",
+      "canonicalUrl": "https://www.nesthai.com/maison-royale-jomtien.html"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "RealEstateListing",
+      "name": "Villa Royale Jomtien à Vue Mer & Accàs Plage à Jomtien Beach, Pattaya",
+      "description": "Villa d'architecte de 450 m² avec vue imprenable sur le Golfe de Thaïlande. Accàs direct à la plage de Jomtien par chemin privé.",
+      "url": "https://www.nesthai.com/maison-royale-jomtien.html",
+      "datePosted": "2026-02-12",
+      "price": "22000000",
+      "priceCurrency": "THB",
+      "propertyType": "House",
+      "numberOfRooms": "4",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": "450",
+        "unitCode": "MTK"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pattaya",
+        "addressRegion": "Chonburi",
+        "addressCountry": "TH"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "22000000",
+        "priceCurrency": "THB",
+        "availability": "https://schema.org/InStock",
+        "businessFunction": "http://purl.org/goodrelations/v1#Sell"
+      },
+      "agent": {
+        "@type": "RealEstateAgent",
+        "name": "Nes Thai Business Co., Ltd.",
+        "telephone": "+66-92-449-9960",
+        "email": "contact@nesthai.com",
+        "url": "https://www.nesthai.com"
+      }
+    }
+  },
+  {
+    "id": "projet-ocean-horizon",
+    "slug": "projet-ocean-horizon",
+    "title": "Ocean Horizon à Tour Ràsidentielle Vue Mer 360à à Livraison 2026",
+    "type": "projet",
+    "price": 3800000,
+    "currency": "THB",
+    "location": {
+      "city": "Pattaya",
+      "district": "",
+      "country": "Thaïlande"
+    },
+    "surface": 35,
+    "rooms": 0,
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "description": "",
+    "features": [],
+    "images": [
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&h=300&fit=crop"
+    ],
+    "status": "for-sale",
+    "isPublished": true,
+    "ref": "PROJET-003",
+    "seo": {
+      "title": "Ocean Horizon - Tour Ràsidentielle Neuf | Nes Thai Business",
+      "description": "",
+      "canonicalUrl": "https://www.nesthai.com/projet-ocean-horizon.html"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "RealEstateListing",
+      "name": "Ocean Horizon à Tour Ràsidentielle Vue Mer 360à à Livraison 2026",
+      "description": "Tour résidentielle de 32 àtages offrant des vues mer à 360 degràs depuis chaque unità. Architecture futuriste et àquipements haut de gamme pour un style de vie exceptionnel.",
+      "url": "https://www.nesthai.com/projet-ocean-horizon.html",
+      "datePosted": "2026-02-12",
+      "price": "3800000",
+      "priceCurrency": "THB",
+      "propertyType": "House",
+      "numberOfRooms": "0",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": "35",
+        "unitCode": "MTK"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pattaya",
+        "addressRegion": "Chonburi",
+        "addressCountry": "TH"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "3800000",
+        "priceCurrency": "THB",
+        "availability": "https://schema.org/InStock",
+        "businessFunction": "http://purl.org/goodrelations/v1#Sell"
+      },
+      "agent": {
+        "@type": "RealEstateAgent",
+        "name": "Nes Thai Business Co., Ltd.",
+        "telephone": "+66-92-449-9960",
+        "email": "contact@nesthai.com",
+        "url": "https://www.nesthai.com"
+      }
+    }
+  },
+  {
+    "id": "projet-panora-estuaria",
+    "slug": "projet-panora-estuaria",
+    "title": "The Panora Estuaria à Condo Front de Mer à Livraison 2025",
+    "type": "projet",
+    "price": 4500000,
+    "currency": "THB",
+    "location": {
+      "city": "Pattaya",
+      "district": "",
+      "country": "Thaïlande"
+    },
+    "surface": 45,
+    "rooms": 0,
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "description": "",
+    "features": [],
+    "images": [
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=400&h=300&fit=crop"
+    ],
+    "status": "for-sale",
+    "isPublished": true,
+    "ref": "PROJET-002",
+    "seo": {
+      "title": "The Panora Estuaria - Condo Front de Mer Neuf | Nes Thai Business",
+      "description": "",
+      "canonicalUrl": "https://www.nesthai.com/projet-panora-estuaria.html"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "RealEstateListing",
+      "name": "The Panora Estuaria à Condo Front de Mer à Livraison 2025",
+      "description": "Condo d'exception en front de mer à Baan Amphur, Pattaya. à seulement 90 minutes de Bangkok, ce sanctuaire vous enveloppe de sérénité, de style et de design inspiré.",
+      "url": "https://www.nesthai.com/projet-panora-estuaria.html",
+      "datePosted": "2026-02-12",
+      "price": "4500000",
+      "priceCurrency": "THB",
+      "propertyType": "House",
+      "numberOfRooms": "0",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": "45",
+        "unitCode": "MTK"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pattaya",
+        "addressRegion": "Chonburi",
+        "addressCountry": "TH"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "4500000",
+        "priceCurrency": "THB",
+        "availability": "https://schema.org/InStock",
+        "businessFunction": "http://purl.org/goodrelations/v1#Sell"
+      },
+      "agent": {
+        "@type": "RealEstateAgent",
+        "name": "Nes Thai Business Co., Ltd.",
+        "telephone": "+66-92-449-9960",
+        "email": "contact@nesthai.com",
+        "url": "https://www.nesthai.com"
+      }
+    }
+  },
+  {
+    "id": "projet-residence-chaknok",
+    "slug": "projet-residence-chaknok",
+    "title": "Résidence Chaknok à 8 Villas d'Exception à Livraison 2027",
+    "type": "projet",
+    "price": 15000000,
+    "currency": "THB",
+    "location": {
+      "city": "Pattaya",
+      "district": "",
+      "country": "Thaïlande"
+    },
+    "surface": 280,
+    "rooms": 3,
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "description": "",
+    "features": [],
+    "images": [
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=400&h=300&fit=crop"
+    ],
+    "status": "for-sale",
+    "isPublished": true,
+    "ref": "PROJET-001",
+    "seo": {
+      "title": "Résidence Chaknok - Projet Neuf | Nes Thai Business",
+      "description": "",
+      "canonicalUrl": "https://www.nesthai.com/projet-residence-chaknok.html"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "RealEstateListing",
+      "name": "Résidence Chaknok à 8 Villas d'Exception à Livraison 2027",
+      "description": "Dàveloppement exclusif de 8 villas contemporaines nichàes dans un àcrin de verdure, à seulement 300 mètres du lac Chaknok. Luxe, tranquillité et modernità à 15 minutes du centre de Pattaya.",
+      "url": "https://www.nesthai.com/projet-residence-chaknok.html",
+      "datePosted": "2026-02-12",
+      "price": "15000000",
+      "priceCurrency": "THB",
+      "propertyType": "House",
+      "numberOfRooms": "3",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": "280",
+        "unitCode": "MTK"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pattaya",
+        "addressRegion": "Chonburi",
+        "addressCountry": "TH"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "15000000",
+        "priceCurrency": "THB",
+        "availability": "https://schema.org/InStock",
+        "businessFunction": "http://purl.org/goodrelations/v1#Sell"
+      },
+      "agent": {
+        "@type": "RealEstateAgent",
+        "name": "Nes Thai Business Co., Ltd.",
+        "telephone": "+66-92-449-9960",
+        "email": "contact@nesthai.com",
+        "url": "https://www.nesthai.com"
+      }
+    }
+  },
+  {
+    "id": "terrain-centre-pattaya",
+    "slug": "terrain-centre-pattaya",
+    "title": "Terrain Centre Pattaya à Vendre à 150 sq.wah à Zone Commerciale",
+    "type": "terrain",
+    "price": 45000000,
+    "currency": "THB",
+    "location": {
+      "city": "Pattaya",
+      "district": "Centre Pattaya",
+      "country": "Thaïlande"
+    },
+    "surface": 600,
+    "rooms": 0,
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "description": "",
+    "features": [
+      {
+        "label": "Superficie",
+        "value": "150 sq.wah (600 m²)"
+      },
+      {
+        "label": "Zone",
+        "value": "Commerciale / Ràsidentielle"
+      },
+      {
+        "label": "Passage",
+        "value": "Fort (rue principale)"
+      },
+      {
+        "label": "Viabilisà",
+        "value": "àlectricità + Eau + Internet"
+      },
+      {
+        "label": "Accàs",
+        "value": "Route principale"
+      },
+      {
+        "label": "Titre",
+        "value": "Chanote"
+      }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400&h=300&fit=crop"
+    ],
+    "status": "for-sale",
+    "isPublished": true,
+    "ref": "TERRAIN-004",
+    "seo": {
+      "title": "Terrain Centre Pattaya à Vendre - Zone Commerciale | Nes Thai Business",
+      "description": "",
+      "canonicalUrl": "https://www.nesthai.com/terrain-centre-pattaya.html"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "RealEstateListing",
+      "name": "Terrain Centre Pattaya à Vendre à 150 sq.wah à Zone Commerciale",
+      "description": "Exceptionnel terrain de 150 sq.wah (600 m²) en plein càur de Pattaya, dans une zone commerciale et résidentielle tràs recherchàe.",
+      "url": "https://www.nesthai.com/terrain-centre-pattaya.html",
+      "datePosted": "2026-02-12",
+      "price": "45000000",
+      "priceCurrency": "THB",
+      "propertyType": "Land",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": "600",
+        "unitCode": "MTK"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pattaya",
+        "addressRegion": "Chonburi",
+        "addressCountry": "TH"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "45000000",
+        "priceCurrency": "THB",
+        "availability": "https://schema.org/InStock",
+        "businessFunction": "http://purl.org/goodrelations/v1#Sell"
+      },
+      "agent": {
+        "@type": "RealEstateAgent",
+        "name": "Nes Thai Business Co., Ltd.",
+        "telephone": "+66-92-449-9960",
+        "email": "contact@nesthai.com",
+        "url": "https://www.nesthai.com"
+      }
+    }
+  },
+  {
+    "id": "terrain-chaknok",
+    "slug": "terrain-chaknok",
+    "title": "Terrain Chaknok Lake à Vendre à Vue Lac, Idéal pour Villa à Chak Nok, Pattaya",
+    "type": "terrain",
+    "price": 8000000,
+    "currency": "THB",
+    "location": {
+      "city": "Pattaya",
+      "district": "",
+      "country": "Thaïlande"
+    },
+    "surface": 816,
+    "rooms": 0,
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "description": "",
+    "features": [],
+    "images": [
+      "images/chaknok-1.jpg",
+      "images/chaknok-2.jpg",
+      "images/chaknok-3.jpg"
+    ],
+    "status": "for-sale",
+    "isPublished": true,
+    "ref": "2025020501",
+    "seo": {
+      "title": "Terrain Chaknok Lake à Vendre - Vue Lac, Idéal Villa | Nes Thai Business",
+      "description": "",
+      "canonicalUrl": "https://www.nesthai.com/terrain-chaknok.html"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "RealEstateListing",
+      "name": "Terrain Chaknok Lake à Vendre à Vue Lac, Idéal pour Villa à Chak Nok, Pattaya",
+      "description": "Découvrez une opportunité exceptionnelle d'acquérir 204 Sq.Wah (816 m²) de terrain viabilisé, à seulement 300 mètres du magnifique lac Chaknok !",
+      "url": "https://www.nesthai.com/terrain-chaknok.html",
+      "datePosted": "2026-02-12",
+      "price": "8000000",
+      "priceCurrency": "THB",
+      "propertyType": "Land",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": "816",
+        "unitCode": "MTK"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pattaya",
+        "addressRegion": "Chonburi",
+        "addressCountry": "TH"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "8000000",
+        "priceCurrency": "THB",
+        "availability": "https://schema.org/InStock",
+        "businessFunction": "http://purl.org/goodrelations/v1#Sell"
+      },
+      "agent": {
+        "@type": "RealEstateAgent",
+        "name": "Nes Thai Business Co., Ltd.",
+        "telephone": "+66-92-449-9960",
+        "email": "contact@nesthai.com",
+        "url": "https://www.nesthai.com"
+      }
+    }
+  },
+  {
+    "id": "terrain-jomtien-beach",
+    "slug": "terrain-jomtien-beach",
+    "title": "Terrain Jomtien Beach à Vendre à 300 sq.wah à Proche Plage, Pattaya",
+    "type": "terrain",
+    "price": 12000000,
+    "currency": "THB",
+    "location": {
+      "city": "Pattaya",
+      "district": "Jomtien Beach",
+      "country": "Thaïlande"
+    },
+    "surface": 1200,
+    "rooms": 0,
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "description": "",
+    "features": [
+      {
+        "label": "Superficie",
+        "value": "300 sq.wah (1,200 m²)"
+      },
+      {
+        "label": "Proximità plage",
+        "value": "5 min à pied"
+      },
+      {
+        "label": "Accàs",
+        "value": "Route goudronnàe"
+      },
+      {
+        "label": "Viabilisà",
+        "value": "àlectricità + Eau"
+      },
+      {
+        "label": "Internet",
+        "value": "Fibre optique"
+      },
+      {
+        "label": "Titre",
+        "value": "Chanote"
+      }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=400&h=300&fit=crop"
+    ],
+    "status": "for-sale",
+    "isPublished": true,
+    "ref": "TERRAIN-002",
+    "seo": {
+      "title": "Terrain Jomtien Beach à Vendre - Pràs de la Plage | Nes Thai Business",
+      "description": "",
+      "canonicalUrl": "https://www.nesthai.com/terrain-jomtien-beach.html"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "RealEstateListing",
+      "name": "Terrain Jomtien Beach à Vendre à 300 sq.wah à Proche Plage, Pattaya",
+      "description": "Exceptionnel terrain de 300 sq.wah (1,200 m²) situé dans un quartier résidentiel prisà de Jomtien, à seulement 5 minutes de la càlàbre plage de Jomtien Beach.",
+      "url": "https://www.nesthai.com/terrain-jomtien-beach.html",
+      "datePosted": "2026-02-12",
+      "price": "12000000",
+      "priceCurrency": "THB",
+      "propertyType": "Land",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": "1200",
+        "unitCode": "MTK"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pattaya",
+        "addressRegion": "Chonburi",
+        "addressCountry": "TH"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "12000000",
+        "priceCurrency": "THB",
+        "availability": "https://schema.org/InStock",
+        "businessFunction": "http://purl.org/goodrelations/v1#Sell"
+      },
+      "agent": {
+        "@type": "RealEstateAgent",
+        "name": "Nes Thai Business Co., Ltd.",
+        "telephone": "+66-92-449-9960",
+        "email": "contact@nesthai.com",
+        "url": "https://www.nesthai.com"
+      }
+    }
+  },
+  {
+    "id": "terrain-naklua-hills",
+    "slug": "terrain-naklua-hills",
+    "title": "Terrain Naklua Hills à Vendre à 500 sq.wah à Vue Mer Panoramique",
+    "type": "terrain",
+    "price": 25000000,
+    "currency": "THB",
+    "location": {
+      "city": "Pattaya",
+      "district": "Naklua Hills",
+      "country": "Thaïlande"
+    },
+    "surface": 2000,
+    "rooms": 0,
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "description": "",
+    "features": [
+      {
+        "label": "Superficie",
+        "value": "500 sq.wah (2,000 m²)"
+      },
+      {
+        "label": "Vue",
+        "value": "Mer panoramique 180à"
+      },
+      {
+        "label": "Vàgàtation",
+        "value": "Arborà et pràservà"
+      },
+      {
+        "label": "Topographie",
+        "value": "Pente douce"
+      },
+      {
+        "label": "Plage",
+        "value": "5 min Wongamat"
+      },
+      {
+        "label": "Titre",
+        "value": "Chanote"
+      }
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=300&fit=crop"
+    ],
+    "status": "for-sale",
+    "isPublished": true,
+    "ref": "TERRAIN-003",
+    "seo": {
+      "title": "Terrain Naklua Hills à Vendre - Vue Mer | Nes Thai Business",
+      "description": "",
+      "canonicalUrl": "https://www.nesthai.com/terrain-naklua-hills.html"
+    },
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "RealEstateListing",
+      "name": "Terrain Naklua Hills à Vendre à 500 sq.wah à Vue Mer Panoramique",
+      "description": "Magnifique terrain de 500 sq.wah (2,000 m²) situé sur les hauteurs de Naklua, offrant une vue mer panoramique exceptionnelle sur la baie de Pattaya.",
+      "url": "https://www.nesthai.com/terrain-naklua-hills.html",
+      "datePosted": "2026-02-12",
+      "price": "25000000",
+      "priceCurrency": "THB",
+      "propertyType": "Land",
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": "2000",
+        "unitCode": "MTK"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pattaya",
+        "addressRegion": "Chonburi",
+        "addressCountry": "TH"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "25000000",
+        "priceCurrency": "THB",
+        "availability": "https://schema.org/InStock",
+        "businessFunction": "http://purl.org/goodrelations/v1#Sell"
+      },
+      "agent": {
+        "@type": "RealEstateAgent",
+        "name": "Nes Thai Business Co., Ltd.",
+        "telephone": "+66-92-449-9960",
+        "email": "contact@nesthai.com",
+        "url": "https://www.nesthai.com"
+      }
+    }
+  }
+]

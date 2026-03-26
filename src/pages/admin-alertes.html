@@ -1,0 +1,67 @@
+<!-- Stats -->
+        <div class="stats-bar">
+            <div class="stat-card">
+                <div class="stat-value" id="totalAlerts">0</div>
+                <div class="stat-label">Alertes actives</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="uniqueUsers">0</div>
+                <div class="stat-label">Utilisateurs uniques</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="avgBudget">0M</div>
+                <div class="stat-label">Budget moyen max</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="topLocation">-</div>
+                <div class="stat-label">Zone la plus demandée</div>
+            </div>
+        </div>
+
+        <!-- Filtres -->
+        <div class="filters">
+            <input type="text" id="searchEmail" placeholder="Rechercher par email...">
+            <select id="filterType">
+                <option value="">Tous les types</option>
+                <option value="condo">Condos</option>
+                <option value="house">Maisons</option>
+                <option value="land">Terrains</option>
+            </select>
+            <select id="filterLocation">
+                <option value="">Toutes zones</option>
+                <option value="central-pattaya">Central Pattaya</option>
+                <option value="jomtien">Jomtien</option>
+                <option value="wongamat">Wongamat</option>
+                <option value="pratumnak">Pratumnak</option>
+                <option value="naklua">Naklua</option>
+            </select>
+            <button onclick="applyFilters()">Filtrer</button>
+            <button onclick="resetFilters()">Réinitialiser</button>
+        </div>
+
+        <!-- Table -->
+        <div class="alerts-table-container">
+            <table class="alerts-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Contact</th>
+                        <th>Type</th>
+                        <th>Budget</th>
+                        <th>Zone</th>
+                        <th>Ch.</th>
+                        <th>Statut</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="alertsTableBody">
+                    <!-- Rempli par JS -->
+                </tbody>
+            </table>
+            
+            <div class="empty-state" id="emptyState" style="display: none;">
+                <div class="empty-state-icon">📭</div>
+                <h3>Aucune alerte trouvée</h3>
+                <p>Les alertes créées par les utilisateurs apparaîtront ici.</p>
+            </div>
+        </div>

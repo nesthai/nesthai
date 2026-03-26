@@ -1,0 +1,21 @@
+{{!-- Partial: Carte propriété pour les listings --}}
+<article class="property-card" data-location="{{location.district}}" data-price="{{price}}" data-type="{{type}}">
+    <a href="{{slug}}.html" style="text-decoration: none; color: inherit; display: block;">
+        <div class="card-image">
+            <img src="{{{images.[0]}}}" alt="{{title}}" loading="lazy">
+            <span class="card-badge badge-sale">{{statusLabel status}}</span>
+            <div class="card-price">{{formatPriceShort price}} THB</div>
+        </div>
+        <div class="card-content">
+            <h3>{{title}}</h3>
+            <p class="card-location">📍 {{location.district}}{{#if location.city}}, {{location.city}}{{/if}}</p>
+            <div class="card-features">
+                {{#if bedrooms}}<span>🛏️ {{bedrooms}} Ch.</span>{{/if}}
+                {{#if bathrooms}}<span>🛁 {{bathrooms}} SdB</span>{{/if}}
+                {{#if surface}}<span>📐 {{surface}} m²</span>{{/if}}
+            </div>
+            <p class="card-description">{{truncate description 120}}</p>
+            <span class="btn btn-outline" style="margin-top: 10px; display: inline-block; padding: 8px 20px; font-size: 0.8rem;">Voir détails →</span>
+        </div>
+    </a>
+</article>

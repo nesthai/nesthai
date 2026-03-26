@@ -1,0 +1,313 @@
+﻿<!-- CALCULATEUR -->
+                    <div class="calculator-widget">
+                        <h3>🧮 Calculateur de frais d'achat</h3>
+                        <div class="calculator-form">
+                            <div class="calc-row">
+                                <label>Prix du bien (THB)</label>
+                                <input type="number" id="calcPrice" placeholder="5,000,000" value="5000000">
+                            </div>
+                            <div class="calc-row">
+                                <label>Type de bien</label>
+                                <select id="calcType">
+                                    <option value="condo">Condominium</option>
+                                    <option value="house">Maison/Villa</option>
+                                    <option value="land">Terrain</option>
+                                </select>
+                            </div>
+                            <div class="calc-row">
+                                <label>Régime fiscal</label>
+                                <select id="calcTax">
+                                    <option value="standard">Standard (partagé)</option>
+                                    <option value="buyer">Acheteur paye tout</option>
+                                </select>
+                            </div>
+                            <button onclick="calculateFees()" class="btn btn-primary">Calculer</button>
+                        </div>
+                        <div class="calculator-result" id="calcResult" style="display:none;">
+                            <h4>Résultat estimé</h4>
+                            <div class="result-item">
+                                <span>Frais totaux :</span>
+                                <strong id="totalFees">0 THB</strong>
+                            </div>
+                            <div class="result-item total">
+                                <span>Coût total :</span>
+                                <strong id="grandTotal">0 THB</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="article-toc">
+                        <h2>Sommaire</h2>
+                        <ul>
+                            <li><a href="#section-1">1. Les frais d'acquisition obligatoires</a></li>
+                            <li><a href="#section-2">2. Taxe de transfert et taxes connexes</a></li>
+                            <li><a href="#section-3">3. Honoraires d'agence et professionnels</a></li>
+                            <li><a href="#section-4">4. Charges courantes et fonds de joints</a></li>
+                            <li><a href="#section-5">5. Exemple de budget complet</a></li>
+                        </ul>
+                    </div>
+
+                    <section id="section-1" class="article-section">
+                        <h2>Les frais d'acquisition obligatoires</h2>
+                        <p>L'achat immobilier en Thaïlande implique plusieurs frais obligatoires, souvent méconnus des acheteurs étrangers. Voici le détail complet :</p>
+
+                        <div class="fee-breakdown">
+                            <div class="fee-item">
+                                <div class="fee-header">
+                                    <h4>Taxe de transfert (Transfer Fee)</h4>
+                                    <span class="fee-rate">2%</span>
+                                </div>
+                                <p>Calculée sur la valeur déclarée ou la valeur estimée par le Land Office (la plus élevée des deux). Généralement partagée 50/50 entre acheteur et vendeur, mais négociable.</p>
+                                <div class="fee-example">Exemple : Condo 5M THB → 100,000 THB (50,000 THB si partagé)</div>
+                            </div>
+
+                            <div class="fee-item">
+                                <div class="fee-header">
+                                    <h4>Impôt spécial sur les affaires (SBT)</h4>
+                                    <span class="fee-rate">3,3%</span>
+                                </div>
+                                <p>Applicable si le vendeur est une société ou si la propriété est revendue dans les 5 ans (pour les particuliers). Payé par le vendeur.</p>
+                            </div>
+
+                            <div class="fee-item">
+                                <div class="fee-header">
+                                    <h4>Impôt sur le revenu (Withholding Tax)</h4>
+                                    <span class="fee-rate">Variable</span>
+                                </div>
+                                <p>Calculé selon un barème progressif pour les particuliers (0-35%) ou 1% pour les sociétés. Payé par le vendeur mais retenu par l'acheteur.</p>
+                            </div>
+
+                            <div class="fee-item">
+                                <div class="fee-header">
+                                    <h4>Taxe de timbre (Stamp Duty)</h4>
+                                    <span class="fee-rate">0,5%</span>
+                                </div>
+                                <p>Exigée si le SBT ne s'applique pas. Payée par le vendeur.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="section-2" class="article-section">
+                        <h2>Taxe de transfert : Le détail</h2>
+                        
+                        <p>La <strong>taxe de transfert</strong> est souvent le plus gros poste de dépense pour l'acheteur. Elle se calcule ainsi :</p>
+
+                        <div class="calculation-box">
+                            <h4>Formule de calcul</h4>
+                            <p class="formula">Transfer Fee = Valeur du bien × 2%</p>
+                            <p class="note">La valeur est déterminée par le Land Office (rarement le prix réel payé)</p>
+                        </div>
+
+                        <h3>Répartition type entre acheteur et vendeur</h3>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Frais</th>
+                                    <th>Acheteur</th>
+                                    <th>Vendeur</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Taxe de transfert (2%)</td>
+                                    <td>1%</td>
+                                    <td>1%</td>
+                                </tr>
+                                <tr>
+                                    <td>SBT (3,3%)</td>
+                                    <td>-</td>
+                                    <td>3,3%</td>
+                                </tr>
+                                <tr>
+                                    <td>Withholding Tax</td>
+                                    <td>-</td>
+                                    <td>Variable</td>
+                                </tr>
+                                <tr>
+                                    <td>Taxe de timbre</td>
+                                    <td>-</td>
+                                    <td>0,5%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="info-box info-warning">
+                            <strong>⚠️ Attention aux pratiques</strong>
+                            <p>Certains vendeurs demandent à l'acheteur de payer 100% des frais. C'est négociable ! Une répartition 50/50 est la norme.</p>
+                        </div>
+                    </section>
+
+                    <section id="section-3" class="article-section">
+                        <h2>Honoraires d'agence et professionnels</h2>
+                        
+                        <h3>Honoraires d'agence immobilière</h3>
+                        <ul>
+                            <li><strong>Taux standard :</strong> 3% à 5% du prix de vente</li>
+                            <li><strong>Qui paie ?</strong> Généralement le vendeur (mais peut être répercuté)</li>
+                            <li><strong>Inclus ?</strong> Visites, négociation, accompagnement au Land Office</li>
+                        </ul>
+
+                        <h3>Frais juridiques</h3>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Prestation</th>
+                                    <th>Tarif estimé</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Vérification titre de propriété</td>
+                                    <td>5,000 - 10,000 THB</td>
+                                </tr>
+                                <tr>
+                                    <td>Rédaction/relecture contrat</td>
+                                    <td>10,000 - 30,000 THB</td>
+                                </tr>
+                                <tr>
+                                    <td>Accompagnement complet achat</td>
+                                    <td>30,000 - 80,000 THB</td>
+                                </tr>
+                                <tr>
+                                    <td>Traduction assermentée</td>
+                                    <td>2,000 - 5,000 THB/page</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3>Autres frais professionnels</h3>
+                        <ul>
+                            <li><strong>Comptable :</strong> 5,000 - 15,000 THB/an (si location)</li>
+                            <li><strong>Gestion locative :</strong> 10% - 20% des loyers</li>
+                            <li><strong>Expertise bancaire :</strong> 3,000 - 8,000 THB (si crédit)</li>
+                        </ul>
+                    </section>
+
+                    <section id="section-4" class="article-section">
+                        <h2>Charges courantes et fonds de joints</h2>
+                        
+                        <h3>Fonds de joints (Sinking Fund)</h3>
+                        <p>Versement unique à l'achat pour les futurs travaux d'entretien majeurs :</p>
+                        <ul>
+                            <li>Condos : 500 - 1,500 THB/m² (paiement unique)</li>
+                            <li>Villas en projet : Variable selon le développeur</li>
+                        </ul>
+
+                        <h3>Charges de copropriété (Common Fees)</h3>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Type de bien</th>
+                                    <th>Charges mensuelles</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Condo standard</td>
+                                    <td>35 - 60 THB/m²</td>
+                                </tr>
+                                <tr>
+                                    <td>Condo luxe</td>
+                                    <td>60 - 120 THB/m²</td>
+                                </tr>
+                                <tr>
+                                    <td>Villa en gated community</td>
+                                    <td>5,000 - 25,000 THB/mois</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3>Assurances obligatoires</h3>
+                        <ul>
+                            <li><strong>Assurance incendie :</strong> 2,000 - 5,000 THB/an</li>
+                            <li><strong>Assurance responsabilité civile :</strong> Souvent incluse dans les charges</li>
+                        </ul>
+
+                        <h3>Branchements et compteurs</h3>
+                        <p>Si vous achetez sur plan ou une unité neuve :</p>
+                        <ul>
+                            <li>Compteur eau : 5,000 - 15,000 THB</li>
+                            <li>Compteur électricité : 5,000 - 20,000 THB</li>
+                            <li>Internet/Fibre : 3,000 - 10,000 THB (installation)</li>
+                        </ul>
+                    </section>
+
+                    <section id="section-5" class="article-section">
+                        <h2>Exemple de budget complet</h2>
+                        
+                        <p>Prenons l'exemple concret d'un condo à <strong>5,000,000 THB</strong> (environ 130,000€) :</p>
+
+                        <div class="budget-example">
+                            <h4>Détail du budget total</h4>
+                            <table class="budget-table">
+                                <tr>
+                                    <td>Prix d'achat</td>
+                                    <td class="amount">5,000,000 THB</td>
+                                </tr>
+                                <tr class="subtotal">
+                                    <td colspan="2"><strong>Frais d'acquisition</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Taxe de transfert (1%)</td>
+                                    <td class="amount">50,000 THB</td>
+                                </tr>
+                                <tr>
+                                    <td>Frais Land Office divers</td>
+                                    <td class="amount">5,000 THB</td>
+                                </tr>
+                                <tr class="subtotal">
+                                    <td colspan="2"><strong>Services professionnels</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Due diligence juridique</td>
+                                    <td class="amount">15,000 THB</td>
+                                </tr>
+                                <tr>
+                                    <td>Traduction contrat</td>
+                                    <td class="amount">8,000 THB</td>
+                                </tr>
+                                <tr class="subtotal">
+                                    <td colspan="2"><strong>Charges initiales</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Fonds de joints (1,000 THB/m² × 50m²)</td>
+                                    <td class="amount">50,000 THB</td>
+                                </tr>
+                                <tr>
+                                    <td>Charges courantes avance (6 mois)</td>
+                                    <td class="amount">15,000 THB</td>
+                                </tr>
+                                <tr>
+                                    <td>Assurance incendie (1 an)</td>
+                                    <td class="amount">3,000 THB</td>
+                                </tr>
+                                <tr>
+                                    <td>Branchements eau/élec</td>
+                                    <td class="amount">10,000 THB</td>
+                                </tr>
+                                <tr class="total">
+                                    <td><strong>TOTAL FRAIS</strong></td>
+                                    <td class="amount"><strong>156,000 THB</strong></td>
+                                </tr>
+                                <tr class="grand-total">
+                                    <td><strong>COÛT TOTAL</strong></td>
+                                    <td class="amount"><strong>5,156,000 THB</strong></td>
+                                </tr>
+                                <tr class="percentage">
+                                    <td colspan="2">Les frais représentent environ <strong>3,1%</strong> du prix d'achat</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="info-box info-tip">
+                            <strong>💡 Budget à prévoir</strong>
+                            <p>En règle générale, prévoyez <strong>3% à 6%</strong> du prix d'achat en frais additionnels pour un condo, et <strong>5% à 8%</strong> pour une maison ou villa.</p>
+                        </div>
+                    </section>
+
+                    <!-- CTA -->
+                    <div class="article-cta">
+                        <h3>Besoin d'une estimation personnalisée ?</h3>
+                        <p>Nous calculons pour vous le budget complet de votre projet immobilier à Pattaya, sans surprise.</p>
+                        <a href="../contact.html" class="btn btn-primary">Demander une estimation gratuite</a>
+                    </div>

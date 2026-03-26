@@ -1,0 +1,10 @@
+{
+  "name": "Nes Thai Immobilier",
+  "short_name": "NesThai",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#C9A962",
+  "theme_color": "#C9A962",
+  "description": "Panel immobilier Nes Thai Business",
+  "icons": []
+}
