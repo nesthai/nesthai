@@ -2173,5 +2173,35 @@
         "url": "https://www.nesthai.com"
       }
     }
+  },
+  {
+    "id": "condo-whale-marina",
+    "slug": "condo-whale-marina",
+    "title": "Whale Marina",
+    "type": "condo",
+    "price": 9000000,
+    "currency": "THB",
+    "location": {
+      "city": "Na Jomtien",
+      "district": "Sattahaip",
+      "country": "Thaïlande"
+    },
+    "surface": 110,
+    "rooms": 3,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "description": "",
+    "features": [],
+    "images": [],
+    "status": "for-sale",
+    "isPublished": true,
+    "ref": "2026",
+    "seo": {
+      "title": "Whale Marina | Nes Thai Business",
+      "description": "",
+      "canonicalUrl": "https://www.nesthai.com/condo-whale-marina.html"
+    },
+    "createdAt": "2026-03-26T15:03:44.543Z",
+    "updatedAt": "2026-03-26T15:03:44.543Z"
   }
 ]
