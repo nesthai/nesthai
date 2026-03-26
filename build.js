@@ -27,7 +27,7 @@ const CONFIG = {
   pagesTemplatesDir: './templates/pages',
   layoutsDir: './templates/layouts',
   srcPagesDir: './src/pages',
-  outputDir: './dist',
+  outputDir: './docs',
   dataDir: './data',
   propertiesFile: './data/properties.json',
   siteFile: './data/site.json',
@@ -426,7 +426,7 @@ function buildListingPages(properties, site, layoutTemplate) {
 
 /**
  * Corrige les chemins relatifs dans le HTML généré pour les pages
- * situées dans un sous-dossier (ex: dist/actualites/).
+ * situées dans un sous-dossier (ex: docs/actualites/).
  * Les partials utilisent des chemins relatifs au root (./css/, index.html),
  * il faut les ajuster pour un sous-dossier.
  */
@@ -460,7 +460,7 @@ function buildArticlePages(articles, site, layoutTemplate) {
     path.join(CONFIG.pagesTemplatesDir, 'article.html')
   );
   
-  // Créer le dossier actualites dans dist
+  // Créer le dossier actualites dans docs
   const articlesOutputDir = path.join(CONFIG.outputDir, 'actualites');
   fs.mkdirSync(articlesOutputDir, { recursive: true });
   
@@ -674,7 +674,7 @@ function buildAll() {
   
   const startTime = Date.now();
   
-  // 1. Nettoyer dist/
+  // 1. Nettoyer docs/
   if (fs.existsSync(CONFIG.outputDir)) {
     fs.rmSync(CONFIG.outputDir, { recursive: true, force: true });
   }
@@ -739,7 +739,7 @@ function watchMode() {
     `${CONFIG.dataDir}/**/*.json`,
     `${CONFIG.srcPagesDir}/**/*.html`
   ], {
-    ignored: /node_modules|dist/,
+    ignored: /node_modules|docs/,
     persistent: true
   });
   
@@ -778,7 +778,7 @@ Fichiers de données:
   data/pages.json        Pages statiques (guides, contact, etc.)
 
 Sortie:
-  dist/                  Site statique complet
+  docs/                  Site statique complet
   `);
   process.exit(0);
 }
