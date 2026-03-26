@@ -2269,7 +2269,7 @@ ul {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 2.5fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1.2fr;
     gap: 40px;
     margin-bottom: 40px;
 }
@@ -2342,6 +2342,87 @@ ul {
 .footer-bottom p {
     color: var(--gray-light);
     font-size: 0.9rem;
+}
+
+.footer-tagline {
+    color: var(--gray-light);
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+.footer-contact {
+    font-style: normal;
+    line-height: 1.8;
+}
+
+.footer-contact p {
+    color: var(--gray-light);
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.footer-contact a {
+    color: var(--gold);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-contact a:hover {
+    color: #fff;
+}
+
+.footer-col nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Footer Social Bar */
+.footer-social-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 30px 0;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    margin-bottom: 0;
+}
+
+.footer-social-label {
+    text-align: center;
+}
+
+.footer-social-label h4 {
+    color: var(--gold);
+    margin: 0 0 8px 0;
+    font-size: 1.1rem;
+    font-family: var(--font-serif);
+}
+
+.footer-social-link {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.footer-social-link:hover {
+    color: var(--gold);
+}
+
+.footer-social-icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-social-icons .social-icon-btn {
+    color: var(--gold);
+}
+
+.footer-social-icons .social-icon-btn svg {
+    fill: var(--gold);
 }
 
 /* ========================================

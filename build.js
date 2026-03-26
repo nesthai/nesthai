@@ -438,11 +438,12 @@ function fixSubdirPaths(html, articleSlugs) {
   
   // 2. Fix bare page links (index.html, contact.html, etc.) from header/footer
   //    but NOT sister article links (leasehold-30-ans-securite.html etc.)
-  html = html.replace(/(href)="([a-zA-Z][a-zA-Z0-9_-]*\.html)(\#[^"]*)?"/g, (match, attr, filename, hash) => {
-    const slug = filename.replace('.html', '');
+  //    Also fix bare XML links (sitemap.xml, rss.xml)
+  html = html.replace(/(href)="([a-zA-Z][a-zA-Z0-9_-]*\.(?:html|xml))(\#[^"]*)?"/g, (match, attr, filename, hash) => {
+    const slug = filename.replace(/\.\w+$/, '');
     // Ne pas transformer les liens vers des articles sœurs
     if (slugSet.has(slug)) return match;
-    // Transformer les liens vers des pages racine
+    // Transformer les liens vers des pages/fichiers racine
     return `${attr}="../${filename}${hash || ''}"`;
   });
   
